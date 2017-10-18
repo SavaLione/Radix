@@ -6,7 +6,7 @@
            \_|         Radix       |
              |                     |
              |                     |
-			 |          ルート       |
+	     |          ルート     |
              |   __________________|__
               \_/____________________/
 
@@ -21,5 +21,5 @@
 
 
 <p align="center">
-  <img width="200" height="200" src="">
+  <img width="200" height="200" src="https://raw.githubusercontent.com/SavaLione/Radix/master/assets/png/kawaiifood.png">
 </p>
