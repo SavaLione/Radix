@@ -116,6 +116,10 @@ void v_window() {
 
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//	Logging.
+///////////////////////////////////////////////////////////////////////////////
+
 /*
 MNMMMNyNMMMdNdMMMMMNMMmMMddMMMMMMMyohsmdyoooooooooooooydhMMMosm/NmMMMy+h +MMysyo+oshhMMMMMNMy` /Mh  
 MmMMMMdyMMMhdhNMMMMmMMNNmNsNMMMMMMmssyooooooooooooooosomyNMMh+No+mMMMM.h-:yMNsooooooy-yMMMMMMs  sMo 
