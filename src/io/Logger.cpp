@@ -16,7 +16,7 @@ Radix
 using namespace std;
 void LOG_thr(string &s);
 void WARN_thr(string &s);
-void MSG_thr(string &s);
+void MAGE_thr(string &s);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Logger. LOG
@@ -72,11 +72,11 @@ void WARN_thr(string &s){
 	Вывод сообщений вида:
 		[				    ] {MESSAGE}
 */
-void MSG(string s) {
-	thread thr(MSG_thr, ref(s));
+void MAGE(string s) {
+	thread thr(MAGE_thr, ref(s));
 	thr.join();
 }
-void MSG_thr(string &s){
+void MAGE_thr(string &s) {
 	ofstream fout("logger.log", ios_base::app);
 	fout << "[				    ] " << s << "\n";
 	fout.close();

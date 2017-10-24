@@ -9,6 +9,8 @@ void Radix();
 void v_initialization();
 void v_settings();
 void LOG(string s);
+void WARN(string s);
+void MAGE(string s);
 //-----------------------------------------------------------------------------
 
 int main() {
@@ -17,8 +19,8 @@ int main() {
 	v_initialization();
 	v_settings();
 	LOG("LOG");
-	LOG("LOG 1");
-	LOG("LOG 2");
+	WARN("WARN");
+	MAGE("MAGE");
 	system("pause");
 	//-----------------------------------------------------------------------------
 	return 0;

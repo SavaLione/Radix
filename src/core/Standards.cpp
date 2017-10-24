@@ -125,15 +125,15 @@ void v_window() {
 		Определение логгера:
 			void LOG(string s);
 			void WARN(string s);
-			void MSG(string s);
+			void MAGE(string s); (От слова MESSAGE. M...AGE, MAGE)
 		Логирование:
 			LOG("{MESSAGE}");
 			WARN("{MESSAGE}");
-			MSG("{MESSAGE}");
+			MAGE("{MESSAGE}");
 		Уровни лога:
-			0 - MSG уровень. Вывод текста без времени
+			0 - MAGE уровень. Вывод текста без времени
 				Пример:
-					[                   ] MSG
+					[                   ] MAGE
 			1 - LOG уровень. Стандартные сообщения загрузки, подключения, отключения модулей. Статус задания
 				Пример:
 					[2017/10/24 21:57:45] [LOG]	LOG
