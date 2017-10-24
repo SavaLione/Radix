@@ -69,3 +69,18 @@ int i_settings_create_rules_txt() {
 		return 0;
 	}
 }
+
+///////////////////////////////////////////////////////////////////////////////
+//	Creating a standard file logger.log
+///////////////////////////////////////////////////////////////////////////////
+int i_settings_create_logger_log() {
+	try {
+		ofstream fout("logger.log");
+		//fout << "[2017/10/10 10:10] " << "Creating file logger.log" << "\n";
+		fout << "[				    ] " << "Creating file logger.log" << "\n";
+		fout.close();
+		return 1;
+	} catch(exception) {
+		return 0;
+	}
+}
