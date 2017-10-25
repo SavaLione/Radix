@@ -14,6 +14,7 @@ Radix
 #include <windows.h>
 #include <stdio.h>
 using namespace std;
+bool b_settings_logger();
 void MAGE_thr(string &s);
 void LOG_thr(string &s);
 void WARN_thr(string &s);
@@ -29,8 +30,10 @@ void WARN_thr(string &s);
 		[				    ] {MESSAGE}
 */
 void MAGE(string s) {
-	thread thr(MAGE_thr, ref(s));
-	thr.join();
+	if (b_settings_logger()) {
+		thread thr(MAGE_thr, ref(s));
+		thr.join();
+	}
 }
 void MAGE_thr(string &s) {
 	ofstream fout("logger.log", ios_base::app);
@@ -49,8 +52,10 @@ void MAGE_thr(string &s) {
 		[{YEAR}/{MONTH}/{DAY} {HOUR}:{MINUTE}:{SECOND}]	[LOG] {MESSAGE}
 */
 void LOG(string s) {
-	thread thr(LOG_thr, ref(s));
-	thr.join();
+	if (b_settings_logger()) {
+		thread thr(LOG_thr, ref(s));
+		thr.join();
+	}
 }
 void LOG_thr(string &s){
 	SYSTEMTIME time;
@@ -71,8 +76,10 @@ void LOG_thr(string &s){
 		[{YEAR}/{MONTH}/{DAY} {HOUR}:{MINUTE}:{SECOND}]	[WARN] {MESSAGE}
 */
 void WARN(string s) {
-	thread thr(WARN_thr, ref(s));
-	thr.join();
+	if (b_settings_logger()) {
+		thread thr(WARN_thr, ref(s));
+		thr.join();
+	}
 }
 void WARN_thr(string &s){
 	SYSTEMTIME time;
