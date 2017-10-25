@@ -1,4 +1,4 @@
-﻿#include <fstream>
+#include <fstream>
 using namespace std;
 int i_settings_create_logger_log();
 int i_settings_create_template();
