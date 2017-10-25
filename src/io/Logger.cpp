@@ -5,7 +5,6 @@ Radix
 			0 - MSG уровень. Вывод текста без времени
 			1 - LOG уровень. Стандартные сообщения загрузки, подключения, отключения модулей. Статус задания
 			2 - WARN уровень. Сообщения ошибки
-			3 - CRASH уровень. Выход из программы. Серьёзная ошибка
 2017
 ===========================================================================
 */
@@ -18,7 +17,6 @@ using namespace std;
 void MAGE_thr(string &s);
 void LOG_thr(string &s);
 void WARN_thr(string &s);
-void CRASH_thr(string &s);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Logger. MSG
@@ -81,27 +79,5 @@ void WARN_thr(string &s){
 	GetLocalTime(&time);
 	ofstream fout("logger.log", ios_base::app);
 	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [WARN]	" << s << "\n";
-	fout.close();
-}
-
-///////////////////////////////////////////////////////////////////////////////
-//	Logger. CRASH
-///////////////////////////////////////////////////////////////////////////////
-/*
-	Логгер
-	Уровень лога - 2
-	Логгирование сообщений в файл logger.log
-	Вывод сообщений вида:
-		[{YEAR}/{MONTH}/{DAY} {HOUR}:{MINUTE}:{SECOND}]	[CRASH] {MESSAGE}
-*/
-void CRASH(string s) {
-	thread thr(CRASH_thr, ref(s));
-	thr.join();
-}
-void CRASH_thr(string &s){
-	SYSTEMTIME time;
-	GetLocalTime(&time);
-	ofstream fout("logger.log", ios_base::app);
-	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [CRASH]	" << s << "\n";
 	fout.close();
 }
