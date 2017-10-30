@@ -11,7 +11,9 @@ Radix
 #include <stdio.h>
 
 #include "Logger.h"
+
 #include "Settings.h"
+
 using namespace std;
 
 void msg_thr(string &s);
@@ -42,23 +44,19 @@ void warn_thr(string &s);
 		Обработка важных сообщений ошибки(не удачная загрузка модуля, не удачный вход в программу, экстренный выход из программы и тд.) С временем и префиксом ([WARN])
 */
 void log(char level[], string s) {
-	char ch_arr_msg[] = "MSG", ch_arr_log[] = "LOG", ch_arr_warn[] = "WARN";
 	if (b_settings_logger()) {
-		if (strcmp(level, ch_arr_msg) == 0) {
+		if (strcmp(level, "MSG") == 0) {
 			thread thr(msg_thr, ref(s));
 			thr.join();
-		} else if (strcmp(level, ch_arr_log) == 0) {
+		} else if (strcmp(level, "LOG") == 0) {
 			thread thr(log_thr, ref(s));
 			thr.join();
-		} else if (strcmp(level, ch_arr_warn) == 0) {
+		} else if (strcmp(level, "WARN") == 0) {
 			thread thr(warn_thr, ref(s));
 			thr.join();
 		} else {
-			//Изменить. Возможно сделать 4 уровень для обработки не верных вызовов логгера
-			//-----------------------------------------------------------------------------
 			thread thr(warn_thr, ref(s));
 			thr.join();
-			//-----------------------------------------------------------------------------
 		}
 	}
 }
