@@ -1,12 +1,14 @@
 ﻿#include <fstream>
+
+#include "Initialization.h"
+#include "..\io\Templates.h"
+#include "..\io\Logger.h"
+
 using namespace std;
-void v_templates_create_logger_log();
-void v_templates_create_rules_txt();
-void v_templates_create_settings_ini();
-void v_initialization_settings_ini();
-void v_initialization_rules_txt();
+
 void v_initialization_logger_log();
-void log(char level[], string s);
+void v_initialization_rules_txt();
+void v_initialization_settings_ini();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы

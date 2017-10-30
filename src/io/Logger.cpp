@@ -9,8 +9,11 @@ Radix
 #include <thread>
 #include <windows.h>
 #include <stdio.h>
+
+#include "Logger.h"
+#include "Settings.h"
 using namespace std;
-bool b_settings_logger();
+
 void msg_thr(string &s);
 void log_thr(string &s);
 void warn_thr(string &s);
@@ -38,7 +41,7 @@ void warn_thr(string &s);
 	Применение:
 		Обработка важных сообщений ошибки(не удачная загрузка модуля, не удачный вход в программу, экстренный выход из программы и тд.) С временем и префиксом ([WARN])
 */
-void log(char level[],string s) {
+void log(char level[], string s) {
 	char ch_arr_msg[] = "MSG", ch_arr_log[] = "LOG", ch_arr_warn[] = "WARN";
 	if (b_settings_logger()) {
 		if (strcmp(level, ch_arr_msg) == 0) {

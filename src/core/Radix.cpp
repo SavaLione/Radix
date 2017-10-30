@@ -4,7 +4,7 @@ Radix
 2017
 ===========================================================================
 */
-void v_initialization();
+#include "Initialization.h"
 void Radix() {
 	v_initialization();
 }
