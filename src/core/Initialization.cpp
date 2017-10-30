@@ -6,8 +6,7 @@ void v_templates_create_settings_ini();
 void v_initialization_settings_ini();
 void v_initialization_rules_txt();
 void v_initialization_logger_log();
-void MAGE(string s);
-void WARN(string s);
+void log(char level[], string s);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы
@@ -31,9 +30,9 @@ void v_initialization_logger_log() {
 	ifstream fin("logger.log");
 	if (!fin.is_open()) {
 		v_templates_create_logger_log();
-		WARN("Logger module. logger.log file not found");
+		log("WARN", "Logger module. logger.log file not found");
 	}
-	MAGE("Logger module is loaded");
+	log("MSG", "Logger module is loaded");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -48,10 +47,10 @@ void v_initialization_logger_log() {
 void v_initialization_rules_txt() {
 	ifstream fin("rules.txt");
 	if (!fin.is_open()) {
-		WARN("Rules module. rules.txt file not found");
+		log("WARN", "Rules module. rules.txt file not found");
 		v_templates_create_rules_txt();
 	}
-	MAGE("Rules module is loaded");
+	log("LOG", "Rules module is loaded");
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -66,8 +65,8 @@ void v_initialization_rules_txt() {
 void v_initialization_settings_ini() {
 	ifstream fin("settings.ini");
 	if (!fin.is_open()) {
-		WARN("Settings module. settings.ini file not found");
+		log("WARN", "Settings module. settings.ini file not found");
 		v_templates_create_settings_ini();
 	}
-	MAGE("Settings module is loaded");
+	log("LOG", "Settings module is loaded");
 }
