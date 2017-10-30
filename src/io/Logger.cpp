@@ -29,17 +29,6 @@ void WARN_thr(string &s);
 	Вывод сообщений вида:
 		[				    ] {MESSAGE}
 */
-void MAGE(string s) {
-	if (b_settings_logger()) {
-		thread thr(MAGE_thr, ref(s));
-		thr.join();
-	}
-}
-void MAGE_thr(string &s) {
-	ofstream fout("logger.log", ios_base::app);
-	fout << "[				    ] " << s << "\n";
-	fout.close();
-}
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Logger. LOG
@@ -51,17 +40,40 @@ void MAGE_thr(string &s) {
 	Вывод сообщений вида:
 		[{YEAR}/{MONTH}/{DAY} {HOUR}:{MINUTE}:{SECOND}]	[LOG] {MESSAGE}
 */
-void LOG(string s) {
+void LOG(char[5] level,string s) {
+	char ch_arr_msg[] = "MSG", ch_arr_log[] = "LOG", ch_arr_warn[] = "WARN";
 	if (b_settings_logger()) {
-		thread thr(LOG_thr, ref(s));
-		thr.join();
+		if (strcmp(level, ch_arr_msg) == 0) {
+			thread thr(msg_thr, ref(s));
+			thr.join();
+		} else if (strcmp(level, ch_arr_log) == 0) {
+			thread thr(log_thr, ref(s));
+			thr.join();
+		} else if (strcmp(level, ch_arr_warn) == 0) {
+			thread thr(warn_thr, ref(s));
+			thr.join();
+		} else {
+			
+		}
 	}
 }
-void LOG_thr(string &s){
+void msg_thr(string &s){
 	SYSTEMTIME time;
 	GetLocalTime(&time);
 	ofstream fout("logger.log", ios_base::app);
 	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [LOG]	" << s << "\n";
+	fout.close();
+}
+void log_thr(string &s) {
+	ofstream fout("logger.log", ios_base::app);
+	fout << "[				    ] " << s << "\n";
+	fout.close();
+}
+void warn_thr(string &s){
+	SYSTEMTIME time;
+	GetLocalTime(&time);
+	ofstream fout("logger.log", ios_base::app);
+	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [WARN]	" << s << "\n";
 	fout.close();
 }
 
@@ -75,16 +87,3 @@ void LOG_thr(string &s){
 	Вывод сообщений вида:
 		[{YEAR}/{MONTH}/{DAY} {HOUR}:{MINUTE}:{SECOND}]	[WARN] {MESSAGE}
 */
-void WARN(string s) {
-	if (b_settings_logger()) {
-		thread thr(WARN_thr, ref(s));
-		thr.join();
-	}
-}
-void WARN_thr(string &s){
-	SYSTEMTIME time;
-	GetLocalTime(&time);
-	ofstream fout("logger.log", ios_base::app);
-	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [WARN]	" << s << "\n";
-	fout.close();
-}
