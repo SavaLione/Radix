@@ -6,14 +6,14 @@
 using namespace std;
 
 ///////////////////////////////////////////////////////////////////////////////
-//	Проверка значения переменной rules в файле settings.ini
+//	Проверка значения переменной ch_arr_value в файле settings.ini
 ///////////////////////////////////////////////////////////////////////////////
+/*
+
+*/
 bool b_settings(char ch_arr_value[]) {
-	string s_true, s_false;
+	string s_value(ch_arr_value), s_true = (s_value + " = true"), s_false = (s_value + " = false");
 	char buff[32];
-	string s_value(ch_arr_value);
-	s_true = s_value + " = true";
-	s_false = s_value + " = false";
 	bool b_end = true, b_start = false;
 	ifstream fin("settings.ini");
 	while (b_end) {
@@ -24,7 +24,7 @@ bool b_settings(char ch_arr_value[]) {
 		} else if (strcmp(buff, "[END]") == 0) {
 			b_end = false, b_start = false;
 		}
-		if (s_buff == s_true) { // true
+		if (s_buff == s_true) {
 			return true;
 		} else if (s_buff == s_false) {
 			return false;
