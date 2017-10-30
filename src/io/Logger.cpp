@@ -38,7 +38,7 @@ void warn_thr(string &s);
 	Применение:
 		Обработка важных сообщений ошибки(не удачная загрузка модуля, не удачный вход в программу, экстренный выход из программы и тд.) С временем и префиксом ([WARN])
 */
-void log(char[5] level,string s) {
+void log(char level[],string s) {
 	char ch_arr_msg[] = "MSG", ch_arr_log[] = "LOG", ch_arr_warn[] = "WARN";
 	if (b_settings_logger()) {
 		if (strcmp(level, ch_arr_msg) == 0) {
