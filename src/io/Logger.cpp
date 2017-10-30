@@ -44,7 +44,7 @@ void warn_thr(string &s);
 		Обработка важных сообщений ошибки(не удачная загрузка модуля, не удачный вход в программу, экстренный выход из программы и тд.) С временем и префиксом ([WARN])
 */
 void log(char level[], string s) {
-	if (b_settings_logger()) {
+	if (b_settings("logger")) {
 		if (strcmp(level, "MSG") == 0) {
 			thread thr(msg_thr, ref(s));
 			thr.join();
