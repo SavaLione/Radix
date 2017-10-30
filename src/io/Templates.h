@@ -5,4 +5,4 @@ void v_templates_create_logger_log();
 void v_templates_create_rules_txt();
 void v_templates_create_settings_ini();
 
-#endif
+#endif // TEMPLATES_H

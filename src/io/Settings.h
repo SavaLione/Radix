@@ -4,4 +4,4 @@
 bool b_settings_rules();
 bool b_settings_logger();
 
-#endif
+#endif // SETTINGS_H

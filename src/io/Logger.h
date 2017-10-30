@@ -3,4 +3,4 @@
 
 void log(char level[], std::string s);
 
-#endif
+#endif // LOGGER_H
