@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include "Windows.h"
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+//int adb(int argc, char* argv[])
+int adb(LPWSTR cmdArgs)
+{
+	PROCESS_INFORMATION ProcessInfo; 
+
+	STARTUPINFO StartupInfo; 
+
+	ZeroMemory(&StartupInfo, sizeof(StartupInfo));
+	StartupInfo.cb = sizeof StartupInfo;
+
+	//LPWSTR cmdArgs = L"adb devices";
+	LPWSTR cmdPath = L"C:\\platform-tools\\adb.exe";
+
+	if (CreateProcess(cmdPath, cmdArgs,
+		NULL, NULL, FALSE, 0, NULL,
+		NULL, &StartupInfo, &ProcessInfo))
+	{
+		WaitForSingleObject(ProcessInfo.hProcess, INFINITE);
+		CloseHandle(ProcessInfo.hThread);
+		CloseHandle(ProcessInfo.hProcess);
+
+		//printf("\[T]/");
+	}
+	/*	else
+		{
+			printf("nope, that doesn't work");
+		}										 */
+	return 0;
+}
