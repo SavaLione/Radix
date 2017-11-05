@@ -64,3 +64,28 @@ void v_templates_create_settings_ini() {
 
 	}
 }
+
+///////////////////////////////////////////////////////////////////////////////
+//	Creating a standard file ip.ini
+///////////////////////////////////////////////////////////////////////////////
+/*
+	Создание файла ip.
+		ip.ini - файл с ip адресами
+*/
+void v_templates_create_ip_ini() {
+	try {
+		ofstream fout("ip.ini");
+		fout << "#Radix" << "\n";
+		fout << "#2017" << "\n";
+		fout << "\n";
+		fout << "[START]" << "\n";
+		fout << "127.0.0.1" << "\n";
+		fout << "127.0.0.1" << "\n";
+		fout << "127.0.0.1" << "\n";
+		fout << "127.0.0.1" << "\n";
+		fout << "[END]";
+		fout.close();
+	} catch(exception) {
+
+	}
+}

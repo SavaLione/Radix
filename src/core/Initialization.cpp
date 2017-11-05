@@ -9,6 +9,7 @@ using namespace std;
 void v_initialization_logger_log();
 void v_initialization_rules_txt();
 void v_initialization_settings_ini();
+void v_initialization_ip_ini();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы
@@ -17,6 +18,7 @@ void v_initialization() {
 	v_initialization_logger_log();
 	v_initialization_rules_txt();
 	v_initialization_settings_ini();
+	v_templates_create_ip_ini();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -71,4 +73,22 @@ void v_initialization_settings_ini() {
 		v_templates_create_settings_ini();
 	}
 	log("LOG", "Settings module is loaded");
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//	Проверка файла ip.ini
+///////////////////////////////////////////////////////////////////////////////
+/*
+	Проверка файла ip.ini
+	При отсутствии файла создаёт его
+	При наличии файла пропуск
+	Всё логируется
+*/
+void v_initialization_ip_ini() {
+	ifstream fin("ip.ini");
+	if (!fin.is_open()) {
+		log("WARN", "ip module. ip.ini file not found");
+		v_templates_create_settings_ini();
+	}
+	log("LOG", "ip module is loaded");
 }

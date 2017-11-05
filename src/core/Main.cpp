@@ -1,5 +1,11 @@
 ﻿//-----------------------------------------------------------------------------
 #include <Windows.h>
+#include <iostream>
+
+#include <string>
+#include "..\io\Settings.h"
+
+using namespace std;
 //-----------------------------------------------------------------------------
 #include "Radix.h"
 

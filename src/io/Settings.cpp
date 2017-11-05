@@ -1,4 +1,7 @@
 ﻿#include <fstream>
+#include <string>
+
+#include "..\core\Net.h"
 
 using namespace std;
 
@@ -30,3 +33,27 @@ bool b_settings(char ch_arr_value[]) {
 	fin.close();
 	return true;
 }
+
+/*
+string s_return_charr_settings() {
+	char buff[32];
+	bool b_end = true, b_start = false;
+	ifstream fin("ip.ini");
+	while (b_end) {
+		fin.getline(buff, 32);
+		string s_buff(buff);
+		if (strcmp(buff, "[START]") == 0) {
+			b_start = true;
+		} else if (strcmp(buff, "[END]") == 0) {
+			b_end = false, b_start = false;
+		}
+
+		if (b_net_ip(buff)) {
+			string s = buff;
+			return s;
+		}
+	}
+	fin.close();
+	return "192.168.0.1";
+}
+*/
