@@ -16,9 +16,7 @@ Radix
 
 using namespace std;
 
-void msg_thr(string &s);
-void log_thr(string &s);
-void warn_thr(string &s);
+void log_thr(string &s, char* level);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Logger
@@ -45,37 +43,14 @@ void warn_thr(string &s);
 */
 void log(char level[], string s) {
 	if (b_settings("logger")) {
-		if (strcmp(level, "MSG") == 0) {
-			thread thr(msg_thr, ref(s));
-			thr.join();
-		} else if (strcmp(level, "LOG") == 0) {
-			thread thr(log_thr, ref(s));
-			thr.join();
-		} else if (strcmp(level, "WARN") == 0) {
-			thread thr(warn_thr, ref(s));
-			thr.join();
-		} else {
-			thread thr(warn_thr, ref(s));
-			thr.join();
-		}
+		thread thr(log_thr, ref(s), ref(level));
+		thr.join();
 	}
 }
-void msg_thr(string &s){
+void log_thr(string &s, char* level){
 	SYSTEMTIME time;
 	GetLocalTime(&time);
 	ofstream fout("logger.log", ios_base::app);
-	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [LOG]	" << s << "\n";
-	fout.close();
-}
-void log_thr(string &s) {
-	ofstream fout("logger.log", ios_base::app);
-	fout << "[				    ] " << s << "\n";
-	fout.close();
-}
-void warn_thr(string &s){
-	SYSTEMTIME time;
-	GetLocalTime(&time);
-	ofstream fout("logger.log", ios_base::app);
-	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] [WARN]	" << s << "\n";
+	fout << "[" << time.wYear << "/" << time.wMonth << "/" << time.wDay << " " << time.wHour << ":" << time.wMinute << ":" << time.wSecond << "] ["<< level << "]	" << s << "\n";
 	fout.close();
 }
