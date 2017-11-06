@@ -1,6 +1,5 @@
 ﻿#include <fstream>
 
-#include "Initialization.h"
 #include "..\io\Templates.h"
 #include "..\io\Logger.h"
 
@@ -16,9 +15,9 @@ void v_initialization_ip_ini();
 ///////////////////////////////////////////////////////////////////////////////
 void v_initialization() {
 	v_initialization_logger_log();
-	v_initialization_rules_txt();
 	v_initialization_settings_ini();
-	v_templates_create_ip_ini();
+	//v_templates_create_ip_ini();
+	v_initialization_rules_txt();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -37,24 +36,7 @@ void v_initialization_logger_log() {
 		log("WARN", "Logger module. logger.log file not found");
 	}
 	log("MSG", "Logger module is loaded");
-}
-
-///////////////////////////////////////////////////////////////////////////////
-//	Проверка файла rules.txt
-///////////////////////////////////////////////////////////////////////////////
-/*
-	Проверка файла rules.txt
-	При отсутствии файла создаёт его
-	При наличии файла пропуск
-	Всё логируется
-*/
-void v_initialization_rules_txt() {
-	ifstream fin("rules.txt");
-	if (!fin.is_open()) {
-		log("WARN", "Rules module. rules.txt file not found");
-		v_templates_create_rules_txt();
-	}
-	log("LOG", "Rules module is loaded");
+	fin.close();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -69,10 +51,11 @@ void v_initialization_rules_txt() {
 void v_initialization_settings_ini() {
 	ifstream fin("settings.ini");
 	if (!fin.is_open()) {
-		log("WARN", "Settings module. settings.ini file not found");
 		v_templates_create_settings_ini();
+		log("WARN", "Settings module. settings.ini file not found");
 	}
 	log("LOG", "Settings module is loaded");
+	fin.close();
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -86,9 +69,30 @@ void v_initialization_settings_ini() {
 */
 void v_initialization_ip_ini() {
 	ifstream fin("ip.ini");
-	if (!fin.is_open()) {
-		log("WARN", "ip module. ip.ini file not found");
-		v_templates_create_settings_ini();
+	if (!(fin.is_open())) {
+		v_templates_create_ip_ini();
+		log("WARN", "Settings module. settings.ini file not found");
 	}
-	log("LOG", "ip module is loaded");
+	log("LOG", "Settings module is loaded");
+	fin.close();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//	Проверка файла rules.txt
+///////////////////////////////////////////////////////////////////////////////
+/*
+	Проверка файла rules.txt
+	При отсутствии файла создаёт его
+	При наличии файла пропуск
+	Всё логируется
+*/
+void v_initialization_rules_txt() {
+	ifstream fin("rules.txt");
+	if (!fin.is_open()) {
+		v_templates_create_rules_txt();
+		log("WARN", "Rules module. rules.txt file not found");
+	}
+	log("LOG", "Rules module is loaded");
+	fin.close();
 }
