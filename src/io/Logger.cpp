@@ -41,13 +41,13 @@ void log_thr(string &s, char* level);
 	Применение:
 		Обработка важных сообщений ошибки(не удачная загрузка модуля, не удачный вход в программу, экстренный выход из программы и тд.) С временем и префиксом ([WARN])
 */
-void log(char level[], string s) {
+void log(string level, string s) {
 	if (b_settings("logger")) {
 		thread thr(log_thr, ref(s), ref(level));
 		thr.join();
 	}
 }
-void log_thr(string &s, char* level){
+void log_thr(string &s, string &level){
 	SYSTEMTIME time;
 	GetLocalTime(&time);
 	ofstream fout("logger.log", ios_base::app);
