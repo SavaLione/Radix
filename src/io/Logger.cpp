@@ -16,7 +16,7 @@ Radix
 
 using namespace std;
 
-void log_thr(string &s, char* level);
+void log_thr(string &s, string &level);
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Logger
