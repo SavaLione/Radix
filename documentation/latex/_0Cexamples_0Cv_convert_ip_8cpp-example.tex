@@ -1,0 +1,23 @@
+\hypertarget{_0Cexamples_0Cv_convert_ip_8cpp-example}{}\section{\textbackslash{}examples\textbackslash{}v\+\_\+convert\+\_\+ip.\+cpp}
+Парсинг ip адресов 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch\+\_\+return} & Массив char с ip адресом \\
+\hline
+\mbox{\tt out}  & {\em uc\+\_\+arr\+\_\+return} & Возвращяет массив типа unsigned char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Массив из 4 переменных типа unsigned char
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#include "..\(\backslash\)io\(\backslash\)Ip.h"}
+
+\textcolor{keywordtype}{int} \hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}() \{
+    \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} uc\_arr[4];
+    \textcolor{keywordtype}{char} ch\_ip\_addr[16] = \textcolor{stringliteral}{"172.1.1.1"};
+    \hyperlink{_ip_8cpp_a456dd80d06da80bf51df048d22fae10c}{v\_convert\_ip}(ch\_ip\_addr, uc\_arr);
+    \textcolor{keywordflow}{return} 0;
+\}
+\end{DoxyCodeInclude}
+ 

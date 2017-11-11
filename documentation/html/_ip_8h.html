@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radix: Файл Settings.cpp</title>
+<title>Radix: Файл Ip.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,55 +65,84 @@ $(function() {
   <div class="summary">
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл Settings.cpp</div>  </div>
+<div class="title">Файл Ip.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Модуль настроек. Парсит переменные в файлах  
+<p>Заголовочный файл с подключением модуля работы с ip адресами.  
 <a href="#details">Подробнее...</a></p>
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &quot;..\core\Net.h&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Settings.cpp:</div>
-<div class="dyncontent">
-<div class="center"><img src="_settings_8cpp__incl.png" border="0" usemap="#_settings_8cpp" alt=""/></div>
-<map name="_settings_8cpp" id="_settings_8cpp">
-<area shape="rect" id="node4" href="_net_8h_source.html" title="..\\core\\Net.h" alt="" coords="173,80,268,107"/>
-</map>
-</div>
-</div><table class="memberdecls">
+
+<p><a href="_ip_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:a7fcd42142e325cb27a380f49d655f9de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_settings_8cpp.html#a7fcd42142e325cb27a380f49d655f9de">b_settings</a> (char ch_arr_value[])</td></tr>
-<tr class="separator:a7fcd42142e325cb27a380f49d655f9de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a456dd80d06da80bf51df048d22fae10c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_8h.html#a456dd80d06da80bf51df048d22fae10c">v_convert_ip</a> (char *ch_ip_addr, unsigned char *uc_arr_return)</td></tr>
+<tr class="separator:a456dd80d06da80bf51df048d22fae10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8922c0342039e2f0d376c1d806eb84d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_ip_8h.html#a8922c0342039e2f0d376c1d806eb84d2">v_get_ip</a> (char *ch_return)</td></tr>
+<tr class="separator:a8922c0342039e2f0d376c1d806eb84d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Модуль настроек. Парсит переменные в файлах </p>
+<div class="textblock"><p>Заголовочный файл с подключением модуля работы с ip адресами. </p>
 <dl class="section author"><dt>Автор</dt><dd>SavaLione </dd></dl>
 </div><h2 class="groupheader">Функции</h2>
-<a id="a7fcd42142e325cb27a380f49d655f9de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fcd42142e325cb27a380f49d655f9de">&#9670;&nbsp;</a></span>b_settings()</h2>
+<a id="a456dd80d06da80bf51df048d22fae10c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456dd80d06da80bf51df048d22fae10c">&#9670;&nbsp;</a></span>v_convert_ip()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool b_settings </td>
+          <td class="memname">void v_convert_ip </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>ch_arr_value</em>[]</td><td>)</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ch_ip_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>uc_arr_return</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Парсинг ip адресов </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_ip_addr</td><td>Массив char с ip адресом </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uc_arr_return</td><td>Возвращяет массив типа unsigned char </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Массив из 4 переменных типа unsigned char </dd></dl>
+
+</div>
+</div>
+<a id="a8922c0342039e2f0d376c1d806eb84d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8922c0342039e2f0d376c1d806eb84d2">&#9670;&nbsp;</a></span>v_get_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_get_ip </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ch_return</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Парсинг параметров </p><dl class="params"><dt>Аргументы</dt><dd>
+<p>Парсинг ip адресов </p><dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ch_arr_value[]</td><td>Значение, которое надо найти в файле </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ch_return</td><td>Массив char, в который запишется ip адрес </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Значение переменной true false </dd></dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Массив символов, который запишется в ch_return </dd></dl>
 
 </div>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radix: Исходный файл Settings.h</title>
+<title>Radix: \examples\v_convert_ip.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -42,6 +42,7 @@ $(function() {
 });
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -56,19 +57,20 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c184e51c84f2c3f0345bbc8a0d75d3e1.html">io</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Settings.h</div>  </div>
+<div class="title">\examples\v_convert_ip.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_settings_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SETTINGS_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SETTINGS_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_settings_8h.html#a7fcd42142e325cb27a380f49d655f9de">b_settings</a>(<span class="keywordtype">char</span> ch_arr_value[]);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_settings_8h.html#a8922c0342039e2f0d376c1d806eb84d2">v_get_ip</a>(<span class="keywordtype">char</span>* ch_return);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif // SETTINGS_H</span></div><div class="ttc" id="_settings_8h_html_a8922c0342039e2f0d376c1d806eb84d2"><div class="ttname"><a href="_settings_8h.html#a8922c0342039e2f0d376c1d806eb84d2">v_get_ip</a></div><div class="ttdeci">void v_get_ip(char *ch_return)</div><div class="ttdef"><b>Definition:</b> Ip.cpp:41</div></div>
-<div class="ttc" id="_settings_8h_html_a7fcd42142e325cb27a380f49d655f9de"><div class="ttname"><a href="_settings_8h.html#a7fcd42142e325cb27a380f49d655f9de">b_settings</a></div><div class="ttdeci">bool b_settings(char ch_arr_value[])</div><div class="ttdef"><b>Definition:</b> Settings.cpp:22</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<p>Парсинг ip адресов </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch_return</td><td>Массив char с ip адресом </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">uc_arr_return</td><td>Возвращяет массив типа unsigned char </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Массив из 4 переменных типа unsigned char</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;..\io\Ip.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> <a name="a0"></a><a class="code" href="_main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div><div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> uc_arr[4];</div><div class="line">    <span class="keywordtype">char</span> ch_ip_addr[16] = <span class="stringliteral">&quot;172.1.1.1&quot;</span>;</div><div class="line">    <a name="a1"></a><a class="code" href="_ip_8cpp.html#a456dd80d06da80bf51df048d22fae10c">v_convert_ip</a>(ch_ip_addr, uc_arr);</div><div class="line">    <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

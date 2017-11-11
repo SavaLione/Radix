@@ -46,20 +46,3 @@ bool b_settings(char ch_arr_value[]) {
 	fin.close();
 	return true;
 }
-
-/** Парсинг ip адресов
-	\param[out] ch_return Массив char, в который запишется ip адрес
-	\return Массив символов, который запишется в ch_return
-*/
-void v_get_ip(char* ch_return) {
-	char buff[32];
-	ifstream fin("ip.ini");
-	if (fin.is_open()) {
-		fin.getline(buff, 32);
-	}
-	fin.close();
-
-	for(int i=0; i < 16; ++i){
-		ch_return[i] = buff[i];
-	}
-}
