@@ -1,0 +1,63 @@
+\hypertarget{_settings_8cpp}{}\section{Файл Settings.\+cpp}
+\label{_settings_8cpp}\index{Settings.\+cpp@{Settings.\+cpp}}
+
+
+Модуль настроек. Парсит переменные в файлах  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Net.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Settings.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{_settings_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_settings_8cpp_a7fcd42142e325cb27a380f49d655f9de}{b\+\_\+settings} (char ch\+\_\+arr\+\_\+value\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_settings_8cpp_a8922c0342039e2f0d376c1d806eb84d2}{v\+\_\+get\+\_\+ip} (char $\ast$ch\+\_\+return)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модуль настроек. Парсит переменные в файлах 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_settings_8cpp_a7fcd42142e325cb27a380f49d655f9de}\label{_settings_8cpp_a7fcd42142e325cb27a380f49d655f9de}} 
+\index{Settings.\+cpp@{Settings.\+cpp}!b\+\_\+settings@{b\+\_\+settings}}
+\index{b\+\_\+settings@{b\+\_\+settings}!Settings.\+cpp@{Settings.\+cpp}}
+\subsubsection{\texorpdfstring{b\+\_\+settings()}{b\_settings()}}
+{\footnotesize\ttfamily bool b\+\_\+settings (\begin{DoxyParamCaption}\item[{char}]{ch\+\_\+arr\+\_\+value\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Парсинг параметров 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch\+\_\+arr\+\_\+value\mbox{[}$\,$\mbox{]}} & Значение, которое надо найти в файле \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Значение переменной true false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_settings_8cpp_a8922c0342039e2f0d376c1d806eb84d2}\label{_settings_8cpp_a8922c0342039e2f0d376c1d806eb84d2}} 
+\index{Settings.\+cpp@{Settings.\+cpp}!v\+\_\+get\+\_\+ip@{v\+\_\+get\+\_\+ip}}
+\index{v\+\_\+get\+\_\+ip@{v\+\_\+get\+\_\+ip}!Settings.\+cpp@{Settings.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+get\+\_\+ip()}{v\_get\_ip()}}
+{\footnotesize\ttfamily void v\+\_\+get\+\_\+ip (\begin{DoxyParamCaption}\item[{char $\ast$}]{ch\+\_\+return }\end{DoxyParamCaption})}
+
+Парсинг ip адресов 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt out}  & {\em ch\+\_\+return} & Массив char, в который запишется ip адрес \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Массив символов, который запишется в ch\+\_\+return 
+\end{DoxyReturn}
