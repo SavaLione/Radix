@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Radix: Файл Logger.h</title>
+<title>Radix: Файл CheckingConnections.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,78 +58,64 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c184e51c84f2c3f0345bbc8a0d75d3e1.html">io</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл Logger.h</div>  </div>
+<div class="title">Файл CheckingConnections.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Заголовочный файл с подключением модуля логирования.  
+<p>Модуль проверки соединения.  
 <a href="#details">Подробнее...</a></p>
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Logger.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="_logger_8h__incl.png" border="0" usemap="#_logger_8h" alt=""/></div>
-</div>
-</div><div class="textblock"><div class="dynheader">
-Граф файлов, в которые включается этот файл:</div>
-<div class="dyncontent">
-<div class="center"><img src="_logger_8h__dep__incl.png" border="0" usemap="#_logger_8hdep" alt=""/></div>
-<map name="_logger_8hdep" id="_logger_8hdep">
-<area shape="rect" id="node2" href="_initialization_8cpp.html" title="Модуль проверки стандартных файлов программы. " alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="_logger_8cpp.html" title="Модуль логирования " alt="" coords="145,80,231,107"/>
-</map>
-</div>
-</div>
-<p><a href="_logger_8h_source.html">См. исходные тексты.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ad35770e66782b0d5c63307682c5de765"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#ad35770e66782b0d5c63307682c5de765">log</a> (std::string level, std::string s)</td></tr>
-<tr class="separator:ad35770e66782b0d5c63307682c5de765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e4924f4faf010e0b60e880f1bfd7dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_checking_connections_8cpp.html#aa1e4924f4faf010e0b60e880f1bfd7dc">b_checkingconnections_phone</a> ()</td></tr>
+<tr class="separator:aa1e4924f4faf010e0b60e880f1bfd7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db9a9ba779bd41fe05c5b402e770732"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_checking_connections_8cpp.html#a5db9a9ba779bd41fe05c5b402e770732">b_checkingconnections_internet</a> ()</td></tr>
+<tr class="separator:a5db9a9ba779bd41fe05c5b402e770732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Заголовочный файл с подключением модуля логирования. </p>
+<div class="textblock"><p>Модуль проверки соединения. </p>
 <dl class="section author"><dt>Автор</dt><dd>SavaLione </dd></dl>
 </div><h2 class="groupheader">Функции</h2>
-<a id="ad35770e66782b0d5c63307682c5de765"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad35770e66782b0d5c63307682c5de765">&#9670;&nbsp;</a></span>log()</h2>
+<a id="a5db9a9ba779bd41fe05c5b402e770732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db9a9ba779bd41fe05c5b402e770732">&#9670;&nbsp;</a></span>b_checkingconnections_internet()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void log </td>
+          <td class="memname">bool b_checkingconnections_internet </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>level</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>s</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Логгирование сообщений в файл logger.log </p><dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Уровень логирования </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Логируемая информация </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Проверка соединения с интернетом. </p><dl class="section return"><dt>Возвращает</dt><dd>true, если соединение есть. false, если соединения нет. </dd></dl>
+
+</div>
+</div>
+<a id="aa1e4924f4faf010e0b60e880f1bfd7dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e4924f4faf010e0b60e880f1bfd7dc">&#9670;&nbsp;</a></span>b_checkingconnections_phone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool b_checkingconnections_phone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверка телефона через adb. </p><dl class="section return"><dt>Возвращает</dt><dd>true, если телефон подключен. false, если телефон не подключен. </dd></dl>
 
 </div>
 </div>

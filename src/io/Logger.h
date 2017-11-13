@@ -10,6 +10,7 @@
 	\param[in] level Уровень логирования
 	\param[in] s Логируемая информация
 */
+#include <string>
 void log(std::string level, std::string s);
 
 #endif // LOGGER_H
