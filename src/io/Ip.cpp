@@ -47,22 +47,20 @@ void v_convert_ip(char *ch_ip_addr, unsigned char* uc_arr_return) {
     \example v_get_ip.cpp
 */
 void v_get_ip(char* ch_return) {
-	// Задаём буфер в 32 элемента
-	char buff[32];
+	// Задаём буфер в 1024 элемента
+	char buff[1024];
 	// Открываем файл ip.ini для записи
 	ifstream fin("ip.ini");
 	// Если файл открыт, получаем первую строку и записываем её в буфер (buff)
 	if (fin.is_open()) {
-		fin.getline(buff, 32);
+		fin.getline(buff, 1024);
+	} else {
+		buff[] = "asd";
 	}
 	// Закрываем файл ip.ini
 	fin.close();
-	
-    if ((buff == "localhost") || (buff == "127.0.0.1") || (buff == "0:0:0:0:0:0:0:1")) {
-        char buff[32] = "localhost";
-    }
 	// Возвращяем массив char
-	for(int i=0; i < 16; ++i){
+	for(int i=0; i < strlen(buff); ++i){
 		ch_return[i] = buff[i];
 	}
 }
