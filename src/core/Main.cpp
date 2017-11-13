@@ -10,7 +10,6 @@
 
 #include <string>
 #include "..\io\Settings.h"
-#include "Net.h"
 
 using namespace std;
 //-----------------------------------------------------------------------------
