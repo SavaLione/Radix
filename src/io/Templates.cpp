@@ -63,6 +63,7 @@ void v_templates_create_settings_ini() {
 		fout << "[START]" << "\n";
 		fout << "rules = true" << "\n";
 		fout << "logger = true"<< "\n";
+		fout << "internet = false"<< "\n";
 		fout << "[END]";
 		fout.close();
 	} catch(exception) {
