@@ -6,6 +6,8 @@
 #include <fstream>
 #include <string>
 
+#include "../core/Constants.h"
+
 using namespace std;
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -20,12 +22,12 @@ using namespace std;
 bool b_settings(char ch_arr_value[]) {
 	string s_value(ch_arr_value), s_true = (s_value + " = true"), s_false = (s_value + " = false");
 	// Буфер в 32 символа
-	char buff[32];
+	char buff[radix::buff_size];
 	bool b_end = true, b_start = false;
 	ifstream fin("settings.ini");
 	if (fin.is_open()) {
 		while (b_end) {
-			fin.getline(buff, 32);
+			fin.getline(buff, radix::buff_size);
 			string s_buff(buff);
 			if (strcmp(buff, "[START]") == 0) {
 				b_start = true;
