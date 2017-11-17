@@ -12,13 +12,14 @@
 		
 		settings.ini - файл настроек
 		
-		ip.ini - файл с ip адресами (не обязательно)
+		ip.ini - файл с ip адресами
 	\author SavaLione
 */
 #include <fstream>
 
 #include "..\io\Templates.h"
 #include "..\io\Logger.h"
+#include "Constants.h"
 
 using namespace std;
 
@@ -26,6 +27,8 @@ void v_initialization_logger_log(); ///< Проверка файла logger.log
 void v_initialization_rules_txt(); ///< Проверка файла settings.ini
 void v_initialization_settings_ini(); ///< Проверка файла ip.ini
 void v_initialization_ip_ini(); ///< Проверка файла rules.txt
+
+void v_initialization_check();
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы
@@ -44,7 +47,7 @@ void v_initialization_ip_ini(); ///< Проверка файла rules.txt
 void v_initialization() {
 	v_initialization_logger_log();
 	v_initialization_settings_ini();
-	//v_templates_create_ip_ini();
+	v_templates_create_ip_ini();
 	v_initialization_rules_txt();
 }
 
@@ -61,12 +64,13 @@ void v_initialization() {
 	Всё логируется
 */
 void v_initialization_logger_log() {
-	ifstream fin("logger.log");
-	if (!fin.is_open()) {
+	ifstream fin(radix::logger_list);
+	if (fin.is_open()) {
+		log("MSG", "Logger module is loaded");
+	} else {
 		v_templates_create_logger_log();
 		log("WARN", "Logger module. logger.log file not found");
 	}
-	log("MSG", "Logger module is loaded");
 	fin.close();
 }
 
@@ -83,12 +87,13 @@ void v_initialization_logger_log() {
 	Всё логируется
 */
 void v_initialization_settings_ini() {
-	ifstream fin("settings.ini");
-	if (!fin.is_open()) {
+	ifstream fin(radix::settings_list);
+	if (fin.is_open()) {
+		log("LOG", "Settings module is loaded");
+	} else {
 		v_templates_create_settings_ini();
 		log("WARN", "Settings module. settings.ini file not found");
 	}
-	log("LOG", "Settings module is loaded");
 	fin.close();
 }
 
@@ -105,12 +110,13 @@ void v_initialization_settings_ini() {
 	Всё логируется
 */
 void v_initialization_ip_ini() {
-	ifstream fin("ip.ini");
-	if (!(fin.is_open())) {
+	ifstream fin(radix::address_list);
+	if (fin.is_open()) {
+		log("LOG", "Settings module is loaded");
+	} else {
 		v_templates_create_ip_ini();
 		log("WARN", "Settings module. settings.ini file not found");
 	}
-	log("LOG", "Settings module is loaded");
 	fin.close();
 }
 
@@ -128,11 +134,12 @@ void v_initialization_ip_ini() {
 	Всё логируется
 */
 void v_initialization_rules_txt() {
-	ifstream fin("rules.txt");
-	if (!fin.is_open()) {
+	ifstream fin(radix::rules_list);
+	if (fin.is_open()) {
+		log("LOG", "Rules module is loaded");
+	} else {
 		v_templates_create_rules_txt();
 		log("WARN", "Rules module. rules.txt file not found");
 	}
-	log("LOG", "Rules module is loaded");
 	fin.close();
 }

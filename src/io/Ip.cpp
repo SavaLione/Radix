@@ -6,6 +6,16 @@
 */
 #include <fstream>
 
+//
+#include <iostream>
+#include <string>
+//
+
+#include "../core/Constants.h"
+
+#pragma comment(lib,"urlmon.lib")
+#pragma warning(disable : 4996)
+
 using namespace std;
 
 /** Парсинг ip адресов
@@ -47,22 +57,35 @@ void v_convert_ip(char *ch_ip_addr, unsigned char* uc_arr_return) {
     \example v_get_ip.cpp
 */
 void v_get_ip(char* ch_return) {
-	// Задаём буфер в 32 элемента
-	char buff[32];
+	char ch[radix::length_url];
+	ifstream fin(radix::address_list);
+	string s;
+	getline(fin, s);
+	fin.close();
+	
+	strncpy(ch, s.c_str(), sizeof(ch));
+	ch[sizeof(ch) - 1] = 0;
+
+	for (size_t sz = 0; sz < sizeof(ch); sz++) {
+		ch_return[sz] = ch[sz];
+	}
+}
+
+/*
+void v_get_ip(char* ch_return) {
+	// Задаём буфер в radix::length_url элемента
+	char buff[radix::length_url] = {'0'};
 	// Открываем файл ip.ini для записи
 	ifstream fin("ip.ini");
 	// Если файл открыт, получаем первую строку и записываем её в буфер (buff)
 	if (fin.is_open()) {
-		fin.getline(buff, 32);
+		fin.getline(buff, radix::length_url);
 	}
 	// Закрываем файл ip.ini
 	fin.close();
-	
-    if ((buff == "localhost") || (buff == "127.0.0.1") || (buff == "0:0:0:0:0:0:0:1")) {
-        char buff[32] = "localhost";
-    }
 	// Возвращяем массив char
-	for(int i=0; i < 16; ++i){
+	for(int i=0; i < radix::length_url; ++i){
 		ch_return[i] = buff[i];
 	}
 }
+*/

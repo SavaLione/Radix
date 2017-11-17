@@ -1,4 +1,5 @@
 <map id="Logger.h" name="Logger.h">
 <area shape="rect" id="node2" href="$_initialization_8cpp.html" title="Модуль проверки стандартных файлов программы. " alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="$_logger_8cpp.html" title="Модуль логирования " alt="" coords="145,80,231,107"/>
+<area shape="rect" id="node3" href="$_download_8cpp.html" title="Модуль загрузки. Загружает файл " alt="" coords="145,80,247,107"/>
+<area shape="rect" id="node4" href="$_logger_8cpp.html" title="Модуль логирования " alt="" coords="271,80,358,107"/>
 </map>

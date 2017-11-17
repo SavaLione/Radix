@@ -7,6 +7,8 @@
 
 #include "Templates.h"
 
+#include "..\core\Constants.h"
+
 using namespace std;
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -18,7 +20,7 @@ using namespace std;
 */
 void v_templates_create_logger_log() {
 	try {
-		ofstream fout("logger.log");
+		ofstream fout(radix::logger_list);
 		fout << "[				    ] " << "Creating file logger.log" << "\n";
 		fout.close();
 	} catch(exception) {
@@ -35,7 +37,7 @@ void v_templates_create_logger_log() {
 */
 void v_templates_create_rules_txt() {
 	try {
-		ofstream fout("rules.txt");
+		ofstream fout(radix::rules_list);
 		fout << "Copyright (c) 2017 Radix" << "\n";
 		fout << "\n";
 		fout << "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A " << "\n";
@@ -56,7 +58,7 @@ void v_templates_create_rules_txt() {
 */
 void v_templates_create_settings_ini() {
 	try {
-		ofstream fout("settings.ini");
+		ofstream fout(radix::settings_list);
 		fout << "#Radix" << "\n";
 		fout << "#2017" << "\n";
 		fout << "\n";
@@ -79,11 +81,16 @@ void v_templates_create_settings_ini() {
 		ip.ini - файл с ip адресами
 */
 void v_templates_create_ip_ini() {
-	try {
-		ofstream fout("ip.ini");
-		fout << "127.0.0.1" << "\n";
-		fout.close();
-	} catch(exception) {
+	ifstream fin(radix::address_list);
+	if (fin.is_open()) {
 
+	} else {
+		try {
+			ofstream fout(radix::address_list);
+			fout << "127.0.0.1";
+			fout.close();
+		} catch(exception) {
+			
+		}
 	}
 }
