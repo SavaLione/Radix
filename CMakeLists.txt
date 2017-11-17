@@ -1,4 +1,4 @@
-message(STATUS "Run CMake")
+﻿message(STATUS "Run CMake")
 
 cmake_minimum_required (VERSION 2.6)
 
