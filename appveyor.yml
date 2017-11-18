@@ -2,5 +2,13 @@ version: 1.0.{build}
 image:
 - Visual Studio 2017
 - Visual Studio 2015
+configuration: Release
+platform:
+- x86
+- x64
 build:
+  project: ..\CMake\Visual Studio 15 2017
+  parallel: true
   verbosity: minimal
+only_commits:
+  message: /build/
