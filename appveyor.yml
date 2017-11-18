@@ -11,7 +11,7 @@ before_build:
   - cd c:\projects\radix
   - cmake -DCMAKE_BUILD_TYPE=Release -G "Visual Studio 15 2017 Win64"
 build:
-  project: c:\projects\radix
+  project: c:\projects\radix\Radix.sln
   parallel: true
   verbosity: minimal
 only_commits:
