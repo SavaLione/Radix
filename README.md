@@ -1,5 +1,5 @@
 # Radix
-<img src="https://ci.appveyor.com/api/projects/status/eq0tx0cavu7brv01?svg=true">
+<a href="https://ci.appveyor.com/project/SavaLione/radix"><img src="https://ci.appveyor.com/api/projects/status/eq0tx0cavu7brv01?svg=true"></a>
 
             _______________________
            /\                      \
