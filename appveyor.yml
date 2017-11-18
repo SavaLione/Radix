@@ -7,7 +7,7 @@ platform:
 - x86
 - x64
 build:
-  project: '..\CMake\Visual Studio 15 2017'
+  project: 'CMake\Visual Studio 15 2017'
   parallel: true
   verbosity: minimal
 only_commits:

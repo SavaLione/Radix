@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Программирование\Radix\CMake\Visual Studio 15 2017\CMakeFiles\14cc77b5f78ae03f510cb7ee6746ea32\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F72926AB-0BEC-3054-8631-F7F483FA7A26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
