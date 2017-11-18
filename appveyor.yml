@@ -2,7 +2,7 @@ version: 1.0.{build}
 image:
 - Visual Studio 2017
 - Visual Studio 2015
-configuration: Release
+configuration: RELEASE
 platform:
 - x86
 - x64
