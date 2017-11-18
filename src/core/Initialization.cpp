@@ -28,8 +28,6 @@ void v_initialization_rules_txt(); ///< Проверка файла settings.ini
 void v_initialization_settings_ini(); ///< Проверка файла ip.ini
 void v_initialization_ip_ini(); ///< Проверка файла rules.txt
 
-void v_initialization_check();
-
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы
 ///////////////////////////////////////////////////////////////////////////////

@@ -80,6 +80,11 @@ void v_download_file(char *ch_file) {
 
 //URLDownloadToFile(0, ch_arr_url_done, ch_arr_file_done, 0, 0);
 
+
+/** Преобразование типа string к типу wstring
+	\param[in] s ссылка на строку string
+	\return wstring
+*/
 std::wstring s2ws(const std::string& s) {
     int len;
     int slength = (int)s.length() + 1;
