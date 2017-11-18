@@ -1,3 +1,0 @@
-D:/Программирование/Radix/CMake/Visual Studio 15 2017/CMakeFiles/Radix.dir
-D:/Программирование/Radix/CMake/Visual Studio 15 2017/CMakeFiles/ALL_BUILD.dir
-D:/Программирование/Radix/CMake/Visual Studio 15 2017/CMakeFiles/ZERO_CHECK.dir

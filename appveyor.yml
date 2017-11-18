@@ -6,8 +6,12 @@ configuration: Release
 platform:
 - x86
 - x64
+before_build:
+  - echo Running cmake...
+  - cd c:\projects\radix
+  - cmake -DCMAKE_BUILD_TYPE=Release -G "Visual Studio 15 2017 Win64"
 build:
-  project: 'CMake\Visual Studio 15 2017'
+  project: c:\projects\radix
   parallel: true
   verbosity: minimal
 only_commits:
