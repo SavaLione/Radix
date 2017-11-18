@@ -1,4 +1,5 @@
 # Radix
+<img src="https://ci.appveyor.com/api/projects/status/eq0tx0cavu7brv01?svg=true">
 
             _______________________
            /\                      \
