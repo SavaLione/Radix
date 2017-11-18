@@ -12,5 +12,3 @@ build:
   project: c:\projects\radix\Radix.sln
   parallel: true
   verbosity: minimal
-only_commits:
-  message: /build/
