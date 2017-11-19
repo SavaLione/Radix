@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['settings_2ecpp',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
-  ['settings_2eh',['Settings.h',['../_settings_8h.html',1,'']]]
+  ['radix_2ecpp',['Radix.cpp',['../_radix_8cpp.html',1,'']]],
+  ['radix_2eh',['Radix.h',['../_radix_8h.html',1,'']]]
 ];

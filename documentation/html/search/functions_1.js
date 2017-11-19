@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['log',['log',['../_logger_8cpp.html#a85cbef1702d055318336f0f3a5036959',1,'log(string level, string s):&#160;Logger.cpp'],['../_logger_8h.html#ad35770e66782b0d5c63307682c5de765',1,'log(std::string level, std::string s):&#160;Logger.h']]],
-  ['log_5fthr',['log_thr',['../_logger_8cpp.html#a37ded7634d8547536bbd135208109766',1,'Logger.cpp']]]
+  ['b_5fcheckingconnections_5finternet',['b_checkingconnections_internet',['../_checking_connections_8cpp.html#a5db9a9ba779bd41fe05c5b402e770732',1,'b_checkingconnections_internet():&#160;CheckingConnections.cpp'],['../_checking_connections_8h.html#a5db9a9ba779bd41fe05c5b402e770732',1,'b_checkingconnections_internet():&#160;CheckingConnections.cpp']]],
+  ['b_5fcheckingconnections_5fphone',['b_checkingconnections_phone',['../_checking_connections_8cpp.html#aa1e4924f4faf010e0b60e880f1bfd7dc',1,'b_checkingconnections_phone():&#160;CheckingConnections.cpp'],['../_checking_connections_8h.html#aa1e4924f4faf010e0b60e880f1bfd7dc',1,'b_checkingconnections_phone():&#160;CheckingConnections.cpp']]],
+  ['b_5fsettings',['b_settings',['../_settings_8cpp.html#a7fcd42142e325cb27a380f49d655f9de',1,'b_settings(char ch_arr_value[]):&#160;Settings.cpp'],['../_settings_8h.html#a7fcd42142e325cb27a380f49d655f9de',1,'b_settings(char ch_arr_value[]):&#160;Settings.cpp']]]
 ];
