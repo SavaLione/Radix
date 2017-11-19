@@ -1,0 +1,62 @@
+\hypertarget{_ip_8h}{}\section{Файл Ip.\+h}
+\label{_ip_8h}\index{Ip.\+h@{Ip.\+h}}
+
+
+Заголовочный файл с подключением модуля работы с ip адресами.  
+
+
+Граф файлов, в которые включается этот файл\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{_ip_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_ip_8h_a456dd80d06da80bf51df048d22fae10c}{v\+\_\+convert\+\_\+ip} (char $\ast$ch\+\_\+ip\+\_\+addr, unsigned char $\ast$uc\+\_\+arr\+\_\+return)
+\item 
+void \hyperlink{_ip_8h_a8922c0342039e2f0d376c1d806eb84d2}{v\+\_\+get\+\_\+ip} (char $\ast$ch\+\_\+return)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Заголовочный файл с подключением модуля работы с ip адресами. 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_ip_8h_a456dd80d06da80bf51df048d22fae10c}\label{_ip_8h_a456dd80d06da80bf51df048d22fae10c}} 
+\index{Ip.\+h@{Ip.\+h}!v\+\_\+convert\+\_\+ip@{v\+\_\+convert\+\_\+ip}}
+\index{v\+\_\+convert\+\_\+ip@{v\+\_\+convert\+\_\+ip}!Ip.\+h@{Ip.\+h}}
+\subsubsection{\texorpdfstring{v\+\_\+convert\+\_\+ip()}{v\_convert\_ip()}}
+{\footnotesize\ttfamily void v\+\_\+convert\+\_\+ip (\begin{DoxyParamCaption}\item[{char $\ast$}]{ch\+\_\+ip\+\_\+addr,  }\item[{unsigned char $\ast$}]{uc\+\_\+arr\+\_\+return }\end{DoxyParamCaption})}
+
+Парсинг ip адресов 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch\+\_\+ip\+\_\+addr} & Массив char с ip адресом \\
+\hline
+\mbox{\tt out}  & {\em uc\+\_\+arr\+\_\+return} & Возвращяет массив типа unsigned char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Массив из 4 переменных типа unsigned char 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_ip_8h_a8922c0342039e2f0d376c1d806eb84d2}\label{_ip_8h_a8922c0342039e2f0d376c1d806eb84d2}} 
+\index{Ip.\+h@{Ip.\+h}!v\+\_\+get\+\_\+ip@{v\+\_\+get\+\_\+ip}}
+\index{v\+\_\+get\+\_\+ip@{v\+\_\+get\+\_\+ip}!Ip.\+h@{Ip.\+h}}
+\subsubsection{\texorpdfstring{v\+\_\+get\+\_\+ip()}{v\_get\_ip()}}
+{\footnotesize\ttfamily void v\+\_\+get\+\_\+ip (\begin{DoxyParamCaption}\item[{char $\ast$}]{ch\+\_\+return }\end{DoxyParamCaption})}
+
+Парсинг ip адресов 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt out}  & {\em ch\+\_\+return} & Массив char, в который запишется ip адрес \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Массив символов, который запишется в ch\+\_\+return 
+\end{DoxyReturn}

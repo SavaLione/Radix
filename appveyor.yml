@@ -1,0 +1,14 @@
+version: 1.0.{build}
+image:
+- Visual Studio 2017
+configuration: RELEASE
+platform:
+- x64
+before_build:
+  - echo Running cmake...
+  - cd c:\projects\radix
+  - cmake -DCMAKE_BUILD_TYPE=RELEASE -G "Visual Studio 15 2017 Win64"
+build:
+  project: c:\projects\radix\Radix.sln
+  parallel: true
+  verbosity: minimal

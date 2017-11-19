@@ -1,0 +1,67 @@
+\hypertarget{_download_8cpp}{}\section{Файл Download.\+cpp}
+\label{_download_8cpp}\index{Download.\+cpp@{Download.\+cpp}}
+
+
+Модуль загрузки. Загружает файл  
+
+
+{\ttfamily \#include $<$urlmon.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}Ip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Constants.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Download.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_download_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::wstring \hyperlink{_download_8cpp_ae9cab0756619dfee595d5b254cfc4859}{s2ws} (const std\+::string \&s)
+\item 
+void \hyperlink{_download_8cpp_ab3291bd9df2e78c286f024fb1df3a683}{v\+\_\+download\+\_\+file} (char $\ast$ch\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модуль загрузки. Загружает файл 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_download_8cpp_ae9cab0756619dfee595d5b254cfc4859}\label{_download_8cpp_ae9cab0756619dfee595d5b254cfc4859}} 
+\index{Download.\+cpp@{Download.\+cpp}!s2ws@{s2ws}}
+\index{s2ws@{s2ws}!Download.\+cpp@{Download.\+cpp}}
+\subsubsection{\texorpdfstring{s2ws()}{s2ws()}}
+{\footnotesize\ttfamily std\+::wstring s2ws (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})}
+
+Преобразование типа string к типу wstring 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em s} & ссылка на строку string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+wstring 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_download_8cpp_ab3291bd9df2e78c286f024fb1df3a683}\label{_download_8cpp_ab3291bd9df2e78c286f024fb1df3a683}} 
+\index{Download.\+cpp@{Download.\+cpp}!v\+\_\+download\+\_\+file@{v\+\_\+download\+\_\+file}}
+\index{v\+\_\+download\+\_\+file@{v\+\_\+download\+\_\+file}!Download.\+cpp@{Download.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+download\+\_\+file()}{v\_download\_file()}}
+{\footnotesize\ttfamily void v\+\_\+download\+\_\+file (\begin{DoxyParamCaption}\item[{char $\ast$}]{ch\+\_\+file }\end{DoxyParamCaption})}
+
+Загрузка файла по уникальному номеру 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch\+\_\+file} & Номер файла для загрузки \\
+\hline
+\end{DoxyParams}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{v_download_file_8cpp-example}{v\+\_\+download\+\_\+file.\+cpp}.\end{Desc}
