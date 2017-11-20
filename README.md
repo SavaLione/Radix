@@ -1,7 +1,6 @@
 # Radix
 
-<a href="https://ci.appveyor.com/project/SavaLione/radix"><img src="https://ci.appveyor.com/api/projects/status/eq0tx0cavu7brv01?svg=true"></a><a href="https://travis-ci.org/SavaLione/Radix"><img src="https://travis-ci.org/SavaLione/Radix.svg?branch=master"></a>
-<a class="badge-align" href="https://www.codacy.com/app/SavaLione/Radix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SavaLione/Radix&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/4fe9eab3dca74b65bb805b2636b898cc"/></a>
+<a href="https://ci.appveyor.com/project/SavaLione/radix"><img src="https://ci.appveyor.com/api/projects/status/eq0tx0cavu7brv01?svg=true"></a><a href="https://travis-ci.org/SavaLione/Radix"><img src="https://travis-ci.org/SavaLione/Radix.svg?branch=master"></a><a class="badge-align" href="https://www.codacy.com/app/SavaLione/Radix?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SavaLione/Radix&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/4fe9eab3dca74b65bb805b2636b898cc"/></a>
 
 
             _______________________
@@ -10,6 +9,17 @@
              |         Radix       |
              |   __________________|__
               \_/____________________/
+
+## Compile and install
+
+Для Windows:
+
+	> cd radix
+	> cmake -DCMAKE_BUILD_TYPE=RELEASE -G "Visual Studio 15 2017 Win64"
+
+	Open radix\Radix.sln
+	Build
+	
 
 
 ### Плюсы проекта
