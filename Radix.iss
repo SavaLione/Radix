@@ -43,7 +43,7 @@ DefaultDirName={pf}\{#Name}
 DefaultGroupName={#Name}
 
 ; Каталог, куда будет записан собранный setup и имя исполняемого файла
-OutputDir=innosetup\radix
+OutputDir=bin\
 OutputBaseFileName=radix
 
 ; Файл иконки
@@ -73,7 +73,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 
 ; Исполняемый файл
-Source: "bin\radix.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "assets\radix.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Прилагающиеся ресурсы
 Source: "assets\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
