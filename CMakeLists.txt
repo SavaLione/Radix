@@ -68,5 +68,5 @@ if (UNIX)
 	set (UNIX_SOURCES src/core/Unix.cpp)
 	add_executable (${PROJECT} ${UNIX_SOURCES})
 	message(STATUS "---------------------------")
-endif
+endif()
 message(STATUS "Stop CMake")
