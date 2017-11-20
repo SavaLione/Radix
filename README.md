@@ -10,7 +10,7 @@
              |   __________________|__
               \_/____________________/
 
-## Compile and install
+### Compile and install
 
 Для Windows:
 
