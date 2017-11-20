@@ -4,12 +4,11 @@
 
 using namespace std;
 
-void v_menu_choice(size_t choice);
-void root();
+void v_checkagreement_choice(size_t choice);
 
-void v_menu_choice(size_t choice){
+void v_checkagreement_choice(size_t choice){
     system("cls");
-    string point[3] = { "Root" , "Exit", " " };
+    string point[3] = { "Yes" , "No", " " };
     for (size_t sz = 1; sz < 4; sz++) {
 		if (sz == choice) {
 			cout << "             <";
@@ -23,17 +22,17 @@ void v_menu_choice(size_t choice){
 	cout << endl;
 }
 
-int i_mainmenu(){
+int i_checkagreement(){
     size_t choice = 1;
 	bool menu = true;
-    v_menu_choice(choice);
+    v_checkagreement_choice(choice);
     while (menu) {
         size_t key = _getch();
 		switch (key) {
             case 13: {
                 switch(choice) {
                     case 1: {
-                        root();
+                        return 1;
                         break;
                     }
                     case 2: {
@@ -47,7 +46,7 @@ int i_mainmenu(){
             case 32: {
                 switch(choice) {
                     case 1: {
-                        root();
+                        return 1;
                         break;
                     }
                     case 2: {
@@ -92,19 +91,14 @@ int i_mainmenu(){
 				    	choice = 2;
 				    }
 			    }
-                v_menu_choice(choice);
+                v_checkagreement_choice(choice);
                 break;
             }
             default: {
                 choice = 1;
-                v_menu_choice(choice);
+                v_checkagreement_choice(choice);
                 break;
             }
 		}
     }
-    return 0;
-}
-
-void root() {
-	system("cls");
 }

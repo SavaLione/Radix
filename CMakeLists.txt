@@ -47,13 +47,15 @@ if (WINDOWS)
 			src/io/Ip.h
 			src/io/Logger.h
 			src/io/Settings.h
-			src/io/Templates.h)
+			src/io/Templates.h
+			src/io/RulesList.h)
 		set (IO_SOURCES
 			src/io/Download.cpp
 			src/io/Ip.cpp
 			src/io/Logger.cpp
 			src/io/Settings.cpp
-			src/io/Templates.cpp)
+			src/io/Templates.cpp
+			src/io/RulesList.cpp)
 		message(STATUS ${IO_HEADERS})
 		message(STATUS ${IO_SOURCES})
 	endif()
@@ -62,11 +64,13 @@ if (WINDOWS)
 		set (UI_HEADERS
 			src/ui/CheckDevice.h
 			src/ui/CheckInternet.h
-			src/ui/MainMenu.h)
+			src/ui/MainMenu.h
+			src/ui/CheckAgreement.h)
 		set (UI_SOURCES
 			src/ui/CheckDevice.cpp
 			src/ui/CheckInternet.cpp
-			src/ui/MainMenu.cpp)
+			src/ui/MainMenu.cpp
+			src/ui/CheckAgreement.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})
 	endif()

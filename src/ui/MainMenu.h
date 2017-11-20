@@ -1,15 +1,13 @@
 ﻿/**
 	\file
-	\brief Заголовочный файл с подключением модуля работы с ip адресами.
+	\brief Заголовочный файл с подключением модуля главного меню.
 	\author SavaLione	
 */
 #ifndef MAINMENU_H
 #define MAINMENU_H
 
-/** Парсинг ip адресов
-	\param[in] ch_ip_addr Массив char с ip адресом
-    \param[out] uc_arr_return Возвращяет массив типа unsigned char
-	\return Массив из 4 переменных типа unsigned char
+/** Вывод главного меню
+	\return 0, при завершении работы модуля
 */
 int i_mainmenu();
 

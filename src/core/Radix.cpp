@@ -6,10 +6,15 @@
 #include "Initialization.h"
 
 #include "..\ui\MainMenu.h"
+#include "..\ui\CheckAgreement.h"
 
 void Radix() {
-	/// Запуск модуля инициализации
-	v_initialization();
-	/// MainMenu
-	if (i_mainmenu()) {}
+	if (i_checkagreement()) {
+		/// Запуск модуля инициализации
+		v_initialization();
+		/// MainMenu
+		if (i_mainmenu()) {}
+	} else {
+		
+	}
 }
