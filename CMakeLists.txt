@@ -30,13 +30,16 @@ if (WINDOWS)
 			src/core/CheckingConnections.h
 			src/core/Constants.h
 			src/core/Initialization.h
-			src/core/Radix.h)
+			src/core/Radix.h
+			src/core/Color.h
+			src/core/Logo.h)
 		set (CORE_SOURCES
 			src/core/Main.cpp
 			src/core/CheckingConnections.cpp
 			src/core/Initialization.cpp
 			src/core/Radix.cpp
-			src/core/Standards.cpp)
+			src/core/Standards.cpp
+			src/core/Color.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
 	endif()

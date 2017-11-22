@@ -24,7 +24,7 @@ bool b_settings(char ch_arr_value[]) {
 	// Буфер в 32 символа
 	char buff[radix::buff_size];
 	bool b_end = true, b_start = false;
-	ifstream fin("settings.ini");
+	ifstream fin(radix::settings_list);
 	if (fin.is_open()) {
 		while (b_end) {
 			fin.getline(buff, radix::buff_size);

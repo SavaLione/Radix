@@ -2,24 +2,35 @@
 #include <conio.h>
 #include <string>
 
+#include "..\core\Color.h"
+#include "..\core\Logo.h"
+#include "..\core\ConstantsMenu.h"
+#include "..\io\RulesList.h"
+
 using namespace std;
 
 void v_checkagreement_choice(size_t choice);
 
 void v_checkagreement_choice(size_t choice){
     system("cls");
+    cout << s_ruleslist() << endl;
+    cout << logo::license;
     string point[3] = { "Yes" , "No", " " };
     for (size_t sz = 1; sz < 4; sz++) {
 		if (sz == choice) {
-			cout << "             <";
+			cout << menu::frame_left;
 		} else if (sz - 1 == choice) {
-			cout << ">             ";
+			cout << menu::frame_right;
 		} else {
-			cout << "              ";
+			cout << menu::indentation;
 		}
 		cout << point[sz - 1];
 	}
 	cout << endl;
+    cout << logo::move_indentation;
+    v_set_color(BLACK, WHITE);
+    cout << logo::move;
+    v_set_color(LIGHTGRAY, BLACK);
 }
 
 int i_checkagreement(){
@@ -101,4 +112,5 @@ int i_checkagreement(){
             }
 		}
     }
+    return 0;
 }
