@@ -9,6 +9,7 @@
 #include "..\ui\CheckAgreement.h"
 #include "..\ui\Exit.h"
 
+/** Запуск программы */
 void Radix() {
 	/// Запуск модуля инициализации
 	v_initialization();

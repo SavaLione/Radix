@@ -1,4 +1,9 @@
-﻿#include <iostream>
+﻿/**
+	\file
+    \brief Модуль проверки согласия пользователя с правилами.  
+	\author SavaLione
+*/
+#include <iostream>
 #include <conio.h>
 #include <string>
 
@@ -11,6 +16,9 @@ using namespace std;
 
 void v_checkagreement_choice(size_t choice);
 
+/** Переключение пунктов меню
+	\param[in] choice выбор
+*/
 void v_checkagreement_choice(size_t choice){
     system("cls");
     cout << s_ruleslist() << endl;
@@ -33,6 +41,9 @@ void v_checkagreement_choice(size_t choice){
     v_set_color(LIGHTGRAY, BLACK);
 }
 
+/** Вызов модуля проверки согласия пользователя с правилами.
+    \return 0 - пользователь не согласен с условиями программы, выход из программы. 1 - пользователь согласен с условиями программы, запуск программы.
+*/
 int i_checkagreement(){
     size_t choice = 1;
 	bool menu = true;

@@ -1,4 +1,9 @@
-﻿#include <iostream>
+﻿/**
+	\file
+    \brief Модуль вывода главного меню программы.
+	\author SavaLione
+*/
+#include <iostream>
 #include <conio.h>
 #include <string>
 
@@ -11,6 +16,9 @@ using namespace std;
 void v_menu_choice(size_t choice);
 void root();
 
+/** Переключение пунктов меню
+	\param[in] choice выбор
+*/
 void v_menu_choice(size_t choice){
     system("cls");
     v_set_color(BLACK, WHITE);
@@ -35,6 +43,9 @@ void v_menu_choice(size_t choice){
 	cout << endl;
 }
 
+/** Вызов модуля главного меню.
+    \return 0 - Выход из программы.
+*/
 int i_mainmenu(){
     size_t choice = 1;
 	bool menu = true;
@@ -117,6 +128,7 @@ int i_mainmenu(){
     return 0;
 }
 
+/** Пункт рутирования телефона. */
 void root() {
 	system("cls");
 }

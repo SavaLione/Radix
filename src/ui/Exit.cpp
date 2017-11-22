@@ -1,3 +1,8 @@
+/**
+	\file
+    \brief Модуль выхода из программы.
+	\author SavaLione
+*/
 #include <iostream>
 
 #include "..\core\Color.h"
@@ -6,6 +11,7 @@
 
 using namespace std;
 
+/** Вывод текста. Выход из программы. */
 void v_exit() {
     system("cls");
     v_set_color(BLACK,WHITE);

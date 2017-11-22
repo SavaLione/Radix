@@ -6,8 +6,8 @@
 #ifndef MAINMENU_H
 #define MAINMENU_H
 
-/** Вывод главного меню
-	\return 0, при завершении работы модуля
+/** Вызов модуля главного меню.
+    \return 0 - Выход из программы.
 */
 int i_mainmenu();
 

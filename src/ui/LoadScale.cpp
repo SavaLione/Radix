@@ -1,3 +1,8 @@
+/**
+	\file
+    \brief Модуль вывода шкалы загрузки.
+	\author SavaLione
+*/
 #include <iostream>
 #include <windows.h>
 
@@ -7,6 +12,9 @@
 
 using namespace std;
 
+/** Переключение пунктов меню
+	\param[in] position значение до которого отрисовывать шкалу.
+*/
 void v_loadscale(size_t position) {
     system("cls");
     v_set_color(BLACK,WHITE);

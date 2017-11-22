@@ -6,6 +6,7 @@
 #ifndef RADIX_H
 #define RADIX_H
 
-void Radix(); ///< Запуск программы
+/** Запуск программы */
+void Radix();
 
 #endif // RADIX_H
