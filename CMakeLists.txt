@@ -28,18 +28,19 @@ if (WINDOWS)
 		message(STATUS "---------[CORE]------------")
 		set (CORE_HEADERS
 			src/core/CheckingConnections.h
-			src/core/Constants.h
-			src/core/Initialization.h
-			src/core/Radix.h
 			src/core/Color.h
-			src/core/Logo.h)
+			src/core/Constants.h
+			src/core/ConstantsMenu.h
+			src/core/Initialization.h
+			src/core/Logo.h
+			src/core/Radix.h)
 		set (CORE_SOURCES
 			src/core/Main.cpp
 			src/core/CheckingConnections.cpp
+			src/core/Color.cpp
 			src/core/Initialization.cpp
 			src/core/Radix.cpp
-			src/core/Standards.cpp
-			src/core/Color.cpp)
+			src/core/Standards.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
 	endif()
@@ -65,15 +66,19 @@ if (WINDOWS)
 	if (SRC_UI)
 		message(STATUS "-----------[UI]------------")
 		set (UI_HEADERS
+			src/ui/CheckAgreement.h
 			src/ui/CheckDevice.h
 			src/ui/CheckInternet.h
-			src/ui/MainMenu.h
-			src/ui/CheckAgreement.h)
+			src/ui/Exit.h
+			src/ui/LoadScale.h
+			src/ui/MainMenu.h)
 		set (UI_SOURCES
+			src/ui/CheckAgreement.cpp
 			src/ui/CheckDevice.cpp
 			src/ui/CheckInternet.cpp
-			src/ui/MainMenu.cpp
-			src/ui/CheckAgreement.cpp)
+			src/ui/Exit.cpp
+			src/ui/LoadScale.cpp
+			src/ui/MainMenu.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})
 	endif()

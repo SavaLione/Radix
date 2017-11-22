@@ -26,5 +26,6 @@ enum color {
 };
 void v_set_color(color ConsoleText, color ConsoleBackground);
 void v_set_color(color ConsoleText);
+void v_set_color();
 
 #endif // COLOR_H

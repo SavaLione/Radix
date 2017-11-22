@@ -14,3 +14,8 @@ void v_set_color(color ConsoleText) {
 	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | ConsoleText));
 }
+
+void v_set_color() {
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | LIGHTGRAY));
+}

@@ -20,6 +20,7 @@
 #include "..\io\Templates.h"
 #include "..\io\Logger.h"
 #include "Constants.h"
+#include "..\ui\LoadScale.h"
 
 using namespace std;
 
@@ -43,10 +44,15 @@ void v_initialization_ip_ini(); ///< Проверка файла rules.txt
 		settings.ini
 */
 void v_initialization() {
+	v_loadscale(0);
 	v_initialization_logger_log();
+	v_loadscale(5);
 	v_initialization_settings_ini();
+	v_loadscale(10);
 	v_templates_create_ip_ini();
+	v_loadscale(20);
 	v_initialization_rules_txt();
+	v_loadscale(24);
 }
 
 ///////////////////////////////////////////////////////////////////////////////

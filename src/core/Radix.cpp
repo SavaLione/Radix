@@ -5,13 +5,11 @@
 */
 #include "Initialization.h"
 
-#include <Windows.h>
-
 #include "..\ui\MainMenu.h"
 #include "..\ui\CheckAgreement.h"
+#include "..\ui\Exit.h"
 
 void Radix() {
-	system("pause");
 	/// Запуск модуля инициализации
 	v_initialization();
 	if (i_checkagreement()) {
@@ -20,4 +18,5 @@ void Radix() {
 	} else {
 		
 	}
+	v_exit();
 }
