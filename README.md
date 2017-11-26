@@ -26,12 +26,21 @@
 
 		Простой и понятный интерфейс
 
-### Документация
+### <a href="https://savalione.github.io/Radix/documentation/html/">Документация</a>
 	
 	Лежит в папке documentation
 	html - documentation/html
 	latex - documentation/latex
 	Doxygen
+
+### Screenshots
+
+<p align="center">
+  <img width="216" height="158" src="https://raw.githubusercontent.com/SavaLione/Radix/master/assets/png/MainMenu.png">
+</p>
+<p align="center">
+  <img width="216" height="144" src="https://raw.githubusercontent.com/SavaLione/Radix/master/assets/png/Exit.png">
+</p>
 
 ### Команда разработчиков
 
