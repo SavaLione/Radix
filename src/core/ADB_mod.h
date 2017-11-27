@@ -9,6 +9,6 @@
 /** 
 Вызов модуля adb с командой в качестве аргумента
 */
-int adb(LPCSTR cmdArgs);
+int adb(LPSTR cmdArgs);
 
 #endif // ADB_MOD_H
