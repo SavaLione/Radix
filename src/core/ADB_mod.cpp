@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int adb(LPCSTR cmdArgs)
+int adb(LPSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
 
