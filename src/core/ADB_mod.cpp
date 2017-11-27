@@ -6,7 +6,7 @@
 using namespace std;
 
 
-int adb(LPCWSTR cmdArgs)
+int adb(LPCSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
 
@@ -15,7 +15,7 @@ int adb(LPCWSTR cmdArgs)
 	ZeroMemory(&StartupInfo, sizeof(StartupInfo));
 	StartupInfo.cb = sizeof StartupInfo;
 
-	LPCWSTR cmdPath = L"\\assets\\platform-tools\\adb.exe";
+	LPCSTR cmdPath = "\\assets\\platform-tools\\adb.exe";
 
 	if (CreateProcess(cmdPath, cmdArgs,
 		NULL, NULL, FALSE, 0, NULL,
