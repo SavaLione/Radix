@@ -2,6 +2,6 @@
 
 void run_adb
 {
-	adb(L"adb devices");
+  adb(L"adb devices");
   return 0;
 }
