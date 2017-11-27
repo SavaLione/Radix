@@ -5,7 +5,7 @@
 */
 #ifndef ADB_MOD_H
 #define ADB_MOD_H
-
+#include <Windows.h>
 /** 
 Вызов модуля adb с командой в качестве аргумента
 */
