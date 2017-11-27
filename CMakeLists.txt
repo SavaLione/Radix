@@ -27,6 +27,7 @@ if (WINDOWS)
 	if (SRC_CORE)
 		message(STATUS "---------[CORE]------------")
 		set (CORE_HEADERS
+			src/core/ADB_mod.h
 			src/core/CheckingConnections.h
 			src/core/Color.h
 			src/core/Constants.h
@@ -35,6 +36,7 @@ if (WINDOWS)
 			src/core/Logo.h
 			src/core/Radix.h)
 		set (CORE_SOURCES
+			src/core/ADB_mod.cpp
 			src/core/Main.cpp
 			src/core/CheckingConnections.cpp
 			src/core/Color.cpp
