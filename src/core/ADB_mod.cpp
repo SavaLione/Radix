@@ -15,7 +15,7 @@ int adb(LPWSTR cmdArgs)
 	ZeroMemory(&StartupInfo, sizeof(StartupInfo));
 	StartupInfo.cb = sizeof StartupInfo;
 
-	LPWSTR cmdPath = L"\\assets\\platform-tools\\adb.exe";
+	LPCWSTR cmdPath = L"\\assets\\platform-tools\\adb.exe";
 
 	if (CreateProcess(cmdPath, cmdArgs,
 		NULL, NULL, FALSE, 0, NULL,
