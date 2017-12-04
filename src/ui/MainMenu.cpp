@@ -6,10 +6,12 @@
 #include <iostream>
 #include <conio.h>
 #include <string>
+#include <Windows.h>
 
 #include "..\core\Color.h"
 #include "..\core\ConstantsMenu.h"
 #include "..\core\Logo.h"
+#include "..\core\ADB_slave.h"
 
 using namespace std;
 
@@ -57,6 +59,7 @@ int i_mainmenu(){
                 switch(choice) {
                     case 1: {
                         root();
+						return 0;
                         break;
                     }
                     case 2: {
@@ -131,4 +134,13 @@ int i_mainmenu(){
 /** Пункт рутирования телефона. */
 void root() {
 	system("cls");
+
+	adb_state();
+
+	adb_flash();
+
+	adb_root();
+
+	system("cls");
+	
 }
