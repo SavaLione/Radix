@@ -3,22 +3,27 @@
 
 int adb_state()
 {
-	adb("adb devices");
+	adb(adb devices);
+	adb(fastboot devices);
 	return 0;
 }
 
-int adb_files()
+int adb_flash()
 {
-	adb("adb push -p "%CD%"\dl\recovery.zip sd");
-	adb("adb push -p "%CD%"\dl\su.zip sd");
+	adb(adb reboot bootloader);
+	adb(fastboot flash recovery ""%CD%"\dl\recovery.img");
+	adb(fastboot boot ""%CD%"\dl\recovery.img");
+	adb(adb devices);
+	adb(adb push -p "%CD%"\dl\su.zip sd);
+	adb(adb reboot bootloader);
 	return 0;
 }
 
 int adb_root()
 {
-	adb("adb reboot recovery");
-	adb("adb install recovery.zip");
-	adb("adb install su.zip");
-	adb("adb reboot");
+	adb(fastboot devices);
+	adb(fastboot boot ""%CD%"\dl\recovery.img");
+	adb(adb install su.zip); //???
+	adb(adb reboot);
 	return 0;
 }
