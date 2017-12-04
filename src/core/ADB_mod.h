@@ -11,4 +11,6 @@
 */
 int adb(LPSTR cmdArgs);
 
+int fastboot(LPSTR cmdArgs);
+
 #endif // ADB_MOD_H

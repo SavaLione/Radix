@@ -10,16 +10,16 @@
 /**
 Получение состояния устройства
 */
-int adb_state();
+void adb_state();
 
 /**
 Запуск средств adb для установки кастомной рекавери
 */
-int adb_flash();
+void adb_flash();
 
 /**
 Запуск процедуры рутирования
 */
-int adb_root();
+void adb_root();
 
 #endif // ADB_SLAVE_H

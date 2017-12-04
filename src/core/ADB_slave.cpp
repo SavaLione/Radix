@@ -1,29 +1,31 @@
 #include "ADB_mod.h"
 
 
-int adb_state()
+void adb_state()
 {
-	adb(adb devices);
-	adb(fastboot devices);
-	return 0;
+	adb("adb devices");
+	adb("fastboot devices");
 }
 
-int adb_flash()
+void adb_flash()
 {
-	adb(adb reboot bootloader);
-	adb(fastboot flash recovery ""%CD%"\dl\recovery.img");
-	adb(fastboot boot ""%CD%"\dl\recovery.img");
-	adb(adb devices);
-	adb(adb push -p "%CD%"\dl\su.zip sd);
-	adb(adb reboot bootloader);
-	return 0;
+	adb("adb wait-for-device");
+	adb("adb reboot bootloader");
+	fastboot("fastboot flash recovery \"dl\\recovery.img\"");
+	fastboot("fastboot boot \"dl\\recovery.img\"");
+	adb("adb devices");
+	adb("adb push -p \"dl\\su.zip sd");
+	adb("adb wait-for-device");
+	adb("adb reboot bootloader");
 }
 
-int adb_root()
+void adb_root()
 {
-	adb(fastboot devices);
-	adb(fastboot boot ""%CD%"\dl\recovery.img");
-	adb(fastboot install su.zip);
-	adb(adb reboot);
-	return 0;
+	adb("root");
+	adb("adb wait-for-device");
+	fastboot("fastboot devices");
+	fastboot("fastboot boot \"dl\\recovery.img\"");
+	adb("adb wait-for-device");
+	fastboot("fastboot install su.zip");
+	adb("adb reboot");
 }
