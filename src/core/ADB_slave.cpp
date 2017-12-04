@@ -23,7 +23,7 @@ int adb_root()
 {
 	adb(fastboot devices);
 	adb(fastboot boot ""%CD%"\dl\recovery.img");
-	adb(adb install su.zip); //???
+	adb(fastboot install su.zip);
 	adb(adb reboot);
 	return 0;
 }
