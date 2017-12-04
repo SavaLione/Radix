@@ -6,11 +6,15 @@
 #ifndef ADB_MOD_H
 #define ADB_MOD_H
 #include <Windows.h>
-/** 
-Вызов модуля adb с командой в качестве аргумента
+
+/** Вызов adb-интерфейса.
+    LPSTR cmdArgs - команда для adb вида "adb X".
 */
 int adb(LPSTR cmdArgs);
 
+/** Вызов fastboot-интерфейса.
+    LPSTR cmdArgs - команда для fastboot вида "fastboot X".
+*/
 int fastboot(LPSTR cmdArgs);
 
 #endif // ADB_MOD_H
