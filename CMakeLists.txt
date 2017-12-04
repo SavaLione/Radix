@@ -28,6 +28,7 @@ if (WINDOWS)
 		message(STATUS "---------[CORE]------------")
 		set (CORE_HEADERS
 			src/core/ADB_mod.h
+			src/core/ADB_slave.h
 			src/core/CheckingConnections.h
 			src/core/Color.h
 			src/core/Constants.h
@@ -37,6 +38,7 @@ if (WINDOWS)
 			src/core/Radix.h)
 		set (CORE_SOURCES
 			src/core/ADB_mod.cpp
+			src/core/ADB_slave.cpp
 			src/core/Main.cpp
 			src/core/CheckingConnections.cpp
 			src/core/Color.cpp
