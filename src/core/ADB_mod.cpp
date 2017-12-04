@@ -5,7 +5,9 @@
 
 using namespace std;
 
-
+/** Вызов adb-интерфейса.
+    LPSTR cmdArgs - команда для adb вида "adb X".
+*/
 int adb(LPSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
@@ -28,6 +30,9 @@ int adb(LPSTR cmdArgs)
 	return 0;
 }
 
+/** Вызов fastboot-интерфейса.
+    LPSTR cmdArgs - команда для fastboot вида "fastboot X".
+*/
 int fastboot(LPSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
