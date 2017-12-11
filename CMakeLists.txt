@@ -1,4 +1,4 @@
-﻿message(STATUS "Run CMake")
+message(STATUS "Run CMake")
 cmake_minimum_required (VERSION 2.6)
 
 set (SRC_CORE 1)
@@ -18,10 +18,15 @@ endif (UNIX)
 
 set (PROJECT Radix)
 
+set_property( GLOBAL PROPERTY USE_FOLDERS ON )
+set( CMAKE_SUPPRESS_REGENERATION true)
 set( CMAKE_BUILD_TYPE RELEASE )
+set( CMAKE_CONFIGURATION_TYPES "Release;Debug;COWS" )
 message(STATUS "Bild type:  " ${CMAKE_BUILD_TYPE})
-message(STATUS "Bild types: DEBUG RELEASE RELWITHDEBINFO MINSIZEREL")
-
+message(STATUS "Configuration type:  " ${CMAKE_BUILD_TYPE})
+message(STATUS "---------[CHECK]-----------" )
+message(STATUS "[CMAKE_SUPPRESS_REGENERATION " ${USE_FOLDERS} "]" "[CMAKE_BUILD_TYPE " ${CMAKE_BUILD_TYPE} "]" "[CMAKE_CONFIGURATION_TYPES " ${CMAKE_CONFIGURATION_TYPES} "]" )
+message(STATUS "--------[PROJECT]----------" )
 project (${PROJECT})
 if (WINDOWS)
 	if (SRC_CORE)
@@ -29,7 +34,6 @@ if (WINDOWS)
 		set (CORE_HEADERS
 			src/core/ADB_mod.h
 			src/core/ADB_slave.h
-			src/core/CheckingConnections.h
 			src/core/Color.h
 			src/core/Constants.h
 			src/core/ConstantsMenu.h
@@ -40,7 +44,6 @@ if (WINDOWS)
 			src/core/ADB_mod.cpp
 			src/core/ADB_slave.cpp
 			src/core/Main.cpp
-			src/core/CheckingConnections.cpp
 			src/core/Color.cpp
 			src/core/Initialization.cpp
 			src/core/Radix.cpp
@@ -51,15 +54,11 @@ if (WINDOWS)
 	if (SRC_IO)
 		message(STATUS "-----------[IO]------------")
 		set (IO_HEADERS
-			src/io/Download.h
-			src/io/Ip.h
 			src/io/Logger.h
 			src/io/Settings.h
 			src/io/Templates.h
 			src/io/RulesList.h)
 		set (IO_SOURCES
-			src/io/Download.cpp
-			src/io/Ip.cpp
 			src/io/Logger.cpp
 			src/io/Settings.cpp
 			src/io/Templates.cpp
@@ -71,15 +70,11 @@ if (WINDOWS)
 		message(STATUS "-----------[UI]------------")
 		set (UI_HEADERS
 			src/ui/CheckAgreement.h
-			src/ui/CheckDevice.h
-			src/ui/CheckInternet.h
 			src/ui/Exit.h
 			src/ui/LoadScale.h
 			src/ui/MainMenu.h)
 		set (UI_SOURCES
 			src/ui/CheckAgreement.cpp
-			src/ui/CheckDevice.cpp
-			src/ui/CheckInternet.cpp
 			src/ui/Exit.cpp
 			src/ui/LoadScale.cpp
 			src/ui/MainMenu.cpp)
