@@ -31,8 +31,9 @@ deploy:
   description: 'Radix'
   auth_token:
     secure: Jj2VTZV7xlAPGxeAUS5HMDRFzgwdkCSMJxUAl7icI7TeBXTR/mH7fIG9+tPt/oRG
+  artifact: "assets.zip"
   draft: false
   prerelease: false
   on:
-    branch: master                 # release from master branch only
+    branch: master                 # release from master branch only 
     appveyor_repo_tag: true
