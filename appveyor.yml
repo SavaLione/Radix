@@ -13,7 +13,7 @@ build:
   parallel: true
   verbosity: minimal
 artifacts:
-  - path: c:\projects\radix\Release\Radix.exe
+  - path: \*
     name: Radix_x64
     type: zip
   - path: assets
