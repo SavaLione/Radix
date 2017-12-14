@@ -13,11 +13,11 @@ build:
   parallel: true
   verbosity: minimal
 deploy:
+  provider: GitHub
   release: v$(appveyor_build_version)
   description: 'Beta'
-  provider: GitHub
   auth_token:
-    secure: "6eae5d9e8d5e0f113b33d8984c99344f5bd19042"
+    secure: "5092221ad61d1ad90042cdc7ce86881f06ac684f"
   artifact: "Radix.exe"
   draft: false
   prerelease: false
