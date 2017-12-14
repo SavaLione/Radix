@@ -31,7 +31,7 @@ deploy:
   description: 'Radix'
   auth_token:
     secure: Jj2VTZV7xlAPGxeAUS5HMDRFzgwdkCSMJxUAl7icI7TeBXTR/mH7fIG9+tPt/oRG
-  artifact: "Radix_x64.zip"
+  artifact: Radix_x64, assets, Documentation_html, Documentation_all
   draft: false
   prerelease: false
   on:
