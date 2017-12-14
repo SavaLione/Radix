@@ -12,13 +12,25 @@ build:
   project: c:\projects\radix\Radix.sln
   parallel: true
   verbosity: minimal
+artifacts:
+  - path: c:\projects\radix\Release\Radix.exe
+    name: Radix_x64
+    type: zip
+  - path: assets
+    name: assets
+    type: zip
+  - path: documentation\html\*
+    name: Documentation_html
+    type: zip
+  - path: documentation\*
+    name: Documentation_all
+    type: zip
 deploy:
   provider: GitHub
   release: v$(appveyor_build_version)
-  description: 'Beta'
+  description: 'Radix'
   auth_token:
     secure: Jj2VTZV7xlAPGxeAUS5HMDRFzgwdkCSMJxUAl7icI7TeBXTR/mH7fIG9+tPt/oRG
-  artifact: "Radix.exe"
   draft: false
   prerelease: false
   on:
