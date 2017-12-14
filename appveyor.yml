@@ -13,10 +13,10 @@ build:
   parallel: true
   verbosity: minimal
 artifacts:
-  - path: Release
-    name: 'Radix_x64'
-  - path: assets\platform-tools
-    name: 'Radix_x64'
+  - name: 'Radix_x64'
+    path: Release
+    path: assets\platform-tools
+    type: zip
   - path: documentation\html
     name: 'Documentation_html'
     type: zip
