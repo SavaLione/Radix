@@ -12,10 +12,14 @@ build:
   project: c:\projects\radix\Radix.sln
   parallel: true
   verbosity: minimal
+after_build:
+  - MD Deploy
+  - MD Deploy\assets
+  - copy Release\Radix.exe Deploy\Radix.exe
+  - copy assets Deploy\assets
 artifacts:
-  - name: 'Radix_x64'
-    path: Release
-    path: assets\platform-tools
+  - path: Deploy
+    name: 'Radix_x64'
     type: zip
   - path: documentation\html
     name: 'Documentation_html'
