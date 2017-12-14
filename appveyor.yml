@@ -16,7 +16,7 @@ after_build:
   - MD Deploy
   - MD Deploy\assets
   - copy Release\Radix.exe Deploy\Radix.exe
-  - xcopy assets\ Deploy\assets\ /S /E
+  - xcopy assets Deploy\assets\ /S /E
 artifacts:
   - path: Deploy
     name: 'Radix_x64'
