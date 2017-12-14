@@ -23,13 +23,16 @@ artifacts:
   - path: documentation
     name: 'Documentation_all'
     type: zip
+  - path: assets\architecture
+    name: 'architecture'
+    type: zip
 deploy:
   provider: GitHub
   release: v$(appveyor_build_version)
   description: 'Radix'
   auth_token:
     secure: Jj2VTZV7xlAPGxeAUS5HMDRFzgwdkCSMJxUAl7icI7TeBXTR/mH7fIG9+tPt/oRG
-  artifact: Radix_x64, assets, Documentation_html, Documentation_all
+  artifact: Radix_x64, Documentation_html, Documentation_all, architecture
   draft: false
   prerelease: false
   on:
