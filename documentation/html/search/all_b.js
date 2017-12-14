@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['s2ws',['s2ws',['../_download_8cpp.html#ae9cab0756619dfee595d5b254cfc4859',1,'Download.cpp']]],
-  ['s_5fruleslist',['s_ruleslist',['../_rules_list_8cpp.html#a7c6f9bd6ee5089b03c66028f99271e15',1,'s_ruleslist():&#160;RulesList.cpp'],['../_rules_list_8h.html#a5010d1a6599fe48d9bd963375613da92',1,'s_ruleslist():&#160;RulesList.cpp']]],
-  ['settings_2ecpp',['Settings.cpp',['../_settings_8cpp.html',1,'']]],
-  ['settings_2eh',['Settings.h',['../_settings_8h.html',1,'']]],
-  ['settings_5flist',['settings_list',['../_constants_8h.html#a43bff57dbd1b7dcebee0228ccbab7f17',1,'radix']]]
+  ['radix',['radix',['../namespaceradix.html',1,'radix'],['../_radix_8cpp.html#a86a56c401ce2783ee9288b33af746520',1,'Radix():&#160;Radix.cpp'],['../_radix_8h.html#a86a56c401ce2783ee9288b33af746520',1,'Radix():&#160;Radix.cpp'],['../namespacelogo.html#abbbdbfbbcae50e2017f3ed1bdf0e1fa3',1,'logo::radix()']]],
+  ['radix_2ecpp',['Radix.cpp',['../_radix_8cpp.html',1,'']]],
+  ['radix_2eh',['Radix.h',['../_radix_8h.html',1,'']]],
+  ['red',['RED',['../_color_8h.html#a37dbdc30935031c05304482e1be89d8faf80f9a890089d211842d59625e561f88',1,'Color.h']]],
+  ['root',['root',['../_main_menu_8cpp.html#a784c09041cf40075e8eb016a2d8419d6',1,'MainMenu.cpp']]],
+  ['rules_5flist',['rules_list',['../namespaceradix.html#a73b088a3e903cc2845c2299b9ab8ccaf',1,'radix']]],
+  ['ruleslist_2ecpp',['RulesList.cpp',['../_rules_list_8cpp.html',1,'']]],
+  ['ruleslist_2eh',['RulesList.h',['../_rules_list_8h.html',1,'']]]
 ];

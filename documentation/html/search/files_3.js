@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['exit_2ecpp',['Exit.cpp',['../_exit_8cpp.html',1,'']]],
-  ['exit_2eh',['Exit.h',['../_exit_8h.html',1,'']]]
+  ['initialization_2ecpp',['Initialization.cpp',['../_initialization_8cpp.html',1,'']]],
+  ['initialization_2eh',['Initialization.h',['../_initialization_8h.html',1,'']]]
 ];

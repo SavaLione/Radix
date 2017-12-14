@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['b_5fcheckingconnections_5finternet',['b_checkingconnections_internet',['../_checking_connections_8cpp.html#a5db9a9ba779bd41fe05c5b402e770732',1,'b_checkingconnections_internet():&#160;CheckingConnections.cpp'],['../_checking_connections_8h.html#a5db9a9ba779bd41fe05c5b402e770732',1,'b_checkingconnections_internet():&#160;CheckingConnections.cpp']]],
-  ['b_5fcheckingconnections_5fphone',['b_checkingconnections_phone',['../_checking_connections_8cpp.html#aa1e4924f4faf010e0b60e880f1bfd7dc',1,'b_checkingconnections_phone():&#160;CheckingConnections.cpp'],['../_checking_connections_8h.html#aa1e4924f4faf010e0b60e880f1bfd7dc',1,'b_checkingconnections_phone():&#160;CheckingConnections.cpp']]],
   ['b_5fsettings',['b_settings',['../_settings_8cpp.html#a7fcd42142e325cb27a380f49d655f9de',1,'b_settings(char ch_arr_value[]):&#160;Settings.cpp'],['../_settings_8h.html#a7fcd42142e325cb27a380f49d655f9de',1,'b_settings(char ch_arr_value[]):&#160;Settings.cpp']]],
-  ['border',['border',['../_logo_8h.html#a75fab9a3dcd27565e40b08dbbcbf5e6b',1,'logo']]],
-  ['buff_5fruleslist',['buff_ruleslist',['../_constants_8h.html#a8f000aabf647d34fd877c33958bad711',1,'radix']]],
-  ['buff_5fsize',['buff_size',['../_constants_8h.html#a82e81e89088b6430b7ec11a8a0329e9c',1,'radix']]]
+  ['black',['BLACK',['../_color_8h.html#a37dbdc30935031c05304482e1be89d8faf77fb67151d0c18d397069ad8c271ba3',1,'Color.h']]],
+  ['blue',['BLUE',['../_color_8h.html#a37dbdc30935031c05304482e1be89d8fa35d6719cb4d7577c031b3d79057a1b79',1,'Color.h']]],
+  ['border',['border',['../namespacelogo.html#a75fab9a3dcd27565e40b08dbbcbf5e6b',1,'logo']]],
+  ['brown',['BROWN',['../_color_8h.html#a37dbdc30935031c05304482e1be89d8fa1fa14482e7e4dc1332ab8c9d995fe570',1,'Color.h']]],
+  ['buff_5fruleslist',['buff_ruleslist',['../namespaceradix.html#a8f000aabf647d34fd877c33958bad711',1,'radix']]],
+  ['buff_5fsize',['buff_size',['../namespaceradix.html#a82e81e89088b6430b7ec11a8a0329e9c',1,'radix']]]
 ];

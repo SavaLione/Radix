@@ -1,0 +1,117 @@
+.TH "Color.h" 3 "Чт 14 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Color.h \- Заголовочный файл с цветами и модулем смены цвета в консоли\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Перечисления"
+
+.in +1c
+.ti -1c
+.RI "enum \fBcolor\fP { \fBBLACK\fP = 0, \fBBLUE\fP = 1, \fBGREEN\fP = 2, \fBCYAN\fP = 3, \fBRED\fP = 4, \fBMAGENTA\fP = 5, \fBBROWN\fP = 6, \fBLIGHTGRAY\fP = 7, \fBDARKGRAY\fP = 8, \fBLIGHTBLUE\fP = 9, \fBLIGHTGREEN\fP = 10, \fBLIGHTCYAN\fP = 11, \fBLIGHTRED\fP = 12, \fBLIGHTMAGENTA\fP = 13, \fBLIGHTYELLOW\fP = 14, \fBWHITE\fP = 15 }"
+.br
+.in -1c
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBv_set_color\fP (\fBcolor\fP ConsoleText, \fBcolor\fP ConsoleBackground)"
+.br
+.ti -1c
+.RI "void \fBv_set_color\fP (\fBcolor\fP ConsoleText)"
+.br
+.ti -1c
+.RI "void \fBv_set_color\fP ()"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Заголовочный файл с цветами и модулем смены цвета в консоли\&. 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBColor\&.h\fP
+.SH "Перечисления"
+.PP 
+.SS "enum \fBcolor\fP"
+Цвета 
+.PP
+\fBЭлементы перечислений\fP
+.in +1c
+.TP
+\fB\fIBLACK \fP\fP
+.TP
+\fB\fIBLUE \fP\fP
+.TP
+\fB\fIGREEN \fP\fP
+.TP
+\fB\fICYAN \fP\fP
+.TP
+\fB\fIRED \fP\fP
+.TP
+\fB\fIMAGENTA \fP\fP
+.TP
+\fB\fIBROWN \fP\fP
+.TP
+\fB\fILIGHTGRAY \fP\fP
+.TP
+\fB\fIDARKGRAY \fP\fP
+.TP
+\fB\fILIGHTBLUE \fP\fP
+.TP
+\fB\fILIGHTGREEN \fP\fP
+.TP
+\fB\fILIGHTCYAN \fP\fP
+.TP
+\fB\fILIGHTRED \fP\fP
+.TP
+\fB\fILIGHTMAGENTA \fP\fP
+.TP
+\fB\fILIGHTYELLOW \fP\fP
+.TP
+\fB\fIWHITE \fP\fP
+.PP
+См\&. определение в файле Color\&.h строка 9
+.SH "Функции"
+.PP 
+.SS "void v_set_color (\fBcolor\fP ConsoleText, \fBcolor\fP ConsoleBackground)"
+Изменение цвета текста и цвета заднего фона в консоли 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIConsoleText\fP цвет текста 
+.br
+\fIConsoleBackground\fP цвет заднего фона 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Color\&.cpp строка 20
+.SS "void v_set_color (\fBcolor\fP ConsoleText)"
+Изменение цвета текста в консоли\&. Задний фон по умолчанию чёрный\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIConsoleText\fP цвет текста 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Color\&.cpp строка 28
+.SS "void v_set_color ()"
+Вернуть цвет текста и цвет заднего фона в консоли к стандартным значениям\&. 
+.PP
+См\&. определение в файле Color\&.cpp строка 34
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.
