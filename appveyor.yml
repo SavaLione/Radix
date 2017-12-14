@@ -12,3 +12,15 @@ build:
   project: c:\projects\radix\Radix.sln
   parallel: true
   verbosity: minimal
+deploy:
+  release: v$(appveyor_build_version)
+  description: 'Beta'
+  provider: GitHub
+  auth_token:
+    secure: "6eae5d9e8d5e0f113b33d8984c99344f5bd19042"
+  artifact: "radix.exe"
+  draft: false
+  prerelease: false
+  on:
+    branch: master                 # release from master branch only
+    appveyor_repo_tag: true        # deploy on tag push only
