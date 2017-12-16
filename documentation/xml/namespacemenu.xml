@@ -99,7 +99,7 @@
 <para>Модуль загрузки. Левая скобка. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/ConstantsMenu.h" line="31" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="31" bodyend="-1"/>
+        <location file="src/core/ConstantsMenu.h" line="25" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacemenu_1a272b2c0c591457b2aeccaae0c122a1fc" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -113,7 +113,7 @@
 <para>Модуль загрузки. Правая скобка. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/ConstantsMenu.h" line="33" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="33" bodyend="-1"/>
+        <location file="src/core/ConstantsMenu.h" line="27" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacemenu_1ab79f369195d81dcb241b1ab5269c9d3d" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -127,7 +127,7 @@
 <para>Модуль загрузки. Шкала прогресса. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/ConstantsMenu.h" line="35" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="35" bodyend="-1"/>
+        <location file="src/core/ConstantsMenu.h" line="29" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespacemenu_1ad004c327a8a1c14388a6c7f23d6953a6" prot="public" static="no" mutable="no">
         <type>const char</type>
@@ -141,7 +141,7 @@
 <para>Модуль загрузки. Значение после шкалы прогресса. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="src/core/ConstantsMenu.h" line="37" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="37" bodyend="-1"/>
+        <location file="src/core/ConstantsMenu.h" line="31" column="1" bodyfile="src/core/ConstantsMenu.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -11,8 +11,7 @@
 
 /** Запуск программы */
 void Radix() {
-	/// Запуск модуля инициализации
-	v_initialization();
+	v_initialization(); /// Запуск модуля инициализации
 	if (i_checkagreement()) {
 		/// MainMenu
 		if (i_mainmenu()) {}

@@ -27,7 +27,7 @@
 <para>Запуск программы </para>        </detaileddescription>
         <inbodydescription>
 <para>Запуск модуля инициализации</para><para>MainMenu </para>        </inbodydescription>
-        <location file="src/core/Radix.h" line="10" column="1" bodyfile="src/core/Radix.cpp" bodystart="13" bodyend="23"/>
+        <location file="src/core/Radix.h" line="10" column="1" bodyfile="src/core/Radix.cpp" bodystart="13" bodyend="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

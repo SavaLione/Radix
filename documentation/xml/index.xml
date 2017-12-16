@@ -175,6 +175,8 @@
   </compound>
   <compound refid="dir_da5c6b39c0a2f54e57df6799511cd3ab" kind="dir"><name>ui</name>
   </compound>
+  <compound refid="color_8cpp-example" kind="example"><name>color.cpp</name>
+  </compound>
   <compound refid="log_8cpp-example" kind="example"><name>log.cpp</name>
   </compound>
 </doxygenindex>

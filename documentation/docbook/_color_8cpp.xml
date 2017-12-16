@@ -58,13 +58,7 @@
 
 <para>Модуль работы с цветом в консоли. </para>
 
-<para>Модуль позволяет менять цвет текста и цвет фона в консоли.</para>
-
-<para><formalpara><title>Автор: </title>
-
-<para>SavaLione </para>
-</formalpara>
-</para>
+<para>Модуль позволяет менять цвет текста и цвет фона в консоли. </para>
     <para>Definition in file Color.cpp</para>
     </simplesect>
 </section>

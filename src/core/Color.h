@@ -7,22 +7,22 @@
 #define COLOR_H
 /** Цвета */
 enum color {
-        BLACK         = 0,
-        BLUE          = 1,
-        GREEN         = 2,
-        CYAN          = 3,
-        RED           = 4,
-        MAGENTA       = 5,
-        BROWN         = 6,
-        LIGHTGRAY     = 7,
-        DARKGRAY      = 8,
-        LIGHTBLUE     = 9,
-        LIGHTGREEN    = 10,
-        LIGHTCYAN     = 11,
-        LIGHTRED      = 12,
-        LIGHTMAGENTA  = 13,
-        LIGHTYELLOW   = 14,
-        WHITE         = 15
+        BLACK         = 0, /**< @en Black color. @ru Чёрный цвет. */
+        BLUE          = 1, /**< @en Blue color. @ru Синий цвет. */
+        GREEN         = 2, /**< @en Green color. @ru Зелёный цвет. */
+        CYAN          = 3, /**< @en Cyan color. @ru Сине-зелёный цвет. */
+        RED           = 4, /**< @en Red color. @ru Красный цвет. */
+        MAGENTA       = 5, /**< @en Magenta color. @ru Пурпурный цвет. */
+        BROWN         = 6, /**< @en Brown color. @ru Коричневый цвет. */
+        LIGHTGRAY     = 7, /**< @en Light gray color. @ru Светло-серый цвет. */
+        DARKGRAY      = 8, /**< @en Dark gray color. @ru Тёмно-серый цвет. */
+        LIGHTBLUE     = 9, /**< @en Light blue color. @ru Светло-синий цвет. */
+        LIGHTGREEN    = 10, /**< @en Light green color. @ru Светло-зелёный цвет. */
+        LIGHTCYAN     = 11, /**< @en Light cyan color. @ru Светло-сине-зелёный цвет. */
+        LIGHTRED      = 12, /**< @en Light red color. @ru Светло-красный цвет. */
+        LIGHTMAGENTA  = 13, /**< @en Light magenta color. @ru Светло-пурпурный цвет. */
+        LIGHTYELLOW   = 14, /**< @en Light yellow color. @ru Светло-жёлтый цвет.*/
+        WHITE         = 15 /**< @en White color. @ru Белый цвет. */
 };
 /** Изменение цвета текста и цвета заднего фона в консоли
 	\param[in] ConsoleText цвет текста

@@ -21,12 +21,6 @@ namespace menu {
     const bool loading_check_module = false;
     /** Пауза в мс для проверки работоспособности модуля загрузки .*/
     const size_t loading_check_module_sleep = 1000;
-
-    //const std::string loading_left = "[";
-    //const std::string loading_right = "]";
-    //const std::string loading_progress = "|";
-    //const std::string loading_indenting = " ";
-
     /** Модуль загрузки. Левая скобка. */
     const char loading_left = '[';
     /** Модуль загрузки. Правая скобка. */
