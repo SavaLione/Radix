@@ -42,7 +42,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_initialization_8cpp_1a86860ef24d9abdaddea8e817e84528a7">v_initialization_rules_txt</link> (
+                        <para>void <link linkend="_initialization_8cpp_1a9f137f3ae0426a1e7c1a398ad930dc70">v_initialization_settings_ini</link> (
 )<para><emphasis>Проверка файла settings.ini.</emphasis></para>
 </para>
                     </listitem>
@@ -51,16 +51,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="_initialization_8cpp_1a9f137f3ae0426a1e7c1a398ad930dc70">v_initialization_settings_ini</link> (
-)<para><emphasis>Проверка файла ip.ini.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_initialization_8cpp_1a64f497032299d5931b86e93305f54f8c">v_initialization_ip_ini</link> (
+                        <para>void <link linkend="_initialization_8cpp_1a86860ef24d9abdaddea8e817e84528a7">v_initialization_rules_txt</link> (
 )<para><emphasis>Проверка файла rules.txt.</emphasis></para>
 </para>
                     </listitem>
@@ -87,8 +78,6 @@
 rules.txt - правила программы, с которыми должен согласиться пользователь
 
 settings.ini - файл настроек
-
-ip.ini - файл с ip адресами
 </literallayout> <formalpara><title>Автор: </title>
 
 <para>SavaLione </para>

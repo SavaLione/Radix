@@ -62,19 +62,6 @@
         </inbodydescription>
         <location file="src/io/Templates.h" line="23" column="1" bodyfile="src/io/Templates.cpp" bodystart="59" bodyend="74"/>
       </memberdef>
-      <memberdef kind="function" id="_templates_8h_1a4cdca62a0922d9ad016c50f1251636cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void v_templates_create_ip_ini</definition>
-        <argsstring>()</argsstring>
-        <name>v_templates_create_ip_ini</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Создание файла ip. <verbatim>ip.ini - файл с ip адресами</verbatim> </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="src/io/Templates.h" line="28" column="1" bodyfile="src/io/Templates.cpp" bodystart="83" bodyend="96"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Заголовочный файл с подключением модуля создания стандартных файлов программы. </para>    </briefdescription>
@@ -89,9 +76,7 @@
 <codeline lineno="13"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_templates_8h_1abeb0b4d4d31b9c74744a0b9881d95066" kindref="member">v_templates_create_logger_log</ref>();</highlight></codeline>
 <codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_templates_8h_1afbd4b91587b894d5e8b6ea50209ed5dc" kindref="member">v_templates_create_rules_txt</ref>();</highlight></codeline>
 <codeline lineno="23"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_templates_8h_1a593e33d5988d6a49d581f52d94471895" kindref="member">v_templates_create_settings_ini</ref>();</highlight></codeline>
-<codeline lineno="28"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_templates_8h_1a4cdca62a0922d9ad016c50f1251636cb" kindref="member">v_templates_create_ip_ini</ref>();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TEMPLATES_H</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TEMPLATES_H</highlight></codeline>
     </programlisting>
     <location file="src/io/Templates.h"/>
   </compounddef>

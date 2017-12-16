@@ -52,14 +52,6 @@
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>void <link linkend="_templates_8cpp_1a4cdca62a0922d9ad016c50f1251636cb">v_templates_create_ip_ini</link> (
-)</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
         </section>
     <simplesect>
         <title>Подробное описание</title>

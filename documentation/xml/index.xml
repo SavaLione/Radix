@@ -100,9 +100,8 @@
   </compound>
   <compound refid="_initialization_8cpp" kind="file"><name>Initialization.cpp</name>
     <member refid="_initialization_8cpp_1a61271965777637ec3d70f6d7ab0a466a" kind="function"><name>v_initialization_logger_log</name></member>
-    <member refid="_initialization_8cpp_1a86860ef24d9abdaddea8e817e84528a7" kind="function"><name>v_initialization_rules_txt</name></member>
     <member refid="_initialization_8cpp_1a9f137f3ae0426a1e7c1a398ad930dc70" kind="function"><name>v_initialization_settings_ini</name></member>
-    <member refid="_initialization_8cpp_1a64f497032299d5931b86e93305f54f8c" kind="function"><name>v_initialization_ip_ini</name></member>
+    <member refid="_initialization_8cpp_1a86860ef24d9abdaddea8e817e84528a7" kind="function"><name>v_initialization_rules_txt</name></member>
     <member refid="_initialization_8cpp_1a11b373fd61e18cd28810a5b607e1749a" kind="function"><name>v_initialization</name></member>
   </compound>
   <compound refid="_initialization_8h" kind="file"><name>Initialization.h</name>
@@ -159,13 +158,11 @@
     <member refid="_templates_8cpp_1abeb0b4d4d31b9c74744a0b9881d95066" kind="function"><name>v_templates_create_logger_log</name></member>
     <member refid="_templates_8cpp_1afbd4b91587b894d5e8b6ea50209ed5dc" kind="function"><name>v_templates_create_rules_txt</name></member>
     <member refid="_templates_8cpp_1a593e33d5988d6a49d581f52d94471895" kind="function"><name>v_templates_create_settings_ini</name></member>
-    <member refid="_templates_8cpp_1a4cdca62a0922d9ad016c50f1251636cb" kind="function"><name>v_templates_create_ip_ini</name></member>
   </compound>
   <compound refid="_templates_8h" kind="file"><name>Templates.h</name>
     <member refid="_templates_8h_1abeb0b4d4d31b9c74744a0b9881d95066" kind="function"><name>v_templates_create_logger_log</name></member>
     <member refid="_templates_8h_1afbd4b91587b894d5e8b6ea50209ed5dc" kind="function"><name>v_templates_create_rules_txt</name></member>
     <member refid="_templates_8h_1a593e33d5988d6a49d581f52d94471895" kind="function"><name>v_templates_create_settings_ini</name></member>
-    <member refid="_templates_8h_1a4cdca62a0922d9ad016c50f1251636cb" kind="function"><name>v_templates_create_ip_ini</name></member>
   </compound>
   <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>core</name>
   </compound>
