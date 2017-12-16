@@ -21,10 +21,4 @@ void v_templates_create_rules_txt();
 		settings.ini - файл с настройками
 */
 void v_templates_create_settings_ini();
-/** Создание файла ip.
-
-		ip.ini - файл с ip адресами
-*/
-void v_templates_create_ip_ini();
-
 #endif // TEMPLATES_H

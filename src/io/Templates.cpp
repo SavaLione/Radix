@@ -72,25 +72,3 @@ void v_templates_create_settings_ini() {
 
 	}
 }
-
-///////////////////////////////////////////////////////////////////////////////
-//	Creating a standard file ip.ini
-///////////////////////////////////////////////////////////////////////////////
-/** Создание файла ip.
-
-		ip.ini - файл с ip адресами
-*/
-void v_templates_create_ip_ini() {
-	ifstream fin(radix::address_list);
-	if (fin.is_open()) {
-
-	} else {
-		try {
-			ofstream fout(radix::address_list);
-			fout << "127.0.0.1";
-			fout.close();
-		} catch(exception) {
-			
-		}
-	}
-}

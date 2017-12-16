@@ -11,8 +11,6 @@
 		rules.txt - правила программы, с которыми должен согласиться пользователь
 		
 		settings.ini - файл настроек
-		
-		ip.ini - файл с ip адресами
 	\author SavaLione
 */
 #include <fstream>
@@ -25,9 +23,8 @@
 using namespace std;
 
 void v_initialization_logger_log(); ///< Проверка файла logger.log
-void v_initialization_rules_txt(); ///< Проверка файла settings.ini
-void v_initialization_settings_ini(); ///< Проверка файла ip.ini
-void v_initialization_ip_ini(); ///< Проверка файла rules.txt
+void v_initialization_settings_ini(); ///< Проверка файла settings.ini
+void v_initialization_rules_txt(); ///< Проверка файла rules.txt
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Инициализация дополнительных файлов программы
@@ -46,10 +43,8 @@ void v_initialization_ip_ini(); ///< Проверка файла rules.txt
 void v_initialization() {
 	v_loadscale(0); // Шкала загрузки 0 положение
 	v_initialization_logger_log(); // Проверка файла logger.log
-	v_loadscale(5); // Шкала загрузки 5 положение
-	v_initialization_settings_ini(); // Проверка файла settings.ini
 	v_loadscale(10); // Шкала загрузки 10 положение
-	v_templates_create_ip_ini(); // Проверка файла ip.ini
+	v_initialization_settings_ini(); // Проверка файла settings.ini
 	v_loadscale(20); // Шкала загрузки 20 положение
 	v_initialization_rules_txt(); // Проверка файла rules.txt
 	v_loadscale(24); // Шкала загрузки 24 положение
@@ -104,32 +99,6 @@ void v_initialization_settings_ini() {
 	}
 	fin.close(); // Закрытие файла.
 }
-
-///////////////////////////////////////////////////////////////////////////////
-//	Проверка файла ip.ini
-///////////////////////////////////////////////////////////////////////////////
-/**
-	Проверка файла ip.ini
-	
-	При отсутствии файла создаёт его
-	
-	При наличии файла пропуск
-	
-	Всё логируется
-*/
-void v_initialization_ip_ini() {
-	ifstream fin(radix::address_list);
-	// Если файл есть и его можно открыть
-	if (fin.is_open()) {
-		log("LOG", "Settings module is loaded");
-	} else {
-		// При отсутствии файла и отсутствии возможности прочитать файл, создание файла.
-		v_templates_create_ip_ini();
-		log("WARN", "Settings module. settings.ini file not found"); // Сообщение в лог уровня warn. Нет файла.
-	}
-	fin.close(); // Закрытие файла.
-}
-
 
 ///////////////////////////////////////////////////////////////////////////////
 //	Проверка файла rules.txt
