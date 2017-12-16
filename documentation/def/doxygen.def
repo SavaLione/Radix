@@ -1493,7 +1493,7 @@ _EnD_oF_dEf_TeXt_;
 = "===========================\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '16';
+      var-mem-desc-line = '17';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1517,7 +1517,7 @@ _EnD_oF_dEf_TeXt_;
 = "==== <- use to move -> ====\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '22';
+      var-mem-desc-line = '23';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1541,7 +1541,7 @@ _EnD_oF_dEf_TeXt_;
 = "Do you agree with the license?\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '28';
+      var-mem-desc-line = '29';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1565,7 +1565,7 @@ _EnD_oF_dEf_TeXt_;
 = "       "
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '34';
+      var-mem-desc-line = '35';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1589,7 +1589,7 @@ _EnD_oF_dEf_TeXt_;
 = "<- use to move ->\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '40';
+      var-mem-desc-line = '41';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1613,7 +1613,7 @@ _EnD_oF_dEf_TeXt_;
 = "  _____           _ _      \n |  __ \\         | (_)     \n | |__) |__ _  __| |___  __\n |  _  // _` |/ _` | \\ \\/ /\n | | \\ \\ (_| | (_| | |>  < \n |_|  \\_\\__,_|\\__,_|_/_/\\_\\ \n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '52';
+      var-mem-desc-line = '53';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1643,7 +1643,7 @@ _EnD_oF_dEf_TeXt_;
 = "  _                     _ \n | |                   | |\n | |     ___   __ _  __| |\n | |    / _ \\ / _` |/ _` |\n | |___| (_) | (_| | (_| |\n |______\\___/ \\__,_|\\__,_|\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '64';
+      var-mem-desc-line = '65';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1673,7 +1673,7 @@ _EnD_oF_dEf_TeXt_;
 = "  ______      _ _   \n |  ____|    (_) |  \n | |__  __  ___| |_ \n |  __| \\ \\/ / | __|\n | |____ >  <| | |_ \n |______/_/\\_\\_|\\__|\n"
 _EnD_oF_dEf_TeXt_;
       var-mem-desc-file = 'D:/Программирование/git/Radix/src/core/Logo.h';
-      var-mem-desc-line = '76';
+      var-mem-desc-line = '77';
       var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -1697,7 +1697,9 @@ _EnD_oF_dEf_TeXt_;
 Заголовочный файл с логотипами.
 _EnD_oF_dEf_TeXt_;
   file-documentation = <<_EnD_oF_dEf_TeXt_
-\author SavaLione   
+
+
+
 _EnD_oF_dEf_TeXt_;
 }; /* file */
 file = {

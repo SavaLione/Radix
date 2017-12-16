@@ -55,5 +55,6 @@
         <title>Примеры</title>
         <xi:include href="color_8cpp-example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="log_8cpp-example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="logo_8cpp-example.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
 </book>

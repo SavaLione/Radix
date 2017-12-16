@@ -38,12 +38,6 @@
         <title>Подробное описание</title>
 
 <para>Заголовочный файл с логотипами. </para>
-
-<para><formalpara><title>Автор: </title>
-
-<para>SavaLione </para>
-</formalpara>
-</para>
     <para>Definition in file Logo.h</para>
     </simplesect>
 </section>

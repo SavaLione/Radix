@@ -1,6 +1,7 @@
 /**
 	\file
 	\brief Заголовочный файл с логотипами.
+	\example logo.cpp
 	\author SavaLione	
 */
 #ifndef LOGO_H

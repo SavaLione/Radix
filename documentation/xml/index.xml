@@ -176,4 +176,6 @@
   </compound>
   <compound refid="log_8cpp-example" kind="example"><name>log.cpp</name>
   </compound>
+  <compound refid="logo_8cpp-example" kind="example"><name>logo.cpp</name>
+  </compound>
 </doxygenindex>
