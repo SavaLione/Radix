@@ -7,6 +7,7 @@
 
 #include "..\ui\MainMenu.h"
 #include "..\ui\CheckAgreement.h"
+#include "..\ui\Manual.h"
 #include "..\ui\Exit.h"
 #include "..\io\Logger.h"
 
@@ -16,6 +17,7 @@ void Radix() {
 	v_initialization();
 	// Проверка. Согласен ли пользователь с условиями программы.
 	if (i_checkagreement()) {
+		v_manual();
 		/* 
 			Вызов модуля главного меню.
 			Если модуль в результате работы вернул код 0, то он корректно завершил свою работу.

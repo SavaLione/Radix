@@ -74,12 +74,14 @@ if (WINDOWS)
 			src/ui/Exit.h
 			src/ui/LoadScale.h
 			src/ui/MainMenu.h
+			src/ui/Manual.h
 			src/ui/QueryMenu.h)
 		set (UI_SOURCES
 			src/ui/CheckAgreement.cpp
 			src/ui/Exit.cpp
 			src/ui/LoadScale.cpp
 			src/ui/MainMenu.cpp
+			src/ui/Manual.cpp
 			src/ui/QueryMenu.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})

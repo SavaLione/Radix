@@ -81,6 +81,21 @@ namespace logo {
         \endcode
     */
     const std::string s_continue = "Continue?\n";
+    /** Инструкция к программе.
+        \code
+					Manual
+            1) Put the file recovery.img in the root of the program.
+			2) Put the file su.zip in the root of the program.
+			3) Continue.
+        \endcode
+    */
+    const std::string s_manual = "		Manual\n1) Put the file recovery.img in the root of the program.\n2) Put the file su.zip in the root of the program.\n3) Continue.\n";
+    /** Продолжить выполнение программы по нажатию любой клавиши.
+        \code
+           Press any key to continue.
+        \endcode
+    */
+    const std::string enter = "Press any key to continue.";
 }
 
 #endif // LOGO_H
