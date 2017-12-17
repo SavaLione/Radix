@@ -24,7 +24,8 @@ bool b_file_exists(const char *ch_file_name){
 
 int i_checking_files() {
 	std::string s_recovery_file = radix::recovery_file, s_su_file = radix::su_file;
-	v_loadscale(0); // Шкала загрузки 0 положение
+	// Шкала загрузки 0 положение
+	v_loadscale(0);
 	if (b_file_exists(radix::recovery_file)) {
 		s_recovery_file += radix::found;
 		log("LOG", s_recovery_file);
