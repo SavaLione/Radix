@@ -93,12 +93,13 @@ namespace logo {
     /** Инструкция к программе.
         \code
 					Manual
+			0) If necessary, install the drivers from the assets/Drivers_Universal folder.
             1) Put the file recovery.img in the root of the program.
 			2) Put the file su.zip in the root of the program.
 			3) Continue.
         \endcode
     */
-    const std::string s_manual = "		Manual\n1) Put the file recovery.img in the root of the program.\n2) Put the file su.zip in the root of the program.\n3) Continue.\n";
+    const std::string s_manual = "		Manual\n0) If necessary, install the drivers from the assets/Drivers_Universal folder.\n1) Put the file recovery.img in the root of the program.\n2) Put the file su.zip in the root of the program.\n3) Continue.\n";
 	
     /** Продолжить выполнение программы по нажатию любой клавиши.
         \code

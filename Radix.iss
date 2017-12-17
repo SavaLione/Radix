@@ -1,4 +1,4 @@
-;------------------------------------------------------------------------------
+﻿;------------------------------------------------------------------------------
 ;
 ;       Установочный скрипта для Radix
 ;       (c) Radix, 20.10.2017
@@ -12,7 +12,7 @@
 ; Имя приложения
 #define   Name       "Radix"
 ; Версия приложения
-#define   Version    "beta"
+#define   Version    "release"
 ; Фирма-разработчик
 #define   Publisher  "Radix"
 ; Сафт фирмы разработчика
@@ -27,7 +27,7 @@
 
 ; Уникальный идентификатор приложения, 
 ;сгенерированный через Tools -> Generate GUID
-AppId={{NULL}
+AppId={{F39BF91A-4F16-41D8-8845-A93359FA8A58}
 
 ; Прочая информация, отображаемая при установке
 AppName={#Name}
@@ -57,8 +57,8 @@ SolidCompression=yes
 ;   Устанавливаем языки для процесса установки
 ;------------------------------------------------------------------------------
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "License_ENG.txt"
-Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"; LicenseFile: "License_RUS.txt"
+Name: "english"; MessagesFile: "compiler:Default.isl"; LicenseFile: "assets\License_ENG.txt"
+Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"; LicenseFile: "assets\License_RUS.txt"
 
 ;------------------------------------------------------------------------------
 ;   Опционально - некоторые задачи, которые надо выполнить при установке
@@ -73,10 +73,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 [Files]
 
 ; Исполняемый файл
-Source: "assets\radix.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "radix.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Прилагающиеся ресурсы
-Source: "assets\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\radix\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ;------------------------------------------------------------------------------
 ;   Указываем установщику, где он должен взять иконки
