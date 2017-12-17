@@ -1,3 +1,8 @@
+/**
+	\file
+    \brief Модуль работы с adb.
+	\author Darlakon
+*/
 #include <Windows.h>
 #include <string.h>
 #include <iostream>
@@ -6,9 +11,9 @@
 using namespace std;
 
 /** Вызов adb-интерфейса.
-    LPSTR cmdArgs - команда для adb вида "adb X".
+    \param[in] cmdArgs - команда для adb вида "adb X".
 */
-int adb(LPSTR cmdArgs)
+void adb(LPSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
 
@@ -17,7 +22,7 @@ int adb(LPSTR cmdArgs)
 	ZeroMemory(&StartupInfo, sizeof(StartupInfo));
 	StartupInfo.cb = sizeof StartupInfo;
 
-	LPCSTR cmdPath = "adb.exe";
+	LPCSTR cmdPath = "assets\\platform-tools\\adb.exe";
 
 	if (CreateProcess(cmdPath, cmdArgs,
 		NULL, NULL, FALSE, 0, NULL,
@@ -27,13 +32,12 @@ int adb(LPSTR cmdArgs)
 		CloseHandle(ProcessInfo.hThread);
 		CloseHandle(ProcessInfo.hProcess);
 	}
-	return 0;
 }
 
 /** Вызов fastboot-интерфейса.
-    LPSTR cmdArgs - команда для fastboot вида "fastboot X".
+    \param[in] cmdArgs - команда для fastboot вида "fastboot X".
 */
-int fastboot(LPSTR cmdArgs)
+void fastboot(LPSTR cmdArgs)
 {
 	PROCESS_INFORMATION ProcessInfo;
 
@@ -42,7 +46,7 @@ int fastboot(LPSTR cmdArgs)
 	ZeroMemory(&StartupInfo, sizeof(StartupInfo));
 	StartupInfo.cb = sizeof StartupInfo;
 
-	LPCSTR cmdPath = "fastboot.exe";
+	LPCSTR cmdPath = "assets\\platform-tools\\fastboot.exe";
 
 	if (CreateProcess(cmdPath, cmdArgs,
 		NULL, NULL, FALSE, 0, NULL,
@@ -52,5 +56,4 @@ int fastboot(LPSTR cmdArgs)
 		CloseHandle(ProcessInfo.hThread);
 		CloseHandle(ProcessInfo.hProcess);
 	}
-	return 0;
 }

@@ -5,7 +5,6 @@
 */
 #ifndef ADB_SLAVE_H
 #define ADB_SLAVE_H
-#include "..\core\ADB_mod.h"
 
 /** 
     Вызов модуля проверки состояния устройства.

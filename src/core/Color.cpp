@@ -32,7 +32,7 @@ void v_set_color(color ConsoleText) {
 }
 
 /** Вернуть цвет текста и цвет заднего фона в консоли к стандартным значениям. */
-void v_set_color() {
+void v_color_reset() {
 	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); // Определение дескриптора, который ссылается на консоль.
     SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | LIGHTGRAY)); // Приведение типа color к word и задание цвета
 }

@@ -34,6 +34,7 @@ if (WINDOWS)
 		set (CORE_HEADERS
 			src/core/ADB_mod.h
 			src/core/ADB_slave.h
+			src/core/CheckingFiles.h
 			src/core/Color.h
 			src/core/Constants.h
 			src/core/ConstantsMenu.h
@@ -43,11 +44,11 @@ if (WINDOWS)
 		set (CORE_SOURCES
 			src/core/ADB_mod.cpp
 			src/core/ADB_slave.cpp
+			src/core/CheckingFiles.cpp
 			src/core/Main.cpp
 			src/core/Color.cpp
 			src/core/Initialization.cpp
-			src/core/Radix.cpp
-			src/core/Standards.cpp)
+			src/core/Radix.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
 	endif()
@@ -72,12 +73,14 @@ if (WINDOWS)
 			src/ui/CheckAgreement.h
 			src/ui/Exit.h
 			src/ui/LoadScale.h
-			src/ui/MainMenu.h)
+			src/ui/MainMenu.h
+			src/ui/QueryMenu.h)
 		set (UI_SOURCES
 			src/ui/CheckAgreement.cpp
 			src/ui/Exit.cpp
 			src/ui/LoadScale.cpp
-			src/ui/MainMenu.cpp)
+			src/ui/MainMenu.cpp
+			src/ui/QueryMenu.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})
 	endif()

@@ -1,3 +1,8 @@
+/**
+	\file
+    \brief Модуль работы с adb.
+	\author Darlakon
+*/
 #include "ADB_mod.h"
 
 /** 
@@ -9,30 +14,30 @@ void adb_state()
 	adb("fastboot devices");
 }
 
-/** Вызов модуля установки кастомной рекавери.
-    Требуется экстремальный пересмотр, ничего не работает.
+/** 
+	Вызов модуля установки кастомной рекавери.
 */
 void adb_flash()
 {
 	adb("adb wait-for-device");
 	adb("adb reboot bootloader");
-	fastboot("fastboot flash recovery \"dl\\recovery.img\""); //вот тут начинается хаос
-	fastboot("fastboot boot \"dl\\recovery.img\"");
+	fastboot("fastboot flash recovery \"recovery.img\"");
+	fastboot("fastboot boot \"recovery.img\"");
 	adb("adb devices");
-	adb("adb push -p \"dl\\su.zip sd");
+	adb("adb push -p \"su.zip sd");
 	adb("adb wait-for-device");
 	adb("adb reboot bootloader");
 }
 
-/** Вызов модуля получения root-прав.
-    Требуется тестирование на работоспособность.
+/** 
+	Вызов модуля получения root-прав.
 */
 void adb_root()
 {
 	adb("root");
 	adb("adb wait-for-device");
 	fastboot("fastboot devices");
-	fastboot("fastboot boot \"dl\\recovery.img\"");
+	fastboot("fastboot boot \"recovery.img\"");
 	adb("adb wait-for-device");
 	fastboot("fastboot install su.zip");
 	adb("adb reboot");

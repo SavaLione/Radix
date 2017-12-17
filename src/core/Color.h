@@ -34,6 +34,6 @@ void v_set_color(color ConsoleText, color ConsoleBackground);
 */
 void v_set_color(color ConsoleText);
 /** Вернуть цвет текста и цвет заднего фона в консоли к стандартным значениям. */
-void v_set_color();
+void v_color_reset();
 
 #endif // COLOR_H

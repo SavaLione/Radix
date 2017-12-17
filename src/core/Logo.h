@@ -75,6 +75,12 @@ namespace logo {
         \endcode
     */
     const std::string exit = "  ______      _ _   \n |  ____|    (_) |  \n | |__  __  ___| |_ \n |  __| \\ \\/ / | __|\n | |____ >  <| | |_ \n |______/_/\\_\\_|\\__|\n";
+    /** Вопрос о продолжении выполнения программы.
+        \code
+            Continue?
+        \endcode
+    */
+    const std::string s_continue = "Continue?\n";
 }
 
 #endif // LOGO_H

@@ -1,6 +1,6 @@
-﻿/**
+/**
 	\file
-    \brief Модуль вывода главного меню программы.
+    \brief Модуль сообщения с вопросом для пользователя.
 	\author SavaLione
 */
 #include <iostream>
@@ -9,40 +9,29 @@
 #include <Windows.h>
 
 #include "..\core\Color.h"
-#include "..\core\ConstantsMenu.h"
 #include "..\core\Logo.h"
-#include "..\core\ADB_slave.h"
-#include "..\core\CheckingFiles.h"
+#include "..\core\ConstantsMenu.h"
 
 using namespace std;
 
-void v_menu_choice(size_t choice);
-void root();
+void v_querymenu_choice(size_t choice, string s);
 
 /** Переключение пунктов меню
 	\param[in] choice выбор
 */
-void v_menu_choice(size_t choice){
+void v_querymenu_choice(size_t choice, string s){
 	// Очистка экрана консоли
     system("cls");
-	// Установить цвет текста - белый, цвет заднего фона - чёрный.
-    v_set_color(BLACK, WHITE);
-	// Вывод линии в консоль. ===========================
-    cout << logo::border;
-	// Установить цвет текста - зелёный, цвет заднего фона - чёрный.
-    v_set_color(GREEN, BLACK);
-	// Ascii графика. Вывод логотипа в консоль.
-    cout << logo::radix;
-	// Перенос строки.
-    cout << endl;
-	// Установить цвет текста - чёрный, цвет заднего фона - белый.
-    v_set_color(BLACK, WHITE);
-	// Справка по управлению. ==== <- use to move -> ====
-    cout << logo::little_help;
-	// Установить цвет текста - белый, цвет заднего фона - чёрный.
-    v_set_color(WHITE, BLACK);
-	// Массив string с пунктами меню. 2 пункта Root - рутировать устройство и Exit - выход из программы.
-    string point[3] = { "Root" , "Exit", " " };
+	cout << s << endl;
+	// Вывод вопроса в консоль.  Continue?
+    cout << logo::s_continue;
+    /*
+		Массив string с пунктами меню.
+		2 пункта.
+			Yes - пользователь готов продолжить, продолжить.
+			No - пользователь не готов продолжить, выход из программы.
+	*/
+	string point[3] = { "Yes" , "No", " " };
 	// Цикл для отслеживания выбранного пункта меню.
     for (size_t sz = 1; sz < 4; sz++) {
 		if (sz == choice) {
@@ -56,24 +45,31 @@ void v_menu_choice(size_t choice){
 	}
 	// Перенос строки.
 	cout << endl;
+	// Вывод отступа. Используется в связке с move. {       }<- use to move ->
+    cout << logo::move_indentation;
+	// Установить цвет текста - чёрный, цвет заднего фона - белый.
+    v_set_color(BLACK, WHITE);
+	// Вывод помощи по управлению. <- use to move ->
+    cout << logo::move;
+	// Установить цвет текста - серый, цвет заднего фона - чёрный.
+    v_set_color(LIGHTGRAY, BLACK);
 }
 
-/** Вызов модуля главного меню.
-    \return 0 - Выход из программы.
+/** Вызов модуля сообщения с вопросом для пользователя.
+    \return 0 - пользователь не готов продолжить, выход из программы. 1 - пользователь готов продолжить, продолжить.
 */
-int i_mainmenu(){
+int i_querymenu(string s){
 	// Переменная для отслеживания выбранного пункта меню. Выбор первого элемента меню.
     size_t choice = 1;
 	bool menu = true;
-    v_menu_choice(choice);
+    v_querymenu_choice(choice, s);
     while (menu) {
         size_t key = _getch();
 		switch (key) {
             case 13: {
                 switch(choice) {
                     case 1: {
-                        root();
-						return 0;
+                        return 1;
                         break;
                     }
                     case 2: {
@@ -87,7 +83,7 @@ int i_mainmenu(){
             case 32: {
                 switch(choice) {
                     case 1: {
-                        root();
+                        return 1;
                         break;
                     }
                     case 2: {
@@ -132,37 +128,15 @@ int i_mainmenu(){
 				    	choice = 2;
 				    }
 			    }
-                v_menu_choice(choice);
+                v_querymenu_choice(choice, s);
                 break;
             }
             default: {
                 choice = 1;
-                v_menu_choice(choice);
+                v_querymenu_choice(choice, s);
                 break;
             }
 		}
     }
     return 0;
-}
-
-/** Пункт рутирования телефона. */
-void root() {
-	if (i_checking_files()) {
-	// Очистка экрана консоли
-	system("cls");
-	
-	adb_state();
-	
-	system("pause");
-	adb_flash();
-	
-	system("pause");
-	adb_root();
-	
-	system("pause");
-	// Очистка экрана консоли
-	system("cls");
-	} else {
-		// Выход.
-	}
 }

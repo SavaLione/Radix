@@ -12,6 +12,15 @@
 #ifndef INITIALIZATION_H
 #define INITIALIZATION_H
 
+/**
+	Функция проверяет наличие 3 стандартных файлов программы
+	
+		logger.log
+		
+		rules.txt
+		
+		settings.ini
+*/
 void v_initialization();
 
 #endif // INITIALIZATION_H

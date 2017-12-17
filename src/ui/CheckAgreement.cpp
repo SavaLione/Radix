@@ -20,10 +20,20 @@ void v_checkagreement_choice(size_t choice);
 	\param[in] choice выбор
 */
 void v_checkagreement_choice(size_t choice){
+	// Очистка экрана консоли
     system("cls");
+	// Вывод пользовательского соглашения в консоль
     cout << s_ruleslist() << endl;
+	// Вывод вопроса в консоль. Do you agree with the license?
     cout << logo::license;
-    string point[3] = { "Yes" , "No", " " };
+    /*
+		Массив string с пунктами меню.
+		2 пункта.
+			Yes - пользователь согласен с условиями программы, продолжить выполнение программы
+			No - пользователь не согласен с условиями программы, выход из программы.
+	*/
+	string point[3] = { "Yes" , "No", " " };
+	// Цикл для отслеживания выбранного пункта меню.
     for (size_t sz = 1; sz < 4; sz++) {
 		if (sz == choice) {
 			cout << menu::frame_left;
@@ -34,10 +44,15 @@ void v_checkagreement_choice(size_t choice){
 		}
 		cout << point[sz - 1];
 	}
+	// Перенос строки.
 	cout << endl;
+	// Вывод отступа. Используется в связке с move. {       }<- use to move ->
     cout << logo::move_indentation;
+	// Установить цвет текста - чёрный, цвет заднего фона - белый.
     v_set_color(BLACK, WHITE);
+	// Вывод помощи по управлению. <- use to move ->
     cout << logo::move;
+	// Установить цвет текста - серый, цвет заднего фона - чёрный.
     v_set_color(LIGHTGRAY, BLACK);
 }
 
@@ -45,6 +60,7 @@ void v_checkagreement_choice(size_t choice){
     \return 0 - пользователь не согласен с условиями программы, выход из программы. 1 - пользователь согласен с условиями программы, запуск программы.
 */
 int i_checkagreement(){
+	// Переменная для отслеживания выбранного пункта меню. Выбор первого элемента меню.
     size_t choice = 1;
 	bool menu = true;
     v_checkagreement_choice(choice);
