@@ -8,12 +8,12 @@
 
 #include <Windows.h>
 /** Вызов adb-интерфейса.
-    LPSTR cmdArgs - команда для adb вида "adb X".
+    \param[in] cmdArgs - команда для adb вида "adb X".
 */
 void adb(LPSTR cmdArgs);
 
 /** Вызов fastboot-интерфейса.
-    LPSTR cmdArgs - команда для fastboot вида "fastboot X".
+    \param[in] cmdArgs - команда для fastboot вида "fastboot X".
 */
 void fastboot(LPSTR cmdArgs);
 

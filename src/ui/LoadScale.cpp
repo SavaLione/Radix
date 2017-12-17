@@ -1,6 +1,7 @@
 /**
 	\file
     \brief Модуль вывода шкалы загрузки.
+	\example loadscale.cpp
 	\author SavaLione
 */
 #include <iostream>

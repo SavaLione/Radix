@@ -5,6 +5,7 @@
 */
 #ifndef EXIT_H
 #define EXIT_H
+
 /** Вывод текста. Выход из программы. */
 void v_exit();
 

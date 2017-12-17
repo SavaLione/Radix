@@ -1,6 +1,7 @@
 ﻿/**
 	\file
-    \brief Модуль проверки согласия пользователя с правилами.  
+    \brief Модуль проверки согласия пользователя с правилами.
+	\example checkagreement.cpp
 	\author SavaLione
 */
 #include <iostream>
@@ -14,6 +15,9 @@
 
 using namespace std;
 
+/** Переключение пунктов меню
+	\param[in] choice выбор
+*/
 void v_checkagreement_choice(size_t choice);
 
 /** Переключение пунктов меню

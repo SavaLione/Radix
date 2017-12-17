@@ -1,6 +1,7 @@
 ﻿/**
 	\file
     \brief Модуль вывода главного меню программы.
+	\example mainmenu.cpp
 	\author SavaLione
 */
 #include <iostream>
@@ -150,16 +151,9 @@ void root() {
 	if (i_checking_files()) {
 	// Очистка экрана консоли
 	system("cls");
-	
 	adb_state();
-	
-	system("pause");
 	adb_flash();
-	
-	system("pause");
 	adb_root();
-	
-	system("pause");
 	// Очистка экрана консоли
 	system("cls");
 	} else {

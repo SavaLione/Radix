@@ -1,6 +1,7 @@
 ﻿/**
 	\file
     \brief Модуль чтения правил.
+	\example ruleslist.cpp
 	\author SavaLione
 */
 #include <fstream>

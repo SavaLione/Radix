@@ -1,6 +1,7 @@
 /**
 	\file
     \brief Модуль сообщения с вопросом для пользователя.
+	\example querymenu.cpp
 	\author SavaLione
 */
 #include <iostream>
@@ -18,6 +19,7 @@ void v_querymenu_choice(size_t choice, string s);
 
 /** Переключение пунктов меню
 	\param[in] choice выбор
+	\param[in] s вопрос
 */
 void v_querymenu_choice(size_t choice, string s){
 	// Очистка экрана консоли
@@ -56,6 +58,7 @@ void v_querymenu_choice(size_t choice, string s){
 }
 
 /** Вызов модуля сообщения с вопросом для пользователя.
+	\param[in] s вопрос
     \return 0 - пользователь не готов продолжить, выход из программы. 1 - пользователь готов продолжить, продолжить.
 */
 int i_querymenu(string s){

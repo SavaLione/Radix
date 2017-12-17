@@ -1,6 +1,7 @@
 /**
 	\file
     \brief Функции для создания стандартных файлов программы.
+	\example templates.cpp
 	\author SavaLione
 */
 #include <fstream>

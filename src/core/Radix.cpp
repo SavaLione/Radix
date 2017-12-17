@@ -1,6 +1,7 @@
 /**
 	\file
 	\brief Главный файл программы
+	\example radix.cpp
 	\author SavaLione	
 */
 #include "Initialization.h"

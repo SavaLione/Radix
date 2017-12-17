@@ -4,6 +4,7 @@
 	
 	Модуль проверяет наличие файлов для рутирования телефона.
 	
+	\example checkingfiles.cpp
 	\author SavaLione
 */
 #include <string>
@@ -15,13 +16,17 @@
 #include "..\ui\LoadScale.h"
 #include "..\ui\QueryMenu.h"
 
-/** Вызов модуля проверки файла.
+/** Вызов модуля проверки файла на наличие в папке.
+	\param[in] ch_file_name Путь и файл, для проверки.
     \return наличие файла.
 */
 bool b_file_exists(const char *ch_file_name){
 	return access(ch_file_name, 0) != -1;
 }
 
+/** Вызов модуля проверки файлов.
+    \return 0 - неуспешная проверка файлов. 1 - успешная проверка файлов.
+*/
 int i_checking_files() {
 	std::string s_recovery_file = radix::recovery_file, s_su_file = radix::su_file;
 	// Шкала загрузки 0 положение
@@ -33,7 +38,7 @@ int i_checking_files() {
 		s_recovery_file += radix::not_found;
 		log("WARN", s_recovery_file);
 		if (i_querymenu(s_recovery_file) == 1) {
-			log("WARN", radix::ch_user_continue); // ch_user_not_continue
+			log("WARN", radix::ch_user_continue);
 		} else {
 			log("LOG", radix::ch_user_not_continue);
 			return 0;

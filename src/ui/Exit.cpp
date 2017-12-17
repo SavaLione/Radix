@@ -1,6 +1,7 @@
 /**
 	\file
     \brief Модуль выхода из программы.
+	\example exit.cpp
 	\author SavaLione
 */
 #include <iostream>

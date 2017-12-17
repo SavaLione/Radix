@@ -11,6 +11,7 @@
 		rules.txt - правила программы, с которыми должен согласиться пользователь
 		
 		settings.ini - файл настроек
+	\example initialization.cpp
 	\author SavaLione
 */
 #include <fstream>

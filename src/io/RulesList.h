@@ -7,6 +7,7 @@
 #define RULESLIST_H
 
 #include <string>
+
 /** Чтение правил программы
 	\return строка с правилами
 */

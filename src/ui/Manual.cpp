@@ -1,6 +1,7 @@
 /**
 	\file
     \brief Модуль инструкции.
+	\example manual.cpp
 	\author SavaLione
 */
 #include <iostream>
