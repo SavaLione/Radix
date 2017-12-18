@@ -67,6 +67,7 @@ if (WINDOWS)
 			src/ui/LoadScale.h
 			src/ui/MainMenu.h
 			src/ui/Manual.h
+			src/ui/Menu.h
 			src/ui/QueryMenu.h)
 		set (UI_SOURCES
 			src/ui/CheckAgreement.cpp
@@ -74,6 +75,7 @@ if (WINDOWS)
 			src/ui/LoadScale.cpp
 			src/ui/MainMenu.cpp
 			src/ui/Manual.cpp
+			src/ui/Menu.cpp
 			src/ui/QueryMenu.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})
