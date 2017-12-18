@@ -8,7 +8,7 @@
 #define CONSTANTS_H
 
 #include <string>
-
+//
 namespace radix {
 	/** 
 	    Размер буфера.
