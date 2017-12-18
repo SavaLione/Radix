@@ -13,8 +13,15 @@
 #include "..\core\Constants.h"
 #include "..\core\CheckingFiles.h"
 #include "..\io\Logger.h"
+#include "..\io\Templates.h"
 #include "..\ui\LoadScale.h"
 #include "..\ui\QueryMenu.h"
+#include "..\ui\LoadScale.h"
+
+void v_initialization_logger_log(); ///< Проверка файла logger.log
+void v_initialization_settings_ini(); ///< Проверка файла settings.ini
+
+using namespace std;
 
 /** Вызов модуля проверки файла на наличие в папке.
 	\param[in] ch_file_name Путь и файл, для проверки.
@@ -60,4 +67,60 @@ int i_checking_files() {
 	}
 	v_loadscale(24); // Шкала загрузки 24 положение
 	return 1;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//	Инициализация дополнительных файлов программы
+///////////////////////////////////////////////////////////////////////////////
+/**
+	Функция проверяет наличие 3 стандартных файлов программы
+	
+		logger.log
+		
+		rules.txt
+		
+		settings.ini
+*/
+void v_initialization() {
+	v_loadscale(0); // Шкала загрузки 0 положение
+	v_initialization_logger_log(); // Проверка файла logger.log
+	v_loadscale(10); // Шкала загрузки 10 положение
+	v_initialization_settings_ini(); // Проверка файла settings.ini
+	v_loadscale(24); // Шкала загрузки 24 положение
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//	Проверка файла logger.log
+///////////////////////////////////////////////////////////////////////////////
+/**
+	Проверка файла logger.log
+	
+	При отсутствии файла создаёт его
+	
+	При наличии файла пропуск
+	
+	Всё логируется
+*/
+void v_initialization_logger_log() {
+	if (!(b_file_exists(radix::logger_list))) {
+		v_templates_create_logger_log();
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//	Проверка файла settings.ini
+///////////////////////////////////////////////////////////////////////////////
+/**
+	Проверка файла settings.ini
+	
+	При отсутствии файла создаёт его
+	
+	При наличии файла пропуск
+	
+	Всё логируется
+*/
+void v_initialization_settings_ini() {
+	if (!(b_file_exists(radix::settings_list))) {
+		v_templates_create_settings_ini();
+	}
 }

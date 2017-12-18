@@ -4,7 +4,7 @@
 	\example radix.cpp
 	\author SavaLione	
 */
-#include "Initialization.h"
+#include "..\core\CheckingFiles.h"
 
 #include "..\ui\MainMenu.h"
 #include "..\ui\CheckAgreement.h"

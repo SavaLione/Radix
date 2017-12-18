@@ -23,4 +23,15 @@ bool b_file_exists(const char *ch_file_name);
 */
 int i_checking_files();
 
+/**
+	Функция проверяет наличие 3 стандартных файлов программы
+	
+		logger.log
+		
+		rules.txt
+		
+		settings.ini
+*/
+void v_initialization();
+
 #endif // CHEKINGFILES_H
