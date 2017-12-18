@@ -33,30 +33,6 @@ void v_templates_create_logger_log() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////
-//	Creating a standard file rules.txt
-///////////////////////////////////////////////////////////////////////////////
-/** Создание файла пользовательского соглашения.
-
-		rules.txt - файл с пользовательским соглашением
-*/
-void v_templates_create_rules_txt() {
-	// Обработка исключений. При ошибке исключить аварийное завершение программы.
-	try {
-		// Создание и открытие файла с настройками (radix::rules_list).
-		ofstream fout(radix::rules_list);
-		fout << "Copyright (c) 2017 Radix" << "\n";
-		fout << "\n";
-		fout << "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A " << "\n";
-		fout << "PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN " << "\n";
-		fout << "ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." << "\n";
-		// Закрытие файла.
-		fout.close();
-	} catch(exception) {
-
-	}
-}
-
-///////////////////////////////////////////////////////////////////////////////
 //	Creating a standard file settings.ini
 ///////////////////////////////////////////////////////////////////////////////
 /** Создание файла настроек.

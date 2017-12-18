@@ -12,12 +12,6 @@
 */
 void v_templates_create_logger_log();
 
-/** Создание файла пользовательского соглашения.
-
-		rules.txt - файл с пользовательским соглашением
-*/
-void v_templates_create_rules_txt();
-
 /** Создание файла настроек.
 
 		settings.ini - файл с настройками

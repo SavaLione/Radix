@@ -25,9 +25,6 @@ namespace radix {
 	
 	/** Файл с настройками программы. */
 	const char settings_list[] = "settings.ini";
-	
-	/** Файл с пользовательским соглашением. */
-	const char rules_list[] = "rules.txt";
 
 	/** Путь к прошивкам. */
 	const char firmware_way[] = "\\assets\\firmware\\";
