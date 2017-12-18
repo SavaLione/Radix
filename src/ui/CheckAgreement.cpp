@@ -11,7 +11,6 @@
 #include "..\core\Color.h"
 #include "..\core\Logo.h"
 #include "..\core\ConstantsMenu.h"
-#include "..\io\RulesList.h"
 
 using namespace std;
 
@@ -27,7 +26,7 @@ void v_checkagreement_choice(size_t choice){
 	// Очистка экрана консоли
     system("cls");
 	// Вывод пользовательского соглашения в консоль
-    cout << s_ruleslist() << endl;
+    cout << logo::eula << endl;
 	// Вывод вопроса в консоль. Do you agree with the license?
     cout << logo::license;
     /*

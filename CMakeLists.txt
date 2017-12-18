@@ -57,13 +57,11 @@ if (WINDOWS)
 		set (IO_HEADERS
 			src/io/Logger.h
 			src/io/Settings.h
-			src/io/Templates.h
-			src/io/RulesList.h)
+			src/io/Templates.h)
 		set (IO_SOURCES
 			src/io/Logger.cpp
 			src/io/Settings.cpp
-			src/io/Templates.cpp
-			src/io/RulesList.cpp)
+			src/io/Templates.cpp)
 		message(STATUS ${IO_HEADERS})
 		message(STATUS ${IO_SOURCES})
 	endif()
