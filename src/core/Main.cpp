@@ -12,12 +12,28 @@
 #include "..\ui\CheckAgreement.h"
 #include "..\ui\Manual.h"
 #include "..\ui\Exit.h"
-
+//---
+#include "..\ui\Menu.h"
+#include <Windows.h>
+#include <iostream>
+#include <conio.h>
+//---
 /**
 	\return Код завершения программы
 	Вызов программы компилятором
 */
 int main() {
+	while (false) {
+		size_t key = _getch();
+		std::cout << key << std::endl;
+	}
+	menu_s menu;
+	menu.sz_amount = 3;
+	menu.vec_item_name = {"1", "2", "3", " ", " "};
+	std::cout << i_menu(menu) << std::endl;
+	system("pause");
+	system("pause");
+	
 	log("LOG", "----------------------------[RUN RADIX]----------------------------");
 	// Запуск программы
 	// Запуск модуля инициализации
