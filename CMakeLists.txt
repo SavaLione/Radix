@@ -37,7 +37,6 @@ if (WINDOWS)
 			src/core/CheckingFiles.h
 			src/core/Color.h
 			src/core/Constants.h
-			src/core/Initialization.h
 			src/core/Radix.h)
 		set (CORE_SOURCES
 			src/core/ADB_mod.cpp
@@ -45,7 +44,6 @@ if (WINDOWS)
 			src/core/CheckingFiles.cpp
 			src/core/Main.cpp
 			src/core/Color.cpp
-			src/core/Initialization.cpp
 			src/core/Radix.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
