@@ -36,15 +36,13 @@ if (WINDOWS)
 			src/core/ADB_slave.h
 			src/core/CheckingFiles.h
 			src/core/Color.h
-			src/core/Constants.h
-			src/core/Radix.h)
+			src/core/Constants.h)
 		set (CORE_SOURCES
 			src/core/ADB_mod.cpp
 			src/core/ADB_slave.cpp
 			src/core/CheckingFiles.cpp
 			src/core/Main.cpp
-			src/core/Color.cpp
-			src/core/Radix.cpp)
+			src/core/Color.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
 	endif()
