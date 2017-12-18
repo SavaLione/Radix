@@ -37,9 +37,7 @@ if (WINDOWS)
 			src/core/CheckingFiles.h
 			src/core/Color.h
 			src/core/Constants.h
-			src/core/ConstantsMenu.h
 			src/core/Initialization.h
-			src/core/Logo.h
 			src/core/Radix.h)
 		set (CORE_SOURCES
 			src/core/ADB_mod.cpp

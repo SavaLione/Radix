@@ -7,9 +7,8 @@
 #include <iostream>
 #include <windows.h>
 
+#include "..\core\Constants.h"
 #include "..\core\Color.h"
-#include "..\core\Logo.h"
-#include "..\core\ConstantsMenu.h"
 
 using namespace std;
 

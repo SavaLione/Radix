@@ -7,7 +7,7 @@
 	\example color.cpp
 	\author SavaLione
 */
-#include<windows.h>
+#include <windows.h>
 #include <iostream>
 
 #include "Color.h"

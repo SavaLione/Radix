@@ -9,9 +9,8 @@
 #include <string>
 #include <Windows.h>
 
+#include "..\core\Constants.h"
 #include "..\core\Color.h"
-#include "..\core\ConstantsMenu.h"
-#include "..\core\Logo.h"
 #include "..\core\ADB_slave.h"
 #include "..\core\CheckingFiles.h"
 
