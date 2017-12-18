@@ -12,8 +12,8 @@ void adb_state()
 {
 	log("LOG", "[Run adb_state module.]");
 	log("LOG", "------[adb_state]-------");
-	adb("adb devices");
-	adb("fastboot devices");
+	adb("adb devices"); 						//проверяем подключение телефона
+	adb("fastboot devices");			
 	log("LOG", "Stop adb_state module.");
 	log("LOG", "------[adb_state]-------");
 }
@@ -25,22 +25,22 @@ void adb_flash()
 {
 	log("LOG", "[Run adb_flash module.]");
 	log("LOG", "------[adb_flash]-------");
-	adb("adb wait-for-device");
-	log("LOG", "adb wait-for-device");
-	adb("adb reboot bootloader");
+	adb("adb wait-for-device");					
+	log("LOG", "adb wait-for-device");				
+	adb("adb reboot bootloader");					//перезагружаем в режим бутлоадера
 	log("LOG", "adb reboot bootloader");
-	fastboot("fastboot flash recovery \"recovery.img\"");
+	fastboot("fastboot flash recovery \"recovery.img\"");		//запускаем флеш рекавери
 	log("LOG", "fastboot flash recovery \"recovery.img\"");
-	fastboot("fastboot boot \"recovery.img\"");
+	fastboot("fastboot boot \"recovery.img\"");			//выходим в рекавери
 	log("LOG", "fastboot boot \"recovery.img\"");
-	adb("adb devices");
+	adb("adb devices");						//проверяем подключение устройства
 	log("LOG", "adb devices");
-	adb("adb push -p \"su.zip\" sd");
+	adb("adb push -p \"su.zip\" sd");				//копируем в корень устройства файл su.zip
 	log("LOG", "adb push -p \"su.zip\" sd");
 	adb("adb wait-for-device");
 	log("LOG", "adb wait-for-device");
 	adb("adb reboot bootloader");
-	log("LOG", "adb reboot bootloader");
+	log("LOG", "adb reboot bootloader");				
 	log("LOG", "Stop adb_flash module.");
 	log("LOG", "------[adb_flash]-------");
 }
