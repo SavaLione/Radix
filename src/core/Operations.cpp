@@ -1,5 +1,23 @@
+/**
+	\file
+    \brief Модуль проверки стандартных файлов программы и вызова алгоритма рутирования.
+	
+	Модуль проверяет наличие стандартных файлов программы и рутирует аппарат.
+	
+	Файлы:
+	
+		logger.log - вывод логера
+		
+		rules.txt - правила программы, с которыми должен согласиться пользователь
+		
+		settings.ini - файл настроек
+	\example Operations.cpp
+	\example Operations_Initialization.cpp
+	\author SavaLione
+*/
 #include <string>
 #include <io.h>
+#include <Windows.h>
 
 #include "..\core\ADB_mod.h"
 #include "..\core\Constants.h"
@@ -16,15 +34,16 @@ void v_initialization_settings_ini(); ///< Проверка файла settings.
 
 using namespace std;
 
+/** Вызов алгоритма рутирования. */
 void root() {
 	if (i_checking_files()) {
 		// Очистка экрана консоли
-		cls();
+		system("cls");
 		adb_state();
 		adb_flash();
 		adb_root();
 		// Очистка экрана консоли
-		cls();
+		system("cls");
 	}
 }
 

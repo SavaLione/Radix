@@ -1,4 +1,11 @@
+/**
+	\file
+    \brief Создание меню.
+	\example items.cpp
+	\author SavaLione
+*/
 #include <iostream>
+#include <Windows.h>
 
 #include "..\core\Constants.h"
 #include "..\core\Color.h"
@@ -6,13 +13,17 @@
 
 using namespace std;
 
-void v_mainmenu_before();
-void v_mainmenu_after();
-void v_querymenu_before();
-void v_querymenu_after();
-void v_checkagreement_before();
-void v_checkagreement_after();
+void v_mainmenu_before(); ///< Блок до выполнения модуля меню.
+void v_mainmenu_after(); ///< Блок после выполнения модуля меню.
+void v_querymenu_before(); ///< Блок до выполнения модуля меню.
+void v_querymenu_after(); ///< Блок после выполнения модуля меню.
+void v_checkagreement_before(); ///< Блок до выполнения модуля меню.
+void v_checkagreement_after(); ///< Блок после выполнения модуля меню.
 
+/**
+	Главное меню.
+	\return Выбранный пункт меню.
+*/
 string s_mainmenu() {
 	menu_s mainmenu;
 	mainmenu.name = "Main Menu";
@@ -22,6 +33,7 @@ string s_mainmenu() {
 	return s_menu(mainmenu);
 }
 
+/** Блок до выполнения модуля меню. */
 void v_mainmenu_before() {
 	// Установить цвет текста - белый, цвет заднего фона - чёрный.
     v_set_color(BLACK, WHITE);
@@ -40,11 +52,18 @@ void v_mainmenu_before() {
 	// Установить цвет текста - белый, цвет заднего фона - чёрный.
     v_set_color(WHITE, BLACK);
 }
+
+/** Блок после выполнения модуля меню. */
 void v_mainmenu_after() {
 	// Перенос строки.
 	cout << endl;
 }
 
+/**
+	Главное меню.
+	\param[in] item Строка до выполнения модуля меню.
+	\return Выбранный пункт меню.
+*/
 string s_querymenu(string item) {
 	menu_s querymenu;
 	querymenu.name = "Query Menu";
@@ -55,10 +74,13 @@ string s_querymenu(string item) {
 	return s_menu(querymenu);
 }
 
+/** Блок до выполнения модуля меню. */
 void v_querymenu_before(){
 	// Вывод вопроса в консоль.  Continue?
     cout << logo::s_continue;
 }
+
+/** Блок после выполнения модуля меню. */
 void v_querymenu_after(){
 	// Перенос строки.
 	cout << endl;
@@ -74,19 +96,10 @@ void v_querymenu_after(){
 	cout << endl;
 }
 
-void v_manual() {
-	cls();
-	cout << logo::s_manual;
-	cout << logo::move_indentation << logo::move_indentation;
-	cout << endl;
-	cout << logo::move_indentation;
-	v_set_color(BLACK, WHITE);
-	cout << logo::enter;
-	v_set_color(WHITE, BLACK);
-	cout << endl;
-	pause();
-}
-
+/**
+	Проверка согласия пользователя с пользовательским соглашением.
+	\return Выбранный пункт меню.
+*/
 string s_checkagreement() {
 	menu_s checkagreement;
 	checkagreement.name = "Check Agreement Menu";
@@ -96,12 +109,15 @@ string s_checkagreement() {
 	return s_menu(checkagreement);
 }
 
+/** Блок до выполнения модуля меню. */
 void v_checkagreement_before(){
 	// Вывод пользовательского соглашения в консоль
     cout << logo::eula << endl;
 	// Вывод вопроса в консоль. Do you agree with the license?
     cout << logo::license;
 }
+
+/** Блок после выполнения модуля меню. */
 void v_checkagreement_after(){
 	// Перенос строки.
 	cout << endl;
@@ -115,4 +131,18 @@ void v_checkagreement_after(){
     v_set_color(LIGHTGRAY, BLACK);
 	// Перенос строки.
 	cout << endl;
+}
+
+/** Инструкция к программе. */
+void v_manual() {
+	system("cls");
+	cout << logo::s_manual;
+	cout << logo::move_indentation << logo::move_indentation;
+	cout << endl;
+	cout << logo::move_indentation;
+	v_set_color(BLACK, WHITE);
+	cout << logo::enter;
+	v_set_color(WHITE, BLACK);
+	cout << endl;
+	pause();
 }

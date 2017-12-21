@@ -1,11 +1,19 @@
 /**
 	\file
-	\brief 
-	\author SavaLione	
+	\brief Заголовочный файл с вызовом модуля проверки стандартных файлов программы и вызова алгоритма рутирования.
+	
+	Вызов:
+		\code
+		void root();
+		void v_initialization();
+		\endcode
+		
+	\author SavaLione
 */
 #ifndef OPERATIONS_H
 #define OPERATIONS_H
 
+/** Вызов алгоритма рутирования. */
 void root();
 
 /** Вызов модуля проверки файла на наличие в папке.

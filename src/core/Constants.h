@@ -1,14 +1,14 @@
 ﻿/**
 	\file
 	\brief Заголовочный файл с константами.
-	\example constants.h
+	\example constants.cpp
 	\author SavaLione	
 */
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 
 #include <string>
-//
+
 namespace radix {
 	/** 
 	    Размер буфера.
@@ -87,14 +87,31 @@ namespace menu {
     /** Модуль загрузки. Значение после шкалы прогресса. */
     const char loading_indenting = ' ';
 	
+	/** Backspace key. */
 	const size_t backspace = 8;
+	
+	/** Enter key. */
 	const size_t enter = 13;
+	
+	/** ESC key. */
 	const size_t esc = 27;
+	
+	/** Space key. */
 	const size_t space = 32;
+	
+	/** Arrow up key. */
 	const size_t arrow_up = 72;
+	
+	/** Arrow left key. */
 	const size_t arrow_left = 75;
+	
+	/** Arrow right key. */
 	const size_t arrow_right = 77;
+	
+	/** Arrow down key. */
 	const size_t arrow_down = 80;
+	
+	/** Special key. */
 	const size_t special = 224;
 }
 

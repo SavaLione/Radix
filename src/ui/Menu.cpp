@@ -1,3 +1,9 @@
+/**
+	\file
+	\brief Модуль создания меню.
+	\example menu.cpp
+	\author SavaLione	
+*/
 #include <iostream>
 #include <conio.h>
 #include <string>
@@ -10,8 +16,18 @@
 
 using namespace std;
 
+/** Отрисовка модуля создания меню.
+	\param[in] choice Выбранный пункт меню.
+	\param[in] menu Список с параметрами создаваемого меню.
+    \return Выбранный пункт меню.
+*/
 string s_menu_choice(size_t choice, menu_s menu);
 
+/** Отрисовка модуля создания меню.
+	\param[in] choice Выбранный пункт меню.
+	\param[in] menu Список с параметрами создаваемого меню.
+    \return Выбранный пункт меню.
+*/
 string s_menu_choice(size_t choice, menu_s menu){
 	system("cls");
 	cout << menu.s_before;
@@ -34,6 +50,10 @@ string s_menu_choice(size_t choice, menu_s menu){
 	return menu.vec_item_name[choice - 1];
 }
 
+/** Модуль создания меню.
+	\param[in] menu Список с параметрами создаваемого меню.
+    \return Выбранный пункт меню.
+*/
 string s_menu(menu_s menu){
 	log("LOG", menu.name);
     size_t choice = 1, key = NULL;
@@ -75,10 +95,14 @@ string s_menu(menu_s menu){
     return s_ret;
 }
 
+/** Паузка до нажатия любой клавиши. */
 void pause(){
 	size_t key = _getch();
 }
 
+/** Выход из программы.
+	Вывод текста.
+*/
 void v_exit() {
 	// Очистка экрана консоли
     system("cls");
@@ -143,8 +167,4 @@ void v_loadscale(size_t position) {
 		// Пауза в мс.
         Sleep(menu::loading_check_module_sleep);
     }
-}
-
-void cls() {
-	system("cls");
 }

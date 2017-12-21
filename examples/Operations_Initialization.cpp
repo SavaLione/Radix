@@ -1,4 +1,4 @@
-#include "..\core\CheckingFiles.h"
+#include "..\core\Operations.h"
 
 int main() {
 	const char ch_radix_exe[] = "Radix.exe";
@@ -13,5 +13,6 @@ int main() {
 	} else {
 		// Unsuccessful file check.
 	}
+	v_initialization();
 	return 0;
 }
