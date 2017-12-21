@@ -17,6 +17,9 @@
 #include <Windows.h>
 #include <iostream>
 #include <conio.h>
+
+void before();
+
 //---
 /**
 	\return Код завершения программы
@@ -28,10 +31,10 @@ int main() {
 		std::cout << key << std::endl;
 	}
 	menu_s menu;
-	menu.sz_amount = 3;
-	menu.vec_item_name = {"1", "2", "3", " ", " "};
-	std::cout << i_menu(menu) << std::endl;
-	system("pause");
+	menu.name = "menu";
+	menu.vec_item_name = {"Root", "Log", "Exit", "Some else", "Some else", "Some else"};
+	menu.before_menu = before;
+	std::cout << std::endl << sz_menu(menu) << std::endl;
 	system("pause");
 	
 	log("LOG", "----------------------------[RUN RADIX]----------------------------");
@@ -62,4 +65,16 @@ int main() {
 	v_exit();
 	log("LOG", "Exit");
 	return 0;
+}
+
+void before() {
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
+	std::cout << std::endl << "Before" << std::endl;
 }
