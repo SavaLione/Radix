@@ -1,4 +1,5 @@
 #include "..\core\ADB_mod.h"
+#include "..\core\CheckingFiles.h"
 
 #include "..\ui\Menu.h"
 #include "..\ui\Items.h"
@@ -11,7 +12,7 @@ void root() {
 		adb_flash();
 		adb_root();
 		// Очистка экрана консоли
-		cls()
+		cls();
 	} else {
 		// Выход.
 	}
