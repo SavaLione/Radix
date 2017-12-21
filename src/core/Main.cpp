@@ -5,7 +5,6 @@
 */
 #include <string>
 
-#include "..\core\CheckingFiles.h"
 #include "..\core\Operations.h"
 
 #include "..\io\Logger.h"
