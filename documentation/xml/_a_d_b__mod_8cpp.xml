@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_a_d_b__mod_8cpp" kind="file" language="C++">
+    <compoundname>ADB_mod.cpp</compoundname>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes refid="_a_d_b__mod_8h" local="yes">ADB_mod.h</includes>
+    <includes refid="_logger_8h" local="yes">..\io\Logger.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>..\io\Logger.h</label>
+        <link refid="_logger_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Windows.h</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>string.h</label>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>ADB_mod.h</label>
+        <link refid="_a_d_b__mod_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>ADB_mod.cpp</label>
+        <link refid="_a_d_b__mod_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adb</definition>
+        <argsstring>(LPSTR cmdArgs)</argsstring>
+        <name>adb</name>
+        <param>
+          <type>LPSTR</type>
+          <declname>cmdArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызов adb-интерфейса. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cmdArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- команда для adb вида &quot;adb X&quot;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/ADB_mod.cpp" line="19" column="1" bodyfile="src/core/ADB_mod.cpp" bodystart="19" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fastboot</definition>
+        <argsstring>(LPSTR cmdArgs)</argsstring>
+        <name>fastboot</name>
+        <param>
+          <type>LPSTR</type>
+          <declname>cmdArgs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызов fastboot-интерфейса. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cmdArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- команда для fastboot вида &quot;fastboot X&quot;. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/ADB_mod.cpp" line="43" column="1" bodyfile="src/core/ADB_mod.cpp" bodystart="43" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_b__mod_8cpp_1ad1f1e991625b5f039ea46c20d003ed0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adb_state</definition>
+        <argsstring>()</argsstring>
+        <name>adb_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызов модуля проверки состояния устройства. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/ADB_mod.cpp" line="67" column="1" bodyfile="src/core/ADB_mod.cpp" bodystart="67" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_b__mod_8cpp_1a6b830192de1fd9a84e95434750984282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adb_flash</definition>
+        <argsstring>()</argsstring>
+        <name>adb_flash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызов модуля установки кастомной рекавери. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/ADB_mod.cpp" line="80" column="1" bodyfile="src/core/ADB_mod.cpp" bodystart="80" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_d_b__mod_8cpp_1abe46e301720694fb6fcec4868d54f516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adb_root</definition>
+        <argsstring>()</argsstring>
+        <name>adb_root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вызов модуля получения root-прав. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/ADB_mod.cpp" line="107" column="1" bodyfile="src/core/ADB_mod.cpp" bodystart="107" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Модуль работы с adb. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Darlakon </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_d_b__mod_8h" kindref="compound">ADB_mod.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\io\Logger.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_a_d_b__mod_8h_1a5d0a3a01ef690bcd93495becd3273063" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(LPSTR<sp/>cmdArgs)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>PROCESS_INFORMATION<sp/>ProcessInfo;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>STARTUPINFO<sp/>StartupInfo;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>ZeroMemory(&amp;StartupInfo,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(StartupInfo));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>StartupInfo.cb<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>StartupInfo;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>LPCSTR<sp/>cmdPath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;assets\\platform-tools\\adb.exe&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CreateProcess(cmdPath,<sp/>cmdArgs,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>NULL,<sp/>FALSE,<sp/>0,<sp/>NULL,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>&amp;StartupInfo,<sp/>&amp;ProcessInfo))</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WaitForSingleObject(ProcessInfo.hProcess,<sp/>INFINITE);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(ProcessInfo.hThread);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(ProcessInfo.hProcess);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_a_d_b__mod_8h_1a3b7f80fa75c7705429c3d7402fec0eb0" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(LPSTR<sp/>cmdArgs)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>PROCESS_INFORMATION<sp/>ProcessInfo;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>STARTUPINFO<sp/>StartupInfo;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ZeroMemory(&amp;StartupInfo,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(StartupInfo));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>StartupInfo.cb<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>StartupInfo;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>LPCSTR<sp/>cmdPath<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;assets\\platform-tools\\fastboot.exe&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CreateProcess(cmdPath,<sp/>cmdArgs,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>NULL,<sp/>FALSE,<sp/>0,<sp/>NULL,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NULL,<sp/>&amp;StartupInfo,<sp/>&amp;ProcessInfo))</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WaitForSingleObject(ProcessInfo.hProcess,<sp/>INFINITE);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(ProcessInfo.hThread);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CloseHandle(ProcessInfo.hProcess);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_a_d_b__mod_8h_1ad1f1e991625b5f039ea46c20d003ed0f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_b__mod_8cpp_1ad1f1e991625b5f039ea46c20d003ed0f" kindref="member">adb_state</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[Run<sp/>adb_state<sp/>module.]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;------[adb_state]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>devices&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//проверяем<sp/>подключение<sp/>телефона</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>devices&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Stop<sp/>adb_state<sp/>module.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;------[adb_state]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_a_d_b__mod_8h_1a6b830192de1fd9a84e95434750984282" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_b__mod_8cpp_1a6b830192de1fd9a84e95434750984282" kindref="member">adb_flash</ref>()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[Run<sp/>adb_flash<sp/>module.]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;------[adb_flash]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>reboot<sp/>bootloader&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//перезагружаем<sp/>в<sp/>режим<sp/>бутлоадера</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>reboot<sp/>bootloader&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>flash<sp/>recovery<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//запускаем<sp/>флеш<sp/>рекавери</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fastboot<sp/>flash<sp/>recovery<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>boot<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//выходим<sp/>в<sp/>рекавери</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fastboot<sp/>boot<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>devices&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//проверяем<sp/>подключение<sp/>устройства</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>devices&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>push<sp/>-p<sp/>\&quot;su.zip\&quot;<sp/>sd&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//копируем<sp/>в<sp/>корень<sp/>устройства<sp/>файл<sp/>su.zip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>push<sp/>-p<sp/>\&quot;su.zip\&quot;<sp/>sd&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>reboot<sp/>bootloader&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>reboot<sp/>bootloader&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Stop<sp/>adb_flash<sp/>module.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;------[adb_flash]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="_a_d_b__mod_8h_1abe46e301720694fb6fcec4868d54f516" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_d_b__mod_8cpp_1abe46e301720694fb6fcec4868d54f516" kindref="member">adb_root</ref>()</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;[Run<sp/>adb_root<sp/>module.]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;-------[adb_root]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>devices&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fastboot<sp/>devices&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>boot<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fastboot<sp/>boot<sp/>\&quot;recovery.img\&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>wait-for-device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a3b7f80fa75c7705429c3d7402fec0eb0" kindref="member">fastboot</ref>(</highlight><highlight class="stringliteral">&quot;fastboot<sp/>install<sp/>su.zip&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;fastboot<sp/>install<sp/>su.zip&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_b__mod_8cpp_1a5d0a3a01ef690bcd93495becd3273063" kindref="member">adb</ref>(</highlight><highlight class="stringliteral">&quot;adb<sp/>reboot&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;adb<sp/>reboot&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Stop<sp/>adb_root<sp/>module.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_logger_8cpp_1a85cbef1702d055318336f0f3a5036959" kindref="member">log</ref>(</highlight><highlight class="stringliteral">&quot;LOG&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;-------[adb_root]-------&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/core/ADB_mod.cpp"/>
+  </compounddef>
+</doxygen>

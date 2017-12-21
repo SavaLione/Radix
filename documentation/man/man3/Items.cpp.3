@@ -1,0 +1,166 @@
+.TH "Items.cpp" 3 "Чт 21 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Items.cpp \- Создание меню\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <Windows\&.h>\fP
+.br
+\fC#include '\&.\&.\\core\\Constants\&.h'\fP
+.br
+\fC#include '\&.\&.\\core\\Color\&.h'\fP
+.br
+\fC#include '\&.\&.\\ui\\Menu\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBv_mainmenu_before\fP ()"
+.br
+.RI "Блок до выполнения модуля меню\&. "
+.ti -1c
+.RI "void \fBv_mainmenu_after\fP ()"
+.br
+.RI "Блок после выполнения модуля меню\&. "
+.ti -1c
+.RI "void \fBv_querymenu_before\fP ()"
+.br
+.RI "Блок до выполнения модуля меню\&. "
+.ti -1c
+.RI "void \fBv_querymenu_after\fP ()"
+.br
+.RI "Блок после выполнения модуля меню\&. "
+.ti -1c
+.RI "void \fBv_checkagreement_before\fP ()"
+.br
+.RI "Блок до выполнения модуля меню\&. "
+.ti -1c
+.RI "void \fBv_checkagreement_after\fP ()"
+.br
+.RI "Блок после выполнения модуля меню\&. "
+.ti -1c
+.RI "string \fBs_mainmenu\fP ()"
+.br
+.ti -1c
+.RI "string \fBs_querymenu\fP (string item)"
+.br
+.ti -1c
+.RI "string \fBs_checkagreement\fP ()"
+.br
+.ti -1c
+.RI "void \fBv_manual\fP ()"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Создание меню\&. 
+
+
+.PP
+См\&. определение в файле \fBItems\&.cpp\fP
+.SH "Функции"
+.PP 
+.SS "string s_checkagreement ()"
+Проверка согласия пользователя с пользовательским соглашением\&. 
+.PP
+\fBВозвращает:\fP
+.RS 4
+Выбранный пункт меню\&. 
+.RE
+.PP
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBitems\&.cpp\fP\&.
+.PP
+См\&. определение в файле Items\&.cpp строка 103
+.SS "string s_mainmenu ()"
+Главное меню\&. 
+.PP
+\fBВозвращает:\fP
+.RS 4
+Выбранный пункт меню\&. 
+.RE
+.PP
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBitems\&.cpp\fP\&.
+.PP
+См\&. определение в файле Items\&.cpp строка 27
+.SS "string s_querymenu (string item)"
+Главное меню\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIitem\fP Строка до выполнения модуля меню\&. 
+.RE
+.PP
+\fBВозвращает:\fP
+.RS 4
+Выбранный пункт меню\&. 
+.RE
+.PP
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBitems\&.cpp\fP\&.
+.PP
+См\&. определение в файле Items\&.cpp строка 67
+.SS "void v_checkagreement_after ()"
+
+.PP
+Блок после выполнения модуля меню\&. Блок после выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 121
+.SS "void v_checkagreement_before ()"
+
+.PP
+Блок до выполнения модуля меню\&. Блок до выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 113
+.SS "void v_mainmenu_after ()"
+
+.PP
+Блок после выполнения модуля меню\&. Блок после выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 57
+.SS "void v_mainmenu_before ()"
+
+.PP
+Блок до выполнения модуля меню\&. Блок до выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 37
+.SS "void v_manual ()"
+Инструкция к программе\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBitems\&.cpp\fP\&.
+.PP
+См\&. определение в файле Items\&.cpp строка 137
+.SS "void v_querymenu_after ()"
+
+.PP
+Блок после выполнения модуля меню\&. Блок после выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 84
+.SS "void v_querymenu_before ()"
+
+.PP
+Блок до выполнения модуля меню\&. Блок до выполнения модуля меню\&. 
+.PP
+См\&. определение в файле Items\&.cpp строка 78
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

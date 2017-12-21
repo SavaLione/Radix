@@ -1,0 +1,121 @@
+\hypertarget{structmenu__s}{}\section{Структура menu\+\_\+s}
+\label{structmenu__s}\index{menu\+\_\+s@{menu\+\_\+s}}
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+\subsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{structmenu__s_a2b4d6cd699b46daba2bb8297c11971aa}{name} = \char`\"{}unassigned\char`\"{}
+\item 
+std\+::string \hyperlink{structmenu__s_ad653d55a31d8503ad989ffd0b94c14e4}{s\+\_\+before} = \char`\"{}\char`\"{}
+\item 
+std\+::string \hyperlink{structmenu__s_a8622e3ccae9b1356ad3e2e3eb51a44e8}{s\+\_\+after} = \char`\"{}\char`\"{}
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{structmenu__s_abf8d2985fb3bf50d8e2075701149375a}{vec\+\_\+item\+\_\+name}
+\begin{DoxyCompactList}\small\item\em Строковый массив векторного размера. Это позволяет создать меню с n количеством параметров. \end{DoxyCompactList}\item 
+void($\ast$ \hyperlink{structmenu__s_a856a04d9c6a20c33b0a763149aa021fc}{before\+\_\+menu} )()
+\item 
+void($\ast$)($\ast$) \hyperlink{structmenu__s_a18bd030b9a460fbfaa350413f8aa0340}{after\+\_\+menu} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 12
+
+
+
+\subsection{Данные класса}
+\mbox{\Hypertarget{structmenu__s_a18bd030b9a460fbfaa350413f8aa0340}\label{structmenu__s_a18bd030b9a460fbfaa350413f8aa0340}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!after\+\_\+menu@{after\+\_\+menu}}
+\index{after\+\_\+menu@{after\+\_\+menu}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{after\+\_\+menu}{after\_menu}}
+{\footnotesize\ttfamily void($\ast$)($\ast$) menu\+\_\+s\+::after\+\_\+menu()}
+
+Функция до создаваемого меню. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 18
+
+\mbox{\Hypertarget{structmenu__s_a856a04d9c6a20c33b0a763149aa021fc}\label{structmenu__s_a856a04d9c6a20c33b0a763149aa021fc}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!before\+\_\+menu@{before\+\_\+menu}}
+\index{before\+\_\+menu@{before\+\_\+menu}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{before\+\_\+menu}{before\_menu}}
+{\footnotesize\ttfamily void($\ast$ menu\+\_\+s\+::before\+\_\+menu) ()}
+
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 17
+
+\mbox{\Hypertarget{structmenu__s_a2b4d6cd699b46daba2bb8297c11971aa}\label{structmenu__s_a2b4d6cd699b46daba2bb8297c11971aa}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!name@{name}}
+\index{name@{name}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string menu\+\_\+s\+::name = \char`\"{}unassigned\char`\"{}}
+
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 13
+
+\mbox{\Hypertarget{structmenu__s_a8622e3ccae9b1356ad3e2e3eb51a44e8}\label{structmenu__s_a8622e3ccae9b1356ad3e2e3eb51a44e8}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!s\+\_\+after@{s\+\_\+after}}
+\index{s\+\_\+after@{s\+\_\+after}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{s\+\_\+after}{s\_after}}
+{\footnotesize\ttfamily std\+::string menu\+\_\+s\+::s\+\_\+after = \char`\"{}\char`\"{}}
+
+Строка до создаваемого меню. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 15
+
+\mbox{\Hypertarget{structmenu__s_ad653d55a31d8503ad989ffd0b94c14e4}\label{structmenu__s_ad653d55a31d8503ad989ffd0b94c14e4}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!s\+\_\+before@{s\+\_\+before}}
+\index{s\+\_\+before@{s\+\_\+before}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{s\+\_\+before}{s\_before}}
+{\footnotesize\ttfamily std\+::string menu\+\_\+s\+::s\+\_\+before = \char`\"{}\char`\"{}}
+
+Имя создаваемого меню. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 14
+
+\mbox{\Hypertarget{structmenu__s_abf8d2985fb3bf50d8e2075701149375a}\label{structmenu__s_abf8d2985fb3bf50d8e2075701149375a}} 
+\index{menu\+\_\+s@{menu\+\_\+s}!vec\+\_\+item\+\_\+name@{vec\+\_\+item\+\_\+name}}
+\index{vec\+\_\+item\+\_\+name@{vec\+\_\+item\+\_\+name}!menu\+\_\+s@{menu\+\_\+s}}
+\subsubsection{\texorpdfstring{vec\+\_\+item\+\_\+name}{vec\_item\_name}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ menu\+\_\+s\+::vec\+\_\+item\+\_\+name}
+
+
+
+Строковый массив векторного размера. Это позволяет создать меню с n количеством параметров. 
+
+Строка после создаваемого меню. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{menu_8cpp-example}{menu.\+cpp}.\end{Desc}
+
+
+См. определение в файле Menu.\+h строка 16
+
+
+
+Объявления и описания членов структуры находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_menu_8h}{Menu.\+h}\end{DoxyCompactItemize}

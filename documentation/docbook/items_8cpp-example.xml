@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="items_8cpp-example">
+    <title>items.cpp</title>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione <literallayout><computeroutput><emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+
+<emphasis class="preprocessor">#include&#32;&quot;..\ui\Items.h&quot;</emphasis>
+
+<emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="namespacestd">std</link>;
+
+<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link>()&#32;{
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_items_8cpp_1afb16d6cecac9a7da7edd9389097a74b2">s_mainmenu</link>()&#32;&lt;&lt;&#32;endl;
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_items_8cpp_1a45daa1eafaa5c4d1e9246abdd4db144e">s_querymenu</link>(<emphasis class="stringliteral">&quot;String&quot;</emphasis>)&#32;&lt;&lt;&#32;endl;
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_items_8cpp_1acda300061b64b7f3003c9103cfb1bb19">s_checkagreement</link>()&#32;&lt;&lt;&#32;endl;
+&#32;&#32;&#32;&#32;<link linkend="_items_8cpp_1ae0f9a7fdce9e3a275336f70656c0c4fc">v_manual</link>();
+&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;0;
+}
+</computeroutput></literallayout> </para>
+</formalpara>
+</para>
+
+</section>

@@ -1,0 +1,36 @@
+\hypertarget{menu_8cpp-example}{}\section{menu.\+cpp}
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione
+\end{DoxyAuthor}
+
+\begin{DoxyCodeInclude}
+\textcolor{preprocessor}{#include <iostream>}
+
+\textcolor{preprocessor}{#include "..\(\backslash\)ui\(\backslash\)Menu.h"}
+
+\textcolor{keyword}{using namespace }\hyperlink{namespacestd}{std};
+
+\textcolor{keywordtype}{void} before();
+\textcolor{keywordtype}{void} after();
+
+\textcolor{keywordtype}{int} \hyperlink{_main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}() \{
+    \hyperlink{structmenu__s}{menu\_s} testmenu;
+    testmenu.\hyperlink{structmenu__s_a2b4d6cd699b46daba2bb8297c11971aa}{name} = \textcolor{stringliteral}{"Test menu"};
+    testmenu.\hyperlink{structmenu__s_ad653d55a31d8503ad989ffd0b94c14e4}{s\_before} = \textcolor{stringliteral}{"Test before."};
+    testmenu.\hyperlink{structmenu__s_a8622e3ccae9b1356ad3e2e3eb51a44e8}{s\_after} = \textcolor{stringliteral}{"Test after."};
+    testmenu.\hyperlink{structmenu__s_abf8d2985fb3bf50d8e2075701149375a}{vec\_item\_name} = \{\textcolor{stringliteral}{"Test"}, \textcolor{stringliteral}{"Exit"}\};
+    testmenu.\hyperlink{structmenu__s_a856a04d9c6a20c33b0a763149aa021fc}{before\_menu} = before;
+    testmenu.\hyperlink{structmenu__s_a18bd030b9a460fbfaa350413f8aa0340}{after\_menu} = after;
+    cout << \hyperlink{_menu_8cpp_a20a38c5c97dbebd634a7b5c71fcd6120}{s\_menu}(mainmenu) << endl;
+    \textcolor{keywordflow}{return} 0;
+\}
+
+\textcolor{keywordtype}{void} before() \{
+    cout << \textcolor{stringliteral}{"Before."} << endl;
+\}
+
+\textcolor{keywordtype}{void} after() \{
+    cout << \textcolor{stringliteral}{"After."} << endl;
+\}
+\end{DoxyCodeInclude}
+ 

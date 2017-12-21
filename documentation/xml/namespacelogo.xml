@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacelogo" kind="namespace" language="C++">
+    <compoundname>logo</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelogo_1a75fab9a3dcd27565e40b08dbbcbf5e6b" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::border</definition>
+        <argsstring></argsstring>
+        <name>border</name>
+        <initializer>= &quot;===========================\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Линия. <programlisting><codeline><highlight class="normal">===========================</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="124" column="1" bodyfile="src/core/Constants.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1adf18ab31906b644891fc8311df747a9d" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::little_help</definition>
+        <argsstring></argsstring>
+        <name>little_help</name>
+        <initializer>= &quot;==== &lt;- use to <ref refid="namespacelogo_1a03b6b80b5648e7dbbbf00b258df733b6" kindref="member">move</ref> -&gt; ====\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Помощь по управлению. <programlisting><codeline><highlight class="normal">====<sp/>&lt;-<sp/>use<sp/>to<sp/>move<sp/>-&gt;<sp/>====</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="131" column="1" bodyfile="src/core/Constants.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1ae5491adc000fde7d3d8229372c877da2" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::license</definition>
+        <argsstring></argsstring>
+        <name>license</name>
+        <initializer>= &quot;Do you agree with the license?\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вопрос о согласии с лицензионным соглашением. <programlisting><codeline><highlight class="normal">Do<sp/>you<sp/>agree<sp/>with<sp/>the<sp/>license?</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="138" column="1" bodyfile="src/core/Constants.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1a7570bf74bf945a06ced26f6fccaeab53" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::move_indentation</definition>
+        <argsstring></argsstring>
+        <name>move_indentation</name>
+        <initializer>= &quot;       &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отступ. Используется в связке с move. <programlisting><codeline><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/>}&lt;-<sp/>use<sp/>to<sp/>move<sp/>-&gt;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="145" column="1" bodyfile="src/core/Constants.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1a03b6b80b5648e7dbbbf00b258df733b6" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::move</definition>
+        <argsstring></argsstring>
+        <name>move</name>
+        <initializer>= &quot;&lt;- use to move -&gt;\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Помощь по управлению. <programlisting><codeline><highlight class="normal">&lt;-<sp/>use<sp/>to<sp/>move<sp/>-&gt;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="152" column="1" bodyfile="src/core/Constants.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1abbbdbfbbcae50e2017f3ed1bdf0e1fa3" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::radix</definition>
+        <argsstring></argsstring>
+        <name>radix</name>
+        <initializer>= &quot;  _____           _ _      \n |  __ \\         | (_)     \n | |__) |__ _  __| |___  __\n |  _  // _` |/ _` | \\ \\/ /\n | | \\ \\ (_| | (_| | |&gt;  &lt; \n |_|  \\_\\__,_|\\__,_|_/_/\\_\\ \n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Логотип программы <programlisting><codeline><highlight class="normal"><sp/>_____<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/>_<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>__<sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(_)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|__)<sp/>|__<sp/>_<sp/><sp/>__|<sp/>|___<sp/><sp/>__</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>_<sp/><sp/>//<sp/>_`<sp/>|/<sp/>_`<sp/>|<sp/>\<sp/>\/<sp/>/</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|<sp/>\<sp/>\<sp/>(_|<sp/>|<sp/>(_|<sp/>|<sp/>|&gt;<sp/><sp/>&lt;<sp/></highlight></codeline>
+<codeline><highlight class="normal">|_|<sp/><sp/>\_\__,_|\__,_|_/_/\_\</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="165" column="1" bodyfile="src/core/Constants.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1ad29ac81055f7eb3624a283f55af8d5ad" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::loading</definition>
+        <argsstring></argsstring>
+        <name>loading</name>
+        <initializer>= &quot;  _                     _ \n | |                   | |\n | |     ___   __ _  __| |\n | |    / _ \\ / _` |/ _` |\n | |___| (_) | (_| | (_| |\n |______\\___/ \\__,_|\\__,_|\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Логотип загрузки <programlisting><codeline><highlight class="normal"><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|<sp/><sp/><sp/><sp/><sp/>___<sp/><sp/><sp/>__<sp/>_<sp/><sp/>__|<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|<sp/><sp/><sp/><sp/>/<sp/>_<sp/>\<sp/>/<sp/>_`<sp/>|/<sp/>_`<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|___|<sp/>(_)<sp/>|<sp/>(_|<sp/>|<sp/>(_|<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|______\___/<sp/>\__,_|\__,_|<sp/><sp/></highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="178" column="1" bodyfile="src/core/Constants.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1aba8ca66bcf8abe6a0991a13887671863" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::exit</definition>
+        <argsstring></argsstring>
+        <name>exit</name>
+        <initializer>= &quot;  ______      _ _   \n |  ____|    (_) |  \n | |__  __  ___| |_ \n |  __| \\ \\/ / | __|\n | |____ &gt;  &lt;| | |_ \n |______/_/\\_\\_|\\__|\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Выход <programlisting><codeline><highlight class="normal"><sp/>______<sp/><sp/><sp/><sp/><sp/><sp/>_<sp/>_<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>____|<sp/><sp/><sp/><sp/>(_)<sp/>|<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|__<sp/><sp/>__<sp/><sp/>___|<sp/>|_<sp/></highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>__|<sp/>\<sp/>\/<sp/>/<sp/>|<sp/>__|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>|____<sp/>&gt;<sp/><sp/>&lt;|<sp/>|<sp/>|_<sp/></highlight></codeline>
+<codeline><highlight class="normal">|______/_/\_\_|\__|</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="191" column="1" bodyfile="src/core/Constants.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1a6bb2bd19b13072f69598ed9f64b77350" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::s_continue</definition>
+        <argsstring></argsstring>
+        <name>s_continue</name>
+        <initializer>= &quot;Continue?\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Вопрос о продолжении выполнения программы. <programlisting><codeline><highlight class="normal">Continue?</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="198" column="1" bodyfile="src/core/Constants.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1a0a26b9dd91d59364dce6d78c217af1a0" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::s_manual</definition>
+        <argsstring></argsstring>
+        <name>s_manual</name>
+        <initializer>= &quot;		User Manual\n0) If necessary, install drivers from assets/Drivers_Universal folder.\n1) Enable USB debugging on your device.\n   You&apos;ll need to become developer by tapping \&quot;Build Number\&quot; in \&quot;About Device\&quot; section.\n   Then go to Developer section and enable debugging.\n2) Plug in your device, accept debugging request.\n3) Put files &apos;recovery.img&apos; and &apos;su.zip&apos; in program directory(next to Radix.exe)\n4) Proceed.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Инструкция к программе. <programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>User<sp/>Manual</highlight></codeline>
+<codeline><highlight class="normal">0)<sp/>If<sp/>necessary,<sp/>install<sp/>drivers<sp/>from<sp/>assets/Drivers_Universal<sp/>folder.</highlight></codeline>
+<codeline><highlight class="normal">1)<sp/>Enable<sp/>USB<sp/>debugging<sp/>on<sp/>your<sp/>device.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>You&apos;ll<sp/>need<sp/>to<sp/>become<sp/>developer<sp/>by<sp/>tapping<sp/>&quot;Build<sp/>Number&quot;<sp/>in<sp/>&quot;About<sp/>Device&quot;<sp/>section.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>Then<sp/>go<sp/>to<sp/>Developer<sp/>section<sp/>and<sp/>enable<sp/>debugging.</highlight></codeline>
+<codeline><highlight class="normal">2)<sp/>Plug<sp/>in<sp/>your<sp/>device,<sp/>accept<sp/>debugging<sp/>request.</highlight></codeline>
+<codeline><highlight class="normal">3)<sp/>Put<sp/>files<sp/>&apos;recovery.img&apos;<sp/>and<sp/>&apos;su.zip&apos;<sp/>in<sp/>program<sp/>directory(next<sp/>to<sp/>Radix.exe)<sp/></highlight></codeline>
+<codeline><highlight class="normal">4)<sp/>Proceed.</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="212" column="1" bodyfile="src/core/Constants.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1ac55b3c4624556820a987ccdf67101bae" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::enter</definition>
+        <argsstring></argsstring>
+        <name>enter</name>
+        <initializer>= &quot;Press any key to continue.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Продолжить выполнение программы по нажатию любой клавиши. <programlisting><codeline><highlight class="normal">Press<sp/>any<sp/>key<sp/>to<sp/>continue.</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="219" column="1" bodyfile="src/core/Constants.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelogo_1ae3d10c2b731b19f239a7311af363354c" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string logo::eula</definition>
+        <argsstring></argsstring>
+        <name>eula</name>
+        <initializer>= &quot;Copyright (c) 2017 Radix\n\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \nPARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN \nACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Продолжить выполнение программы по нажатию любой клавиши. <programlisting><codeline><highlight class="normal">Copyright<sp/>(c)<sp/>2017<sp/>Radix</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>\&quot;AS<sp/>IS\&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/></highlight></codeline>
+<codeline><highlight class="normal">PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/></highlight></codeline>
+<codeline><highlight class="normal">ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="230" column="1" bodyfile="src/core/Constants.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/Constants.h" line="118" column="1"/>
+  </compounddef>
+</doxygen>

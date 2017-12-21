@@ -1,0 +1,201 @@
+\hypertarget{_items_8cpp}{}\section{Файл Items.\+cpp}
+\label{_items_8cpp}\index{Items.\+cpp@{Items.\+cpp}}
+
+
+Создание меню.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Constants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}ui\textbackslash{}\+Menu.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Items.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_items_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_items_8cpp_ad151996f106cf7ff3fad3914fbf611c5}{v\+\_\+mainmenu\+\_\+before} ()
+\begin{DoxyCompactList}\small\item\em Блок до выполнения модуля меню. \end{DoxyCompactList}\item 
+void \hyperlink{_items_8cpp_ac274a96bdc6bb4f3b297c7cf108ffa88}{v\+\_\+mainmenu\+\_\+after} ()
+\begin{DoxyCompactList}\small\item\em Блок после выполнения модуля меню. \end{DoxyCompactList}\item 
+void \hyperlink{_items_8cpp_a58915fe72643acfafcca29110bac7289}{v\+\_\+querymenu\+\_\+before} ()
+\begin{DoxyCompactList}\small\item\em Блок до выполнения модуля меню. \end{DoxyCompactList}\item 
+void \hyperlink{_items_8cpp_a24a975c31a63037906ffcd058119643c}{v\+\_\+querymenu\+\_\+after} ()
+\begin{DoxyCompactList}\small\item\em Блок после выполнения модуля меню. \end{DoxyCompactList}\item 
+void \hyperlink{_items_8cpp_afa52d2bd2c48a7550e095eee9a614b39}{v\+\_\+checkagreement\+\_\+before} ()
+\begin{DoxyCompactList}\small\item\em Блок до выполнения модуля меню. \end{DoxyCompactList}\item 
+void \hyperlink{_items_8cpp_a992f6a23b7b289d164cb112c1a637f86}{v\+\_\+checkagreement\+\_\+after} ()
+\begin{DoxyCompactList}\small\item\em Блок после выполнения модуля меню. \end{DoxyCompactList}\item 
+string \hyperlink{_items_8cpp_afb16d6cecac9a7da7edd9389097a74b2}{s\+\_\+mainmenu} ()
+\item 
+string \hyperlink{_items_8cpp_a45daa1eafaa5c4d1e9246abdd4db144e}{s\+\_\+querymenu} (string item)
+\item 
+string \hyperlink{_items_8cpp_acda300061b64b7f3003c9103cfb1bb19}{s\+\_\+checkagreement} ()
+\item 
+void \hyperlink{_items_8cpp_ae0f9a7fdce9e3a275336f70656c0c4fc}{v\+\_\+manual} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Создание меню. 
+
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_items_8cpp_acda300061b64b7f3003c9103cfb1bb19}\label{_items_8cpp_acda300061b64b7f3003c9103cfb1bb19}} 
+\index{Items.\+cpp@{Items.\+cpp}!s\+\_\+checkagreement@{s\+\_\+checkagreement}}
+\index{s\+\_\+checkagreement@{s\+\_\+checkagreement}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+checkagreement()}{s\_checkagreement()}}
+{\footnotesize\ttfamily string s\+\_\+checkagreement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Проверка согласия пользователя с пользовательским соглашением. \begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{items_8cpp-example}{items.\+cpp}.\end{Desc}
+
+
+См. определение в файле Items.\+cpp строка 103
+
+\mbox{\Hypertarget{_items_8cpp_afb16d6cecac9a7da7edd9389097a74b2}\label{_items_8cpp_afb16d6cecac9a7da7edd9389097a74b2}} 
+\index{Items.\+cpp@{Items.\+cpp}!s\+\_\+mainmenu@{s\+\_\+mainmenu}}
+\index{s\+\_\+mainmenu@{s\+\_\+mainmenu}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+mainmenu()}{s\_mainmenu()}}
+{\footnotesize\ttfamily string s\+\_\+mainmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Главное меню. \begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{items_8cpp-example}{items.\+cpp}.\end{Desc}
+
+
+См. определение в файле Items.\+cpp строка 27
+
+\mbox{\Hypertarget{_items_8cpp_a45daa1eafaa5c4d1e9246abdd4db144e}\label{_items_8cpp_a45daa1eafaa5c4d1e9246abdd4db144e}} 
+\index{Items.\+cpp@{Items.\+cpp}!s\+\_\+querymenu@{s\+\_\+querymenu}}
+\index{s\+\_\+querymenu@{s\+\_\+querymenu}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{s\+\_\+querymenu()}{s\_querymenu()}}
+{\footnotesize\ttfamily string s\+\_\+querymenu (\begin{DoxyParamCaption}\item[{string}]{item }\end{DoxyParamCaption})}
+
+Главное меню. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em item} & Строка до выполнения модуля меню. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{items_8cpp-example}{items.\+cpp}.\end{Desc}
+
+
+См. определение в файле Items.\+cpp строка 67
+
+\mbox{\Hypertarget{_items_8cpp_a992f6a23b7b289d164cb112c1a637f86}\label{_items_8cpp_a992f6a23b7b289d164cb112c1a637f86}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+checkagreement\+\_\+after@{v\+\_\+checkagreement\+\_\+after}}
+\index{v\+\_\+checkagreement\+\_\+after@{v\+\_\+checkagreement\+\_\+after}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+checkagreement\+\_\+after()}{v\_checkagreement\_after()}}
+{\footnotesize\ttfamily void v\+\_\+checkagreement\+\_\+after (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок после выполнения модуля меню. 
+
+Блок после выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 121
+
+\mbox{\Hypertarget{_items_8cpp_afa52d2bd2c48a7550e095eee9a614b39}\label{_items_8cpp_afa52d2bd2c48a7550e095eee9a614b39}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+checkagreement\+\_\+before@{v\+\_\+checkagreement\+\_\+before}}
+\index{v\+\_\+checkagreement\+\_\+before@{v\+\_\+checkagreement\+\_\+before}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+checkagreement\+\_\+before()}{v\_checkagreement\_before()}}
+{\footnotesize\ttfamily void v\+\_\+checkagreement\+\_\+before (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок до выполнения модуля меню. 
+
+Блок до выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 113
+
+\mbox{\Hypertarget{_items_8cpp_ac274a96bdc6bb4f3b297c7cf108ffa88}\label{_items_8cpp_ac274a96bdc6bb4f3b297c7cf108ffa88}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+mainmenu\+\_\+after@{v\+\_\+mainmenu\+\_\+after}}
+\index{v\+\_\+mainmenu\+\_\+after@{v\+\_\+mainmenu\+\_\+after}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+mainmenu\+\_\+after()}{v\_mainmenu\_after()}}
+{\footnotesize\ttfamily void v\+\_\+mainmenu\+\_\+after (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок после выполнения модуля меню. 
+
+Блок после выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 57
+
+\mbox{\Hypertarget{_items_8cpp_ad151996f106cf7ff3fad3914fbf611c5}\label{_items_8cpp_ad151996f106cf7ff3fad3914fbf611c5}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+mainmenu\+\_\+before@{v\+\_\+mainmenu\+\_\+before}}
+\index{v\+\_\+mainmenu\+\_\+before@{v\+\_\+mainmenu\+\_\+before}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+mainmenu\+\_\+before()}{v\_mainmenu\_before()}}
+{\footnotesize\ttfamily void v\+\_\+mainmenu\+\_\+before (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок до выполнения модуля меню. 
+
+Блок до выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 37
+
+\mbox{\Hypertarget{_items_8cpp_ae0f9a7fdce9e3a275336f70656c0c4fc}\label{_items_8cpp_ae0f9a7fdce9e3a275336f70656c0c4fc}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+manual@{v\+\_\+manual}}
+\index{v\+\_\+manual@{v\+\_\+manual}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+manual()}{v\_manual()}}
+{\footnotesize\ttfamily void v\+\_\+manual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Инструкция к программе. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{items_8cpp-example}{items.\+cpp}.\end{Desc}
+
+
+См. определение в файле Items.\+cpp строка 137
+
+\mbox{\Hypertarget{_items_8cpp_a24a975c31a63037906ffcd058119643c}\label{_items_8cpp_a24a975c31a63037906ffcd058119643c}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+querymenu\+\_\+after@{v\+\_\+querymenu\+\_\+after}}
+\index{v\+\_\+querymenu\+\_\+after@{v\+\_\+querymenu\+\_\+after}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+querymenu\+\_\+after()}{v\_querymenu\_after()}}
+{\footnotesize\ttfamily void v\+\_\+querymenu\+\_\+after (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок после выполнения модуля меню. 
+
+Блок после выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 84
+
+\mbox{\Hypertarget{_items_8cpp_a58915fe72643acfafcca29110bac7289}\label{_items_8cpp_a58915fe72643acfafcca29110bac7289}} 
+\index{Items.\+cpp@{Items.\+cpp}!v\+\_\+querymenu\+\_\+before@{v\+\_\+querymenu\+\_\+before}}
+\index{v\+\_\+querymenu\+\_\+before@{v\+\_\+querymenu\+\_\+before}!Items.\+cpp@{Items.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+querymenu\+\_\+before()}{v\_querymenu\_before()}}
+{\footnotesize\ttfamily void v\+\_\+querymenu\+\_\+before (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Блок до выполнения модуля меню. 
+
+Блок до выполнения модуля меню. 
+
+См. определение в файле Items.\+cpp строка 78
+

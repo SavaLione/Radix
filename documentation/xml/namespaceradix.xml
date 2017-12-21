@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceradix" kind="namespace" language="C++">
+    <compoundname>radix</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceradix_1a82e81e89088b6430b7ec11a8a0329e9c" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t radix::buff_size</definition>
+        <argsstring></argsstring>
+        <name>buff_size</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Размер буфера. В основном используется для чтения строк из файла. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="17" column="1" bodyfile="src/core/Constants.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a8f000aabf647d34fd877c33958bad711" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t radix::buff_ruleslist</definition>
+        <argsstring></argsstring>
+        <name>buff_ruleslist</name>
+        <initializer>= 256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Размер буфера для чтения правил программы. В основном используется для чтения правил программы. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="23" column="1" bodyfile="src/core/Constants.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a11c5bfe5c65a0f88a2a950111c6ffc09" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::logger_list[]</definition>
+        <argsstring>[]</argsstring>
+        <name>logger_list</name>
+        <initializer>= &quot;logger.log&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Файл с выводом логера. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="26" column="1" bodyfile="src/core/Constants.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a43bff57dbd1b7dcebee0228ccbab7f17" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::settings_list[]</definition>
+        <argsstring>[]</argsstring>
+        <name>settings_list</name>
+        <initializer>= &quot;settings.ini&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Файл с настройками программы. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="29" column="1" bodyfile="src/core/Constants.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a123392a7ece6e11efaf3ad3df291ff3d" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::firmware_way[]</definition>
+        <argsstring>[]</argsstring>
+        <name>firmware_way</name>
+        <initializer>= &quot;\\assets\\firmware\\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Путь к прошивкам. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="32" column="1" bodyfile="src/core/Constants.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1aa90f63f1d0143b58469670ccbb86cfc4" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::patch[]</definition>
+        <argsstring>[]</argsstring>
+        <name>patch</name>
+        <initializer>= &quot;\\assets\\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Путь к дополнительным файлам программы. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="35" column="1" bodyfile="src/core/Constants.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a01a09f0b88f6fd375ea20667bd318035" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::expansion_file[]</definition>
+        <argsstring>[]</argsstring>
+        <name>expansion_file</name>
+        <initializer>= &quot;.zip&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Расширение прошивок. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="38" column="1" bodyfile="src/core/Constants.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a91c21d6be385236a564ef5bf1f3f3602" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::recovery_file[]</definition>
+        <argsstring>[]</argsstring>
+        <name>recovery_file</name>
+        <initializer>= &quot;recovery.img&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Файл с прошивкой. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="41" column="1" bodyfile="src/core/Constants.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1abcd4cb3ab01a6a642ba224e2d9b1eda5" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::su_file[]</definition>
+        <argsstring>[]</argsstring>
+        <name>su_file</name>
+        <initializer>= &quot;su.zip&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Файл с su для root. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="44" column="1" bodyfile="src/core/Constants.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a9f0187ab8d7f9931ed08159a233408c0" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::not_found[]</definition>
+        <argsstring>[]</argsstring>
+        <name>not_found</name>
+        <initializer>= &quot; not found.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сообщение о том, что файл не найден. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="47" column="1" bodyfile="src/core/Constants.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1a27726ea7eb8e2bea153425bce9328be5" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::found[]</definition>
+        <argsstring>[]</argsstring>
+        <name>found</name>
+        <initializer>= &quot; found.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сообщение о том, что файл не найден. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="50" column="1" bodyfile="src/core/Constants.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1ad5e76eca849713be360ed8478545d801" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::ch_user_continue[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ch_user_continue</name>
+        <initializer>= &quot;The user continued the program despite the error.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сообщение о том, что пользователь продолжил выполнение программы, невзирая на ошибку. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="53" column="1" bodyfile="src/core/Constants.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceradix_1afd1855af7805a1bb408ea9175a626ac7" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char radix::ch_user_not_continue[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ch_user_not_continue</name>
+        <initializer>= &quot;The user did not continue the program despite the error.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Сообщение о том, что пользователь не продолжил выполнение программы, невзирая на ошибку. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="56" column="1" bodyfile="src/core/Constants.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/Constants.h" line="12" column="1"/>
+  </compounddef>
+</doxygen>
