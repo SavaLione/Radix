@@ -1,16 +1,12 @@
 /**
 	\file
-	\brief Заголовочный файл с вызовом модуля проверки файлов для рутирования телефона.
-	
-	Вызов:
-		\code
-		void v_checking_files();
-		\endcode
-		
-	\author SavaLione
+	\brief 
+	\author SavaLione	
 */
-#ifndef CHEKINGFILES_H
-#define CHEKINGFILES_H
+#ifndef OPERATIONS_H
+#define OPERATIONS_H
+
+void root();
 
 /** Вызов модуля проверки файла на наличие в папке.
 	\param[in] ch_file_name Путь и файл, для проверки.
@@ -34,4 +30,4 @@ int i_checking_files();
 */
 void v_initialization();
 
-#endif // CHEKINGFILES_H
+#endif // OPERATIONS_H

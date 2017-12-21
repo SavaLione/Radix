@@ -1,27 +1,32 @@
-/**
-	\file
-    \brief Модуль проверки файлов для рутирования телефона.
-	
-	Модуль проверяет наличие файлов для рутирования телефона.
-	
-	\example checkingfiles.cpp
-	\author SavaLione
-*/
 #include <string>
 #include <io.h>
 
+#include "..\core\ADB_mod.h"
 #include "..\core\Constants.h"
-#include "..\core\CheckingFiles.h"
+#include "..\core\Operations.h"
+
 #include "..\io\Logger.h"
 #include "..\io\Templates.h"
-#include "..\ui\LoadScale.h"
-#include "..\ui\QueryMenu.h"
-#include "..\ui\LoadScale.h"
+
+#include "..\ui\Menu.h"
+#include "..\ui\Items.h"
 
 void v_initialization_logger_log(); ///< Проверка файла logger.log
 void v_initialization_settings_ini(); ///< Проверка файла settings.ini
 
 using namespace std;
+
+void root() {
+	if (i_checking_files()) {
+		// Очистка экрана консоли
+		cls();
+		adb_state();
+		adb_flash();
+		adb_root();
+		// Очистка экрана консоли
+		cls();
+	}
+}
 
 /** Вызов модуля проверки файла на наличие в папке.
 	\param[in] ch_file_name Путь и файл, для проверки.
@@ -44,7 +49,7 @@ int i_checking_files() {
 	} else {
 		s_recovery_file += radix::not_found;
 		log("WARN", s_recovery_file);
-		if (i_querymenu(s_recovery_file) == 1) {
+		if (s_querymenu(s_recovery_file) == "Yes") {
 			log("WARN", radix::ch_user_continue);
 		} else {
 			log("LOG", radix::ch_user_not_continue);
@@ -58,7 +63,7 @@ int i_checking_files() {
 	} else {
 		s_su_file += radix::not_found;
 		log("WARN", s_su_file);
-		if (i_querymenu(s_su_file) == 1) {
+		if (s_querymenu(s_su_file) == "Yes") {
 			log("WARN", radix::ch_user_continue);
 		} else {
 			log("LOG", radix::ch_user_not_continue);

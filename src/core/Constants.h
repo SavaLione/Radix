@@ -86,6 +86,16 @@ namespace menu {
 	
     /** Модуль загрузки. Значение после шкалы прогресса. */
     const char loading_indenting = ' ';
+	
+	const size_t backspace = 8;
+	const size_t enter = 13;
+	const size_t esc = 27;
+	const size_t space = 32;
+	const size_t arrow_up = 72;
+	const size_t arrow_left = 75;
+	const size_t arrow_right = 77;
+	const size_t arrow_down = 80;
+	const size_t special = 224;
 }
 
 namespace logo {

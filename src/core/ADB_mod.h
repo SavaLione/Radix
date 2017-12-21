@@ -17,4 +17,19 @@ void adb(LPSTR cmdArgs);
 */
 void fastboot(LPSTR cmdArgs);
 
+/** 
+    Вызов модуля проверки состояния устройства.
+*/
+void adb_state();
+
+/**
+    Вызов модуля установки кастомной рекавери.
+*/
+void adb_flash();
+
+/**
+    Вызов модуля получения root-прав.
+*/
+void adb_root();
+
 #endif // ADB_MOD_H
