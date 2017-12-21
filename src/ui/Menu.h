@@ -16,4 +16,10 @@ struct menu_s {
 
 std::string s_menu(menu_s menu);
 
+void pause();
+
+void v_exit();
+
+void v_loadscale(size_t position);
+
 #endif // MENU_H
