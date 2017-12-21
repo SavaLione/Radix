@@ -41,8 +41,8 @@ if (WINDOWS)
 			src/core/ADB_mod.cpp
 			src/core/ADB_slave.cpp
 			src/core/CheckingFiles.cpp
-			src/core/Main.cpp
-			src/core/Color.cpp)
+			src/core/Color.cpp
+			src/core/Main.cpp)
 		message(STATUS ${CORE_HEADERS})
 		message(STATUS ${CORE_SOURCES})
 	endif()
@@ -62,21 +62,11 @@ if (WINDOWS)
 	if (SRC_UI)
 		message(STATUS "-----------[UI]------------")
 		set (UI_HEADERS
-			src/ui/CheckAgreement.h
-			src/ui/Exit.h
-			src/ui/LoadScale.h
-			src/ui/MainMenu.h
-			src/ui/Manual.h
-			src/ui/Menu.h
-			src/ui/QueryMenu.h)
+			src/ui/Items.h
+			src/ui/Menu.h)
 		set (UI_SOURCES
-			src/ui/CheckAgreement.cpp
-			src/ui/Exit.cpp
-			src/ui/LoadScale.cpp
-			src/ui/MainMenu.cpp
-			src/ui/Manual.cpp
-			src/ui/Menu.cpp
-			src/ui/QueryMenu.cpp)
+			src/ui/Items.cpp
+			src/ui/Menu.cpp)
 		message(STATUS ${UI_HEADERS})
 		message(STATUS ${UI_SOURCES})
 	endif()
