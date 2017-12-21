@@ -13,7 +13,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Имя создаваемого меню. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/ui/Menu.h" line="13" column="1" bodyfile="src/ui/Menu.h" bodystart="13" bodyend="-1"/>
@@ -27,7 +27,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Имя создаваемого меню. </para>        </detaileddescription>
+<para>Строка до создаваемого меню. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/ui/Menu.h" line="14" column="1" bodyfile="src/ui/Menu.h" bodystart="14" bodyend="-1"/>
@@ -41,7 +41,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Строка до создаваемого меню. </para>        </detaileddescription>
+<para>Строка после создаваемого меню. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/ui/Menu.h" line="15" column="1" bodyfile="src/ui/Menu.h" bodystart="15" bodyend="-1"/>
@@ -54,7 +54,7 @@
         <briefdescription>
 <para>Строковый массив векторного размера. Это позволяет создать меню с n количеством параметров. </para>        </briefdescription>
         <detaileddescription>
-<para>Строка после создаваемого меню. </para>        </detaileddescription>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/ui/Menu.h" line="16" column="1" bodyfile="src/ui/Menu.h" bodystart="16" bodyend="-1"/>
@@ -80,7 +80,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Функция до создаваемого меню. </para>        </detaileddescription>
+<para>&lt; Функция до создаваемого меню. Функция после создаваемого меню. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="src/ui/Menu.h" line="17" column="1" bodyfile="src/ui/Menu.h" bodystart="18" bodyend="-1"/>

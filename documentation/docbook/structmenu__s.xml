@@ -74,8 +74,16 @@
         <section>
             <title>Данные класса</title>
             <simplesect>
-                <title>std::string menu_s::s_before</title>                
+                <title>std::string menu_s::name</title>                
 <para>Имя создаваемого меню. </para>
+
+                <para>Definition at line 13 of file Menu.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Menu.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::string menu_s::s_before</title>                
+<para>Строка до создаваемого меню. </para>
 
                 <para>Definition at line 14 of file Menu.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
@@ -83,23 +91,15 @@
             </simplesect>
             <simplesect>
                 <title>std::string menu_s::s_after</title>                
-<para>Строка до создаваемого меню. </para>
+<para>Строка после создаваемого меню. </para>
 
                 <para>Definition at line 15 of file Menu.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
                 <para><itemizedlist><listitem><para>Menu.h</para></listitem></itemizedlist></para>
             </simplesect>
             <simplesect>
-                <title>std::vector&lt;std::string&gt; menu_s::vec_item_name</title>                
-<para>Строка после создаваемого меню. </para>
-
-                <para>Definition at line 16 of file Menu.h</para>
-                <para>The Documentation for this struct was generated from the following file: </para>
-                <para><itemizedlist><listitem><para>Menu.h</para></listitem></itemizedlist></para>
-            </simplesect>
-            <simplesect>
                 <title>void(*)(*) menu_s::after_menu()</title>                
-<para>Функция до создаваемого меню. </para>
+<para>&lt; Функция до создаваемого меню. Функция после создаваемого меню. </para>
 
                 <para>Definition at line 17 of file Menu.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>

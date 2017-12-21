@@ -22,7 +22,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
+Имя создаваемого меню.  
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -43,7 +43,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-Имя создаваемого меню.  
+Строка до создаваемого меню.  
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -64,7 +64,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-Строка до создаваемого меню.  
+Строка после создаваемого меню.  
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -82,7 +82,7 @@ _EnD_oF_dEf_TeXt_;
 Строковый массив векторного размера. Это позволяет создать меню с n количеством параметров.
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-Строка после создаваемого меню.
+
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
     sec-member = {
@@ -118,7 +118,7 @@ _EnD_oF_dEf_TeXt_;
 
 _EnD_oF_dEf_TeXt_;
       sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
-Функция до создаваемого меню.  
+< Функция до создаваемого меню.  Функция после создаваемого меню.  
 _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
