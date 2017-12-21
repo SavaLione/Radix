@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 struct menu_s {
-	std::string name = "unassigned";
+	std::string name = "unassigned", s_before = "", s_after = "";
 	std::vector<std::string> vec_item_name;
 	void (*before_menu)(), (*after_menu)();
 };

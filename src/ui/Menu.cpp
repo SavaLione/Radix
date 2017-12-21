@@ -14,6 +14,7 @@ string s_menu_choice(size_t choice, menu_s menu);
 
 string s_menu_choice(size_t choice, menu_s menu){
 	system("cls");
+	cout << menu.s_before;
 	menu.before_menu();
 	for (size_t sz = 1; sz <= size(menu.vec_item_name); sz++) {
 		if (sz == choice) {
@@ -28,6 +29,8 @@ string s_menu_choice(size_t choice, menu_s menu){
 			cout << menu::frame_right;
 		}
 	}
+	menu.after_menu();
+	cout << menu.s_after;
 	return menu.vec_item_name[choice - 1];
 }
 

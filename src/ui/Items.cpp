@@ -46,10 +46,10 @@ void v_mainmenu_after() {
 }
 
 string s_querymenu(string item) {
-	cout << item;
 	menu_s querymenu;
 	querymenu.name = "Query Menu";
 	querymenu.vec_item_name = {"Yes", "No"};
+	querymenu.s_before = item;
 	querymenu.before_menu = v_querymenu_before;
 	querymenu.after_menu = v_querymenu_after;
 	return s_menu(querymenu);

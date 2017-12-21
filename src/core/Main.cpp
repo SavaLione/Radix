@@ -6,6 +6,7 @@
 #include <string>
 
 #include "..\core\CheckingFiles.h"
+#include "..\core\Operations.h"
 
 #include "..\io\Logger.h"
 
@@ -36,7 +37,7 @@ int main() {
 			// Вывод сообщения в консоль о том, что модуль корректно завершил свою работу.
 			log("LOG", "Main Menu Module correctly completed work.");
 		} else if (s_menu_choice == "Root") {
-			
+			root();
 		} else {
 			log("WARN", "Unknown menu item.");
 		}
