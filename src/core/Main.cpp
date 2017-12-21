@@ -26,6 +26,12 @@ void before();
 	Вызов программы компилятором
 */
 int main() {
+	std::string s = "abc";
+	if (s == "abc1") {
+		std::cout << "YES" << std::endl;
+	}
+	system("pause");
+	
 	while (false) {
 		size_t key = _getch();
 		std::cout << key << std::endl;
