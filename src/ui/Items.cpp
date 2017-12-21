@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "..\core\Constants.h"
 #include "..\core\Color.h"
 #include "..\ui\Menu.h"
@@ -43,7 +45,8 @@ void v_mainmenu_after() {
 	cout << endl;
 }
 
-string s_querymenu() {
+string s_querymenu(string item) {
+	cout << item;
 	menu_s querymenu;
 	querymenu.name = "Query Menu";
 	querymenu.vec_item_name = {"Yes", "No"};
@@ -53,7 +56,6 @@ string s_querymenu() {
 }
 
 void v_querymenu_before(){
-	cout << s << endl;
 	// Вывод вопроса в консоль.  Continue?
     cout << logo::s_continue;
 }
@@ -68,9 +70,12 @@ void v_querymenu_after(){
     cout << logo::move;
 	// Установить цвет текста - серый, цвет заднего фона - чёрный.
     v_set_color(LIGHTGRAY, BLACK);
+	// Перенос строки.
+	cout << endl;
 }
 
 void v_manual() {
+	cls();
 	cout << logo::s_manual;
 	cout << logo::move_indentation << logo::move_indentation;
 	cout << endl;
@@ -79,6 +84,7 @@ void v_manual() {
 	cout << logo::enter;
 	v_set_color(WHITE, BLACK);
 	cout << endl;
+	pause();
 }
 
 string s_checkagreement() {
@@ -107,4 +113,6 @@ void v_checkagreement_after(){
     cout << logo::move;
 	// Установить цвет текста - серый, цвет заднего фона - чёрный.
     v_set_color(LIGHTGRAY, BLACK);
+	// Перенос строки.
+	cout << endl;
 }

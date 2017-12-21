@@ -22,4 +22,6 @@ void v_exit();
 
 void v_loadscale(size_t position);
 
+void cls();
+
 #endif // MENU_H

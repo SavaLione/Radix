@@ -142,3 +142,6 @@ void v_loadscale(size_t position) {
     }
 }
 
+void cls() {
+	system("cls");
+}

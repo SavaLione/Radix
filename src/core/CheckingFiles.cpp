@@ -14,9 +14,8 @@
 #include "..\core\CheckingFiles.h"
 #include "..\io\Logger.h"
 #include "..\io\Templates.h"
-#include "..\ui\LoadScale.h"
-#include "..\ui\QueryMenu.h"
-#include "..\ui\LoadScale.h"
+#include "..\ui\Menu.h"
+#include "..\ui\Items.h"
 
 void v_initialization_logger_log(); ///< Проверка файла logger.log
 void v_initialization_settings_ini(); ///< Проверка файла settings.ini
@@ -44,7 +43,7 @@ int i_checking_files() {
 	} else {
 		s_recovery_file += radix::not_found;
 		log("WARN", s_recovery_file);
-		if (i_querymenu(s_recovery_file) == 1) {
+		if (s_querymenu(s_recovery_file) == "Yes") {
 			log("WARN", radix::ch_user_continue);
 		} else {
 			log("LOG", radix::ch_user_not_continue);
@@ -58,7 +57,7 @@ int i_checking_files() {
 	} else {
 		s_su_file += radix::not_found;
 		log("WARN", s_su_file);
-		if (i_querymenu(s_su_file) == 1) {
+		if (s_querymenu(s_su_file) == "Yes") {
 			log("WARN", radix::ch_user_continue);
 		} else {
 			log("LOG", radix::ch_user_not_continue);
