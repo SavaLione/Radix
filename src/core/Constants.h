@@ -184,13 +184,15 @@ namespace logo {
         \code
 					User Manual
 			0) If necessary, install drivers from assets/Drivers_Universal folder.
-			1) Enable USB debugging on your device(You'll need to become developer by tapping "Build Number" in "About Device" section. Then go to Developer section and enable debugging.)
-			2) Plug in your device, accept debugging request
-            		3) Put files 'recovery.img' and 'su.zip' in program directory(next to Radix.exe) 
-			4) Proceed
+			1) Enable USB debugging on your device.
+			   You'll need to become developer by tapping "Build Number" in "About Device" section.
+			   Then go to Developer section and enable debugging.
+			2) Plug in your device, accept debugging request.
+            3) Put files 'recovery.img' and 'su.zip' in program directory(next to Radix.exe) 
+			4) Proceed.
         \endcode
     */
-    const std::string s_manual = "		Manual\n0) If necessary, install the drivers from the assets/Drivers_Universal folder.\n1) Put the file recovery.img in the root of the program.\n2) Put the file su.zip in the root of the program.\n3) Continue.\n";
+    const std::string s_manual = "		User Manual\n0) If necessary, install drivers from assets/Drivers_Universal folder.\n1) Enable USB debugging on your device.\n   You'll need to become developer by tapping \"Build Number\" in \"About Device\" section.\n   Then go to Developer section and enable debugging.\n2) Plug in your device, accept debugging request.\n3) Put files 'recovery.img' and 'su.zip' in program directory(next to Radix.exe)\n4) Proceed.";
 	
     /** Продолжить выполнение программы по нажатию любой клавиши.
         \code
