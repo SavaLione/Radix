@@ -40,7 +40,7 @@ int main() {
 	menu.name = "menu";
 	menu.vec_item_name = {"Root", "Log", "Exit", "Some else", "Some else", "Some else"};
 	menu.before_menu = before;
-	std::cout << std::endl << sz_menu(menu) << std::endl;
+	std::cout << std::endl << s_menu(menu) << std::endl;
 	system("pause");
 	
 	log("LOG", "----------------------------[RUN RADIX]----------------------------");

@@ -1,4 +1,3 @@
-
 #include "..\core\Constants.h"
 #include "..\core\Color.h"
 #include "..\ui\Menu.h"

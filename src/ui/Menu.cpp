@@ -10,9 +10,9 @@
 
 using namespace std;
 
-void v_menu_choice(size_t choice, menu_s menu);
+string s_menu_choice(size_t choice, menu_s menu);
 
-void v_menu_choice(size_t choice, menu_s menu){
+string s_menu_choice(size_t choice, menu_s menu){
 	system("cls");
 	menu.before_menu();
 	for (size_t sz = 1; sz <= size(menu.vec_item_name); sz++) {
@@ -28,14 +28,16 @@ void v_menu_choice(size_t choice, menu_s menu){
 			cout << menu::frame_right;
 		}
 	}
+	return menu.vec_item_name[choice - 1];
 }
 
-size_t sz_menu(menu_s menu){
+string s_menu(menu_s menu){
 	log("LOG", "[start menu module]");
 	log("LOG", menu.name);
     size_t choice = 1, key = NULL;
+	string s_ret = "";
 	bool b_menu = true;
-    v_menu_choice(choice, menu);
+    s_ret = s_menu_choice(choice, menu);
 	while(b_menu) {
 		key = _getch();
 		if ((key == menu::enter) || (key == menu::backspace) || (key == menu::esc) || (key == menu::space)) {
@@ -66,8 +68,8 @@ size_t sz_menu(menu_s menu){
 				choice = 1;
 			}
 		}
-		v_menu_choice(choice, menu);
+		s_ret = s_menu_choice(choice, menu);
 	}
 	log("LOG", "[stop menu module]");
-    return choice;
+    return s_ret;
 }

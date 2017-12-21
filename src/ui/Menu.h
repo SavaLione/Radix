@@ -14,6 +14,6 @@ struct menu_s {
 	void (*before_menu)(), (*after_menu)();
 };
 
-size_t sz_menu(menu_s menu);
+std::string s_menu(menu_s menu);
 
 #endif // MENU_H
