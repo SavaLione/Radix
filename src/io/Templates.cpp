@@ -10,6 +10,8 @@
 
 #include "..\core\Constants.h"
 
+#include "..\io\Logger.h"
+
 using namespace std;
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -20,15 +22,12 @@ using namespace std;
 		logger.log - файл с логом вывода
 */
 void v_templates_create_logger_log() {
-	// Обработка исключений. При ошибке исключить аварийное завершение программы.
-	try {
-		// Создание и открытие файла с настройками (radix::logger_list).
-		ofstream fout(radix::logger_list);
-		fout << "[				    ] " << "Creating file logger.log" << "\n";
-		// Закрытие файла.
-		fout.close();
-	} catch(exception) {
-
+	try {															// Обработка исключений. При ошибке исключить аварийное завершение программы.
+		ofstream fout(radix::logger_list);							// Создание и открытие файла с настройками (radix::logger_list).
+		fout << "[				    ] Creating file logger.log\n";	//	[				    ] Creating file logger.log
+		fout.close();												// Закрытие файла.
+	} catch(std::string s) {										// При ошибке логирование.
+		log("WARN", s);												// Ошибка в лог.
 	}
 }
 
@@ -40,21 +39,18 @@ void v_templates_create_logger_log() {
 		settings.ini - файл с настройками
 */
 void v_templates_create_settings_ini() {
-	// Обработка исключений. При ошибке исключить аварийное завершение программы.
-	try {
-		// Создание и открытие файла с настройками (radix::settings_list).
-		ofstream fout(radix::settings_list);
-		fout << "#Radix" << "\n";
-		fout << "#2017" << "\n";
-		fout << "\n";
-		fout << "[START]" << "\n";
-		fout << "rules = true" << "\n";
-		fout << "logger = true"<< "\n";
-		fout << "internet = false"<< "\n";
-		fout << "[END]";
-		// Закрытие файла.
-		fout.close();
-	} catch(exception) {
-
+	try {															// Обработка исключений. При ошибке исключить аварийное завершение программы.
+		ofstream fout(radix::settings_list);						// Создание и открытие файла с настройками (radix::settings_list).
+		fout << "#Radix" << "\n";									// 	#Radix
+		fout << "#2017" << "\n";									//	#2017
+		fout << "\n";												//
+		fout << "[START]" << "\n";									//	[START]
+		fout << "rules = true" << "\n";								//	rules = true
+		fout << "logger = true"<< "\n";								//	logger = true
+		fout << "internet = false"<< "\n";							//	internet = false
+		fout << "[END]";											//	[END]
+		fout.close();												// Закрытие файла.
+	} catch(std::string s) {										// При ошибке логирование.
+		log("WARN", s);												// Ошибка в лог.
 	}
 }
