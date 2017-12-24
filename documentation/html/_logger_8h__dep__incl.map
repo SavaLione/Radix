@@ -1,7 +1,0 @@
-<map id="Logger.h" name="Logger.h">
-<area shape="rect" id="node2" href="$_a_d_b__mod_8cpp.html" title="Модуль работы с adb. " alt="" coords="5,80,112,107"/>
-<area shape="rect" id="node3" href="$_main_8cpp.html" title="Главный файл программы " alt="" coords="136,80,211,107"/>
-<area shape="rect" id="node4" href="$_operations_8cpp.html" title="Модуль проверки стандартных файлов программы и вызова алгоритма рутирования. " alt="" coords="235,80,346,107"/>
-<area shape="rect" id="node5" href="$_logger_8cpp.html" title="Модуль логирования " alt="" coords="370,80,457,107"/>
-<area shape="rect" id="node6" href="$_menu_8cpp.html" title="Модуль создания меню. " alt="" coords="481,80,559,107"/>
-</map>
