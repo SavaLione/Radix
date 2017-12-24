@@ -81,19 +81,13 @@ void v_querymenu_before(){
 }
 
 /** Блок после выполнения модуля меню. */
-void v_querymenu_after(){
-	// Перенос строки.
-	cout << endl;
-	// Вывод отступа. Используется в связке с move. {       }<- use to move ->
-    cout << logo::move_indentation;
-	// Установить цвет текста - чёрный, цвет заднего фона - белый.
-    v_set_color(BLACK, WHITE);
-	// Вывод помощи по управлению. <- use to move ->
-    cout << logo::move;
-	// Установить цвет текста - серый, цвет заднего фона - чёрный.
-    v_set_color(LIGHTGRAY, BLACK);
-	// Перенос строки.
-	cout << endl;
+void v_querymenu_after(){			// Блок после выполнения модуля меню.
+	cout << endl;					// Перенос строки.
+    cout << logo::move_indentation;	// Вывод отступа. Используется в связке с move. {       }<- use to move ->
+    v_set_color(BLACK, WHITE);		// Установить цвет текста - чёрный, цвет заднего фона - белый.
+    cout << logo::move;				// Вывод помощи по управлению. <- use to move ->
+    v_set_color(LIGHTGRAY, BLACK);	// Установить цвет текста - серый, цвет заднего фона - чёрный.
+	cout << endl;					// Перенос строки.
 }
 
 /**
