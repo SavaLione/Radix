@@ -21,7 +21,7 @@ using namespace std;
 
 		logger.log - файл с логом вывода
 */
-void v_templates_create_logger_log() {
+void v_templates_create_logger_log() {								// Создание файла пользовательского соглашения.
 	try {															// Обработка исключений. При ошибке исключить аварийное завершение программы.
 		ofstream fout(radix::logger_list);							// Создание и открытие файла с настройками (radix::logger_list).
 		fout << "[				    ] Creating file logger.log\n";	//	[				    ] Creating file logger.log
@@ -38,7 +38,7 @@ void v_templates_create_logger_log() {
 
 		settings.ini - файл с настройками
 */
-void v_templates_create_settings_ini() {
+void v_templates_create_settings_ini() {							// Создание файла настроек.
 	try {															// Обработка исключений. При ошибке исключить аварийное завершение программы.
 		ofstream fout(radix::settings_list);						// Создание и открытие файла с настройками (radix::settings_list).
 		fout << "#Radix" << "\n";									// 	#Radix
