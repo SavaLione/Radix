@@ -29,8 +29,8 @@
 #include "..\ui\Menu.h"
 #include "..\ui\Items.h"
 
-void v_initialization_logger_log(); ///< Проверка файла logger.log
-void v_initialization_settings_ini(); ///< Проверка файла settings.ini
+void v_initialization_logger_log(); 	///< Проверка файла logger.log
+void v_initialization_settings_ini(); 	///< Проверка файла settings.ini
 
 using namespace std;
 
@@ -106,11 +106,11 @@ int i_checking_files() {
 		settings.ini
 */
 void v_initialization() {
-	v_loadscale(0); // Шкала загрузки 0 положение
-	v_initialization_logger_log(); // Проверка файла logger.log
-	v_loadscale(10); // Шкала загрузки 10 положение
-	v_initialization_settings_ini(); // Проверка файла settings.ini
-	v_loadscale(24); // Шкала загрузки 24 положение
+	v_loadscale(0); 					// Шкала загрузки 0 положение
+	v_initialization_logger_log(); 		// Проверка файла logger.log
+	v_loadscale(10); 					// Шкала загрузки 10 положение
+	v_initialization_settings_ini(); 	// Проверка файла settings.ini
+	v_loadscale(24); 					// Шкала загрузки 24 положение
 }
 
 ///////////////////////////////////////////////////////////////////////////////

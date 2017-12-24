@@ -19,20 +19,20 @@ using namespace std;
     \param[in] ConsoleBackground цвет заднего фона
 */
 void v_set_color(color ConsoleText, color ConsoleBackground) {
-	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); // Определение дескриптора, который ссылается на консоль.
-    SetConsoleTextAttribute(hStdOut, (WORD)((ConsoleBackground << 4) | ConsoleText)); // Приведение типа color к word и задание цвета
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); 									// Определение дескриптора, который ссылается на консоль.
+    SetConsoleTextAttribute(hStdOut, (WORD)((ConsoleBackground << 4) | ConsoleText)); 	// Приведение типа color к word и задание цвета
 }
 
 /** Изменение цвета текста в консоли. Задний фон по умолчанию чёрный.
 	\param[in] ConsoleText цвет текста
 */
 void v_set_color(color ConsoleText) {
-	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); // Определение дескриптора, который ссылается на консоль.
-    SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | ConsoleText)); // Приведение типа color к word и задание цвета
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); 									// Определение дескриптора, который ссылается на консоль.
+    SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | ConsoleText)); 				// Приведение типа color к word и задание цвета
 }
 
 /** Вернуть цвет текста и цвет заднего фона в консоли к стандартным значениям. */
 void v_color_reset() {
-	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); // Определение дескриптора, который ссылается на консоль.
-    SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | LIGHTGRAY)); // Приведение типа color к word и задание цвета
+	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE); 									// Определение дескриптора, который ссылается на консоль.
+    SetConsoleTextAttribute(hStdOut, (WORD)((BLACK << 4) | LIGHTGRAY)); 				// Приведение типа color к word и задание цвета
 }

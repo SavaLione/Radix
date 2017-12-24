@@ -13,12 +13,12 @@
 
 using namespace std;
 
-void v_mainmenu_before(); ///< Блок до выполнения модуля меню.
-void v_mainmenu_after(); ///< Блок после выполнения модуля меню.
-void v_querymenu_before(); ///< Блок до выполнения модуля меню.
-void v_querymenu_after(); ///< Блок после выполнения модуля меню.
-void v_checkagreement_before(); ///< Блок до выполнения модуля меню.
-void v_checkagreement_after(); ///< Блок после выполнения модуля меню.
+void v_mainmenu_before(); 			///< Блок до выполнения модуля меню.
+void v_mainmenu_after(); 			///< Блок после выполнения модуля меню.
+void v_querymenu_before(); 			///< Блок до выполнения модуля меню.
+void v_querymenu_after(); 			///< Блок после выполнения модуля меню.
+void v_checkagreement_before(); 	///< Блок до выполнения модуля меню.
+void v_checkagreement_after(); 		///< Блок после выполнения модуля меню.
 
 /**
 	Главное меню.
@@ -27,7 +27,7 @@ void v_checkagreement_after(); ///< Блок после выполнения м�
 string s_mainmenu() {
 	menu_s mainmenu;
 	mainmenu.name = "Main Menu";
-	mainmenu.vec_item_name = {"Root", "Log", "Exit"};
+	mainmenu.vec_item_name = {"Root", "Exit"};
 	mainmenu.before_menu = v_mainmenu_before;
 	mainmenu.after_menu = v_mainmenu_after;
 	return s_menu(mainmenu);
