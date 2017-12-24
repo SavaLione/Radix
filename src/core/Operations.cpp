@@ -29,21 +29,19 @@
 #include "..\ui\Menu.h"
 #include "..\ui\Items.h"
 
-void v_initialization_logger_log(); 	///< Проверка файла logger.log
-void v_initialization_settings_ini(); 	///< Проверка файла settings.ini
+void v_initialization_logger_log(); 						///< Проверка файла logger.log
+void v_initialization_settings_ini(); 						///< Проверка файла settings.ini
 
 using namespace std;
 
 /** Вызов алгоритма рутирования. */
 void root() {
-	if (i_checking_files()) {
-		// Очистка экрана консоли
-		system("cls");
-		adb_state();
-		adb_flash();
-		adb_root();
-		// Очистка экрана консоли
-		system("cls");
+	if (i_checking_files()) {								//Вызов модуля проверки файлов. Если успешно, то продолжить.
+		system("cls");										// Очистка экрана консоли.
+		adb_state();										// Вызов модуля проверки состояния устройства.
+		adb_flash();										// Вызов модуля установки кастомной рекавери.
+		adb_root();											// Вызов модуля получения root-прав. Рутирование устройства.
+		system("cls");										// Очистка экрана консоли
 	}
 }
 
@@ -52,45 +50,45 @@ void root() {
     \return наличие файла.
 */
 bool b_file_exists(const char *ch_file_name){
-	return access(ch_file_name, 0) != -1;
+	return access(ch_file_name, 0) != -1;					// Проверка файла на наличие в папке. Возвращает true, если файл найден и false, если файл не найден.
 }
 
 /** Вызов модуля проверки файлов.
     \return 0 - неуспешная проверка файлов. 1 - успешная проверка файлов.
 */
 int i_checking_files() {
-	std::string s_recovery_file = radix::recovery_file, s_su_file = radix::su_file;
-	// Шкала загрузки 0 положение
-	v_loadscale(0);
-	if (b_file_exists(radix::recovery_file)) {
-		s_recovery_file += radix::found;
-		log("LOG", s_recovery_file);
-	} else {
-		s_recovery_file += radix::not_found;
-		log("WARN", s_recovery_file);
-		if (s_querymenu(s_recovery_file) == "Yes") {
-			log("WARN", radix::ch_user_continue);
-		} else {
-			log("LOG", radix::ch_user_not_continue);
-			return 0;
+	std::string s_recovery_file = radix::recovery_file,		// Файл с recovery.
+				s_su_file = radix::su_file;					// Файл с Su обеспечением для устройства.
+	v_loadscale(0);											// Шкала загрузки 0 положение.
+	if (b_file_exists(radix::recovery_file)) {				// Файл найден, сообщение в лог, продолжить.
+		s_recovery_file += radix::found;					// Строка содержащая в себе название файла и сообщение, что файла найден.
+		log("LOG", s_recovery_file);						// Сообщение в лог. Уровень LOG.
+	} else {												// Файл не найден. В дальнейшем вывод сообщения в консоль о том, что файл не найден.
+		s_recovery_file += radix::not_found;				// Строка содержащая в себе название файла и сообщение, что файла не найден.
+		log("WARN", s_recovery_file);						// Сообщение в лог. Уровень WARN.
+		if (s_querymenu(s_recovery_file) == "Yes") {		// Если пользователь готов продолжить невзирая на то, что файл не найден.
+			log("WARN", radix::ch_user_continue);			// Сообщение в лог, что пользователь готов продолжить невзирая на то, что файл не найден.
+		} else {											// Если пользователь не готов продолжить невзирая на то, что файл не найден.
+			log("LOG", radix::ch_user_not_continue);		// Сообщение в лог, что пользователь не готов продолжить невзирая на то, что файл не найден.
+			return 0;										// Не успешная проверка файла. Завершение алгоритма.
 		}
 	}
-	v_loadscale(12); // Шкала загрузки 12 положение
-	if (b_file_exists(radix::su_file)) {
-		s_su_file += radix::found;
-		log("LOG", s_su_file);
-	} else {
-		s_su_file += radix::not_found;
-		log("WARN", s_su_file);
-		if (s_querymenu(s_su_file) == "Yes") {
-			log("WARN", radix::ch_user_continue);
-		} else {
-			log("LOG", radix::ch_user_not_continue);
-			return 0;
+	v_loadscale(12); 										// Шкала загрузки 12 положение
+	if (b_file_exists(radix::su_file)) {					// Файл найден, сообщение в лог, продолжить.
+		s_su_file += radix::found;							// Строка содержащая в себе название файла и сообщение, что файла найден.
+		log("LOG", s_su_file);								// Сообщение в лог. Уровень LOG.
+	} else {												// Файл не найден. В дальнейшем вывод сообщения в консоль о том, что файл не найден.
+		s_su_file += radix::not_found;						// Строка содержащая в себе название файла и сообщение, что файла не найден.
+		log("WARN", s_su_file);								// Сообщение в лог. Уровень WARN.
+		if (s_querymenu(s_su_file) == "Yes") {				// Если пользователь готов продолжить невзирая на то, что файл не найден.
+			log("WARN", radix::ch_user_continue);			// Сообщение в лог, что пользователь готов продолжить невзирая на то, что файл не найден.
+		} else {											// Если пользователь не готов продолжить невзирая на то, что файл не найден.
+			log("LOG", radix::ch_user_not_continue);		// Сообщение в лог, что пользователь не готов продолжить невзирая на то, что файл не найден.
+			return 0;										// Не успешная проверка файла. Завершение алгоритма.
 		}
 	}
-	v_loadscale(24); // Шкала загрузки 24 положение
-	return 1;
+	v_loadscale(24); 										// Шкала загрузки 24 положение
+	return 1;												// Успешная проверка файла. Завершение алгоритма.
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -106,11 +104,11 @@ int i_checking_files() {
 		settings.ini
 */
 void v_initialization() {
-	v_loadscale(0); 					// Шкала загрузки 0 положение
-	v_initialization_logger_log(); 		// Проверка файла logger.log
-	v_loadscale(10); 					// Шкала загрузки 10 положение
-	v_initialization_settings_ini(); 	// Проверка файла settings.ini
-	v_loadscale(24); 					// Шкала загрузки 24 положение
+	v_loadscale(0); 										// Шкала загрузки 0 положение
+	v_initialization_logger_log(); 							// Проверка файла logger.log
+	v_loadscale(10); 										// Шкала загрузки 10 положение
+	v_initialization_settings_ini(); 						// Проверка файла settings.ini
+	v_loadscale(24); 										// Шкала загрузки 24 положение
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -126,8 +124,8 @@ void v_initialization() {
 	Всё логируется
 */
 void v_initialization_logger_log() {
-	if (!(b_file_exists(radix::logger_list))) {
-		v_templates_create_logger_log();
+	if (!(b_file_exists(radix::logger_list))) {				// Проверка файла logger.log Если файл не найден, создать файл.
+		v_templates_create_logger_log();					// Создание файла.
 	}
 }
 
@@ -144,7 +142,7 @@ void v_initialization_logger_log() {
 	Всё логируется
 */
 void v_initialization_settings_ini() {
-	if (!(b_file_exists(radix::settings_list))) {
-		v_templates_create_settings_ini();
+	if (!(b_file_exists(radix::settings_list))) {			// Проверка файла settings.ini Если файл не найден, создать файл.
+		v_templates_create_settings_ini();					// Создание файла.
 	}
 }
