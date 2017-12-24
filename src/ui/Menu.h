@@ -32,7 +32,7 @@ void pause();
 */
 void v_exit();
 
-/** Шкала загрузки
+/** Шкала загрузки.
 	\param[in] position значение до которого отрисовывать шкалу.
 */
 void v_loadscale(size_t position);

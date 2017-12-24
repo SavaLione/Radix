@@ -24,14 +24,14 @@ enum color {
         LIGHTYELLOW   = 14, /**< @en Light yellow color. @ru Светло-жёлтый цвет.*/
         WHITE         = 15 /**< @en White color. @ru Белый цвет. */
 };
-/** Изменение цвета текста и цвета заднего фона в консоли
-	\param[in] ConsoleText цвет текста
-    \param[in] ConsoleBackground цвет заднего фона
+/** Изменение цвета текста и цвета заднего фона в консоли.
+	\param[in] ConsoleText цвет текста.
+    \param[in] ConsoleBackground цвет заднего фона.
 */
 void v_set_color(color ConsoleText, color ConsoleBackground);
 
 /** Изменение цвета текста в консоли. Задний фон по умолчанию чёрный.
-	\param[in] ConsoleText цвет текста
+	\param[in] ConsoleText цвет текста.
 */
 void v_set_color(color ConsoleText);
 

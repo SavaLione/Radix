@@ -7,8 +7,8 @@
 #ifndef SETTINGS_H
 #define SETTINGS_H
 
-/** Парсинг параметров
-	\param[in] ch_arr_value[] Значение, которое надо найти в файле
+/** Парсинг параметров.
+	\param[in] ch_arr_value[] Значение, которое надо найти в файле.
 	\return Значение переменной
 		true
 		false

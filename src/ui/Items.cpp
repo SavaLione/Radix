@@ -111,7 +111,7 @@ void v_checkagreement_after(){
 
 /** Инструкция к программе. */
 void v_manual() {
-	system("cls");					// Очистка экрана консоли
+	system("cls");					// Очистка экрана консоли.
 	cout << logo::s_manual;			// Инструкция к программе.
 	cout << logo::move_indentation	// Отступ. Используется в связке с move.
 		 << logo::move_indentation;	// Отступ. Используется в связке с move.

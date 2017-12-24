@@ -8,13 +8,13 @@
 
 /** Создание файла пользовательского соглашения.
 
-		logger.log - файл с логом вывода
+		logger.log - файл с логом вывода.
 */
 void v_templates_create_logger_log();
 
 /** Создание файла настроек.
 
-		settings.ini - файл с настройками
+		settings.ini - файл с настройками.
 */
 void v_templates_create_settings_ini();
 

@@ -1,6 +1,6 @@
 /**
 	\file
-    \brief Модуль настроек. Парсит переменные в файлах
+    \brief Модуль настроек. Парсит переменные в файлах.
 	\author SavaLione
 */
 #include <fstream>
@@ -28,7 +28,7 @@ bool b_settings(char ch_arr_value[]) {					//Парсинг параметров
 	ifstream fin(radix::settings_list);					// Открытие файла с настройками (radix::settings_list).
 	if (fin.is_open()) {								// Если файл есть и его можно открыть.
 		while (b_end) {									// Цикл до конца файла. Конец файла задаётся словом [END]
-			fin.getline(buff, radix::buff_size);		// Помещение строки из файла в буфер
+			fin.getline(buff, radix::buff_size);		// Помещение строки из файла в буфер.
 			string s_buff(buff);						// Создание строки s_buff с буфером.
 			if (strcmp(buff, "[START]") == 0) {			// Проверка. Игнорирование всего, что стоит не в блоках [START] и [END]
 				b_start = true;							// Поиск блока [START] Если блок найден, то можно читать константы из файла.

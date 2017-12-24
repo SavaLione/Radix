@@ -6,11 +6,11 @@
 	
 	Файлы:
 	
-		logger.log - вывод логера
+		logger.log - вывод логера.
 		
-		rules.txt - правила программы, с которыми должен согласиться пользователь
+		rules.txt - правила программы, с которыми должен согласиться пользователь.
 		
-		settings.ini - файл настроек
+		settings.ini - файл настроек.
 	\example Operations.cpp
 	\example Operations_Initialization.cpp
 	\author SavaLione
@@ -29,6 +29,8 @@
 #include "..\ui\Menu.h"
 #include "..\ui\Items.h"
 
+#pragma warning(disable : 4996) 							// Отключение сообщения о ошибке. В реализации, из-за которой вызывается данная ошибка, есть обработка ошибок.
+
 void v_initialization_logger_log(); 						///< Проверка файла logger.log
 void v_initialization_settings_ini(); 						///< Проверка файла settings.ini
 
@@ -36,12 +38,12 @@ using namespace std;
 
 /** Вызов алгоритма рутирования. */
 void root() {
-	if (i_checking_files()) {								//Вызов модуля проверки файлов. Если успешно, то продолжить.
+	if (i_checking_files()) {								// Вызов модуля проверки файлов. Если успешно, то продолжить.
 		system("cls");										// Очистка экрана консоли.
 		adb_state();										// Вызов модуля проверки состояния устройства.
 		adb_flash();										// Вызов модуля установки кастомной рекавери.
 		adb_root();											// Вызов модуля получения root-прав. Рутирование устройства.
-		system("cls");										// Очистка экрана консоли
+		system("cls");										// Очистка экрана консоли.
 	}
 }
 
@@ -50,7 +52,11 @@ void root() {
     \return наличие файла.
 */
 bool b_file_exists(const char *ch_file_name){
-	return access(ch_file_name, 0) != -1;					// Проверка файла на наличие в папке. Возвращает true, если файл найден и false, если файл не найден.
+	bool b_return = (access(ch_file_name, 0) != -1);		// Проверка файла на наличие в папке. Возвращает true, если файл найден и false, если файл не найден.
+	if (b_return == NULL) {									// Обработка ошибок.
+		b_return = false;									// При ошибке присвоение false значения.
+	}
+	return b_return;										// Возвращает наличие файла.
 }
 
 /** Вызов модуля проверки файлов.
@@ -73,7 +79,7 @@ int i_checking_files() {
 			return 0;										// Не успешная проверка файла. Завершение алгоритма.
 		}
 	}
-	v_loadscale(12); 										// Шкала загрузки 12 положение
+	v_loadscale(12); 										// Шкала загрузки 12 положение.
 	if (b_file_exists(radix::su_file)) {					// Файл найден, сообщение в лог, продолжить.
 		s_su_file += radix::found;							// Строка содержащая в себе название файла и сообщение, что файла найден.
 		log("LOG", s_su_file);								// Сообщение в лог. Уровень LOG.
@@ -87,7 +93,7 @@ int i_checking_files() {
 			return 0;										// Не успешная проверка файла. Завершение алгоритма.
 		}
 	}
-	v_loadscale(24); 										// Шкала загрузки 24 положение
+	v_loadscale(24); 										// Шкала загрузки 24 положение.
 	return 1;												// Успешная проверка файла. Завершение алгоритма.
 }
 
@@ -104,11 +110,11 @@ int i_checking_files() {
 		settings.ini
 */
 void v_initialization() {
-	v_loadscale(0); 										// Шкала загрузки 0 положение
+	v_loadscale(0); 										// Шкала загрузки 0 положение.
 	v_initialization_logger_log(); 							// Проверка файла logger.log
-	v_loadscale(10); 										// Шкала загрузки 10 положение
+	v_loadscale(10); 										// Шкала загрузки 10 положение.
 	v_initialization_settings_ini(); 						// Проверка файла settings.ini
-	v_loadscale(24); 										// Шкала загрузки 24 положение
+	v_loadscale(24); 										// Шкала загрузки 24 положение.
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -117,11 +123,11 @@ void v_initialization() {
 /**
 	Проверка файла logger.log
 	
-	При отсутствии файла создаёт его
+	При отсутствии файла создаёт его.
 	
-	При наличии файла пропуск
+	При наличии файла пропуск.
 	
-	Всё логируется
+	Всё логируется.
 */
 void v_initialization_logger_log() {
 	if (!(b_file_exists(radix::logger_list))) {				// Проверка файла logger.log Если файл не найден, создать файл.
@@ -135,11 +141,11 @@ void v_initialization_logger_log() {
 /**
 	Проверка файла settings.ini
 	
-	При отсутствии файла создаёт его
+	При отсутствии файла создаёт его.
 	
-	При наличии файла пропуск
+	При наличии файла пропуск.
 	
-	Всё логируется
+	Всё логируется.
 */
 void v_initialization_settings_ini() {
 	if (!(b_file_exists(radix::settings_list))) {			// Проверка файла settings.ini Если файл не найден, создать файл.
