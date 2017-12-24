@@ -1,0 +1,163 @@
+\hypertarget{_operations_8cpp}{}\section{Файл Operations.\+cpp}
+\label{_operations_8cpp}\index{Operations.\+cpp@{Operations.\+cpp}}
+
+
+Модуль проверки стандартных файлов программы и вызова алгоритма рутирования.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$io.\+h$>$}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+A\+D\+B\+\_\+mod.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Constants.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}core\textbackslash{}\+Operations.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}io\textbackslash{}\+Logger.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}io\textbackslash{}\+Templates.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}ui\textbackslash{}\+Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}ui\textbackslash{}\+Items.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для Operations.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_operations_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_operations_8cpp_a61271965777637ec3d70f6d7ab0a466a}{v\+\_\+initialization\+\_\+logger\+\_\+log} ()
+\begin{DoxyCompactList}\small\item\em Проверка файла logger.\+log. \end{DoxyCompactList}\item 
+void \hyperlink{_operations_8cpp_a9f137f3ae0426a1e7c1a398ad930dc70}{v\+\_\+initialization\+\_\+settings\+\_\+ini} ()
+\begin{DoxyCompactList}\small\item\em Проверка файла settings.\+ini. \end{DoxyCompactList}\item 
+void \hyperlink{_operations_8cpp_a784c09041cf40075e8eb016a2d8419d6}{root} ()
+\item 
+bool \hyperlink{_operations_8cpp_a06ba6d957eba855cc9f88ce7ac641722}{b\+\_\+file\+\_\+exists} (const char $\ast$ch\+\_\+file\+\_\+name)
+\item 
+int \hyperlink{_operations_8cpp_a5f44f09549aae42fa22e71e761b40abc}{i\+\_\+checking\+\_\+files} ()
+\item 
+void \hyperlink{_operations_8cpp_a11b373fd61e18cd28810a5b607e1749a}{v\+\_\+initialization} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Модуль проверки стандартных файлов программы и вызова алгоритма рутирования. 
+
+Модуль проверяет наличие стандартных файлов программы и рутирует аппарат.
+
+Файлы\+: \begin{DoxyVerb}logger.log - вывод логера.
+
+rules.txt - правила программы, с которыми должен согласиться пользователь.
+
+settings.ini - файл настроек.\end{DoxyVerb}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_operations_8cpp_a06ba6d957eba855cc9f88ce7ac641722}\label{_operations_8cpp_a06ba6d957eba855cc9f88ce7ac641722}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!b\+\_\+file\+\_\+exists@{b\+\_\+file\+\_\+exists}}
+\index{b\+\_\+file\+\_\+exists@{b\+\_\+file\+\_\+exists}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{b\+\_\+file\+\_\+exists()}{b\_file\_exists()}}
+{\footnotesize\ttfamily bool b\+\_\+file\+\_\+exists (\begin{DoxyParamCaption}\item[{const char $\ast$}]{ch\+\_\+file\+\_\+name }\end{DoxyParamCaption})}
+
+Вызов модуля проверки файла на наличие в папке. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em ch\+\_\+file\+\_\+name} & Путь и файл, для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+наличие файла. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{_operations__initialization_8cpp-example}{Operations\+\_\+\+Initialization.\+cpp}.\end{Desc}
+
+
+См. определение в файле Operations.\+cpp строка 54
+
+\mbox{\Hypertarget{_operations_8cpp_a5f44f09549aae42fa22e71e761b40abc}\label{_operations_8cpp_a5f44f09549aae42fa22e71e761b40abc}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!i\+\_\+checking\+\_\+files@{i\+\_\+checking\+\_\+files}}
+\index{i\+\_\+checking\+\_\+files@{i\+\_\+checking\+\_\+files}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{i\+\_\+checking\+\_\+files()}{i\_checking\_files()}}
+{\footnotesize\ttfamily int i\+\_\+checking\+\_\+files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Вызов модуля проверки файлов. \begin{DoxyReturn}{Возвращает}
+0 -\/ неуспешная проверка файлов. 1 -\/ успешная проверка файлов. 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{_operations_8cpp-example}{Operations.\+cpp} и \hyperlink{_operations__initialization_8cpp-example}{Operations\+\_\+\+Initialization.\+cpp}.\end{Desc}
+
+
+См. определение в файле Operations.\+cpp строка 65
+
+\mbox{\Hypertarget{_operations_8cpp_a784c09041cf40075e8eb016a2d8419d6}\label{_operations_8cpp_a784c09041cf40075e8eb016a2d8419d6}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!root@{root}}
+\index{root@{root}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily void root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Вызов алгоритма рутирования. \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{_operations_8cpp-example}{Operations.\+cpp}.\end{Desc}
+
+
+См. определение в файле Operations.\+cpp строка 40
+
+\mbox{\Hypertarget{_operations_8cpp_a11b373fd61e18cd28810a5b607e1749a}\label{_operations_8cpp_a11b373fd61e18cd28810a5b607e1749a}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!v\+\_\+initialization@{v\+\_\+initialization}}
+\index{v\+\_\+initialization@{v\+\_\+initialization}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+initialization()}{v\_initialization()}}
+{\footnotesize\ttfamily void v\+\_\+initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Функция проверяет наличие 3 стандартных файлов программы \begin{DoxyVerb}logger.log
+
+rules.txt
+
+settings.ini\end{DoxyVerb}
+ \begin{Desc}
+\item[Примеры\+: ]\par
+\hyperlink{_operations__initialization_8cpp-example}{Operations\+\_\+\+Initialization.\+cpp}.\end{Desc}
+
+
+См. определение в файле Operations.\+cpp строка 112
+
+\mbox{\Hypertarget{_operations_8cpp_a61271965777637ec3d70f6d7ab0a466a}\label{_operations_8cpp_a61271965777637ec3d70f6d7ab0a466a}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!v\+\_\+initialization\+\_\+logger\+\_\+log@{v\+\_\+initialization\+\_\+logger\+\_\+log}}
+\index{v\+\_\+initialization\+\_\+logger\+\_\+log@{v\+\_\+initialization\+\_\+logger\+\_\+log}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+initialization\+\_\+logger\+\_\+log()}{v\_initialization\_logger\_log()}}
+{\footnotesize\ttfamily void v\+\_\+initialization\+\_\+logger\+\_\+log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Проверка файла logger.\+log. 
+
+Проверка файла logger.\+log
+
+При отсутствии файла создаёт его.
+
+При наличии файла пропуск.
+
+Всё логируется. 
+
+См. определение в файле Operations.\+cpp строка 132
+
+\mbox{\Hypertarget{_operations_8cpp_a9f137f3ae0426a1e7c1a398ad930dc70}\label{_operations_8cpp_a9f137f3ae0426a1e7c1a398ad930dc70}} 
+\index{Operations.\+cpp@{Operations.\+cpp}!v\+\_\+initialization\+\_\+settings\+\_\+ini@{v\+\_\+initialization\+\_\+settings\+\_\+ini}}
+\index{v\+\_\+initialization\+\_\+settings\+\_\+ini@{v\+\_\+initialization\+\_\+settings\+\_\+ini}!Operations.\+cpp@{Operations.\+cpp}}
+\subsubsection{\texorpdfstring{v\+\_\+initialization\+\_\+settings\+\_\+ini()}{v\_initialization\_settings\_ini()}}
+{\footnotesize\ttfamily void v\+\_\+initialization\+\_\+settings\+\_\+ini (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Проверка файла settings.\+ini. 
+
+Проверка файла settings.\+ini
+
+При отсутствии файла создаёт его.
+
+При наличии файла пропуск.
+
+Всё логируется. 
+
+См. определение в файле Operations.\+cpp строка 150
+

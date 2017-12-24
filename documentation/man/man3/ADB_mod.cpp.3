@@ -1,0 +1,94 @@
+.TH "ADB_mod.cpp" 3 "Пн 25 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ADB_mod.cpp \- Модуль работы с adb\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Windows\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include 'ADB_mod\&.h'\fP
+.br
+\fC#include '\&.\&.\\io\\Logger\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBadb\fP (LPSTR cmdArgs)"
+.br
+.ti -1c
+.RI "void \fBfastboot\fP (LPSTR cmdArgs)"
+.br
+.ti -1c
+.RI "void \fBadb_state\fP ()"
+.br
+.ti -1c
+.RI "void \fBadb_flash\fP ()"
+.br
+.ti -1c
+.RI "void \fBadb_root\fP ()"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Модуль работы с adb\&. 
+
+
+.PP
+\fBАвтор:\fP
+.RS 4
+Darlakon 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBADB_mod\&.cpp\fP
+.SH "Функции"
+.PP 
+.SS "void adb (LPSTR cmdArgs)"
+Вызов adb-интерфейса\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIcmdArgs\fP - команда для adb вида 'adb X'\&. 
+.RE
+.PP
+
+.PP
+См\&. определение в файле ADB_mod\&.cpp строка 19
+.SS "void adb_flash ()"
+Вызов модуля установки кастомной рекавери\&. 
+.PP
+См\&. определение в файле ADB_mod\&.cpp строка 80
+.SS "void adb_root ()"
+Вызов модуля получения root-прав\&. 
+.PP
+См\&. определение в файле ADB_mod\&.cpp строка 107
+.SS "void adb_state ()"
+Вызов модуля проверки состояния устройства\&. 
+.PP
+См\&. определение в файле ADB_mod\&.cpp строка 67
+.SS "void fastboot (LPSTR cmdArgs)"
+Вызов fastboot-интерфейса\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIcmdArgs\fP - команда для fastboot вида 'fastboot X'\&. 
+.RE
+.PP
+
+.PP
+См\&. определение в файле ADB_mod\&.cpp строка 43
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

@@ -1,0 +1,110 @@
+\hypertarget{_menu_8h}{}\section{Файл Menu.\+h}
+\label{_menu_8h}\index{Menu.\+h@{Menu.\+h}}
+
+
+Заголовочный файл с подключением модуля создания меню.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Граф включаемых заголовочных файлов для Menu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{_menu_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmenu__s}{menu\+\_\+s}
+\end{DoxyCompactItemize}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{_menu_8h_a7e6e7063d214256725a790c495d5c9da}{s\+\_\+menu} (\hyperlink{structmenu__s}{menu\+\_\+s} menu)
+\item 
+void \hyperlink{_menu_8h_a7167f5c196fc5e167bfabde1a730e81d}{pause} ()
+\item 
+void \hyperlink{_menu_8h_a540f8b6f2205a3bcf98d2b8f81e8aa09}{v\+\_\+exit} ()
+\item 
+void \hyperlink{_menu_8h_ab957e5514a924cccac4e53b2a576d063}{v\+\_\+loadscale} (size\+\_\+t position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Заголовочный файл с подключением модуля создания меню. 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_menu_8h_a7167f5c196fc5e167bfabde1a730e81d}\label{_menu_8h_a7167f5c196fc5e167bfabde1a730e81d}} 
+\index{Menu.\+h@{Menu.\+h}!pause@{pause}}
+\index{pause@{pause}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Паузка до нажатия любой клавиши. 
+
+См. определение в файле Menu.\+cpp строка 107
+
+\mbox{\Hypertarget{_menu_8h_a7e6e7063d214256725a790c495d5c9da}\label{_menu_8h_a7e6e7063d214256725a790c495d5c9da}} 
+\index{Menu.\+h@{Menu.\+h}!s\+\_\+menu@{s\+\_\+menu}}
+\index{s\+\_\+menu@{s\+\_\+menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{s\+\_\+menu()}{s\_menu()}}
+{\footnotesize\ttfamily std\+::string s\+\_\+menu (\begin{DoxyParamCaption}\item[{\hyperlink{structmenu__s}{menu\+\_\+s}}]{menu }\end{DoxyParamCaption})}
+
+Модуль создания меню. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em menu} & Список с параметрами создаваемого меню. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+
+
+См. определение в файле Menu.\+cpp строка 61
+
+\mbox{\Hypertarget{_menu_8h_a540f8b6f2205a3bcf98d2b8f81e8aa09}\label{_menu_8h_a540f8b6f2205a3bcf98d2b8f81e8aa09}} 
+\index{Menu.\+h@{Menu.\+h}!v\+\_\+exit@{v\+\_\+exit}}
+\index{v\+\_\+exit@{v\+\_\+exit}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{v\+\_\+exit()}{v\_exit()}}
+{\footnotesize\ttfamily void v\+\_\+exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Выход из программы. Вывод текста. 
+
+См. определение в файле Menu.\+cpp строка 114
+
+\mbox{\Hypertarget{_menu_8h_ab957e5514a924cccac4e53b2a576d063}\label{_menu_8h_ab957e5514a924cccac4e53b2a576d063}} 
+\index{Menu.\+h@{Menu.\+h}!v\+\_\+loadscale@{v\+\_\+loadscale}}
+\index{v\+\_\+loadscale@{v\+\_\+loadscale}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{v\+\_\+loadscale()}{v\_loadscale()}}
+{\footnotesize\ttfamily void v\+\_\+loadscale (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{position }\end{DoxyParamCaption})}
+
+Шкала загрузки. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em position} & значение до которого отрисовывать шкалу.\\
+\hline
+\end{DoxyParams}
+Шкала загрузки 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em position} & значение до которого отрисовывать шкалу. \\
+\hline
+\end{DoxyParams}
+
+
+См. определение в файле Menu.\+cpp строка 128
+

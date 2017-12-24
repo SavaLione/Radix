@@ -1,0 +1,96 @@
+\hypertarget{_items_8h}{}\section{Файл Items.\+h}
+\label{_items_8h}\index{Items.\+h@{Items.\+h}}
+
+
+Заголовочный файл с подключением меню.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Граф включаемых заголовочных файлов для Items.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{_items_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{_items_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{_items_8h_ac7f6531a9ecd51bc1ac40c3d6a142c87}{s\+\_\+mainmenu} ()
+\item 
+std\+::string \hyperlink{_items_8h_aff329d8d7665b0b0778374dc958f84e1}{s\+\_\+querymenu} (std\+::string item)
+\item 
+std\+::string \hyperlink{_items_8h_abd9bea227cb7ce61cb32dc1c9e4d2104}{s\+\_\+checkagreement} ()
+\item 
+void \hyperlink{_items_8h_ae0f9a7fdce9e3a275336f70656c0c4fc}{v\+\_\+manual} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Заголовочный файл с подключением меню. 
+
+\begin{DoxyAuthor}{Автор}
+Sava\+Lione 
+\end{DoxyAuthor}
+
+
+\subsection{Функции}
+\mbox{\Hypertarget{_items_8h_abd9bea227cb7ce61cb32dc1c9e4d2104}\label{_items_8h_abd9bea227cb7ce61cb32dc1c9e4d2104}} 
+\index{Items.\+h@{Items.\+h}!s\+\_\+checkagreement@{s\+\_\+checkagreement}}
+\index{s\+\_\+checkagreement@{s\+\_\+checkagreement}!Items.\+h@{Items.\+h}}
+\subsubsection{\texorpdfstring{s\+\_\+checkagreement()}{s\_checkagreement()}}
+{\footnotesize\ttfamily std\+::string s\+\_\+checkagreement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Проверка согласия пользователя с пользовательским соглашением. \begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+
+
+См. определение в файле Items.\+cpp строка 87
+
+\mbox{\Hypertarget{_items_8h_ac7f6531a9ecd51bc1ac40c3d6a142c87}\label{_items_8h_ac7f6531a9ecd51bc1ac40c3d6a142c87}} 
+\index{Items.\+h@{Items.\+h}!s\+\_\+mainmenu@{s\+\_\+mainmenu}}
+\index{s\+\_\+mainmenu@{s\+\_\+mainmenu}!Items.\+h@{Items.\+h}}
+\subsubsection{\texorpdfstring{s\+\_\+mainmenu()}{s\_mainmenu()}}
+{\footnotesize\ttfamily std\+::string s\+\_\+mainmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Главное меню. \begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+
+
+См. определение в файле Items.\+cpp строка 27
+
+\mbox{\Hypertarget{_items_8h_aff329d8d7665b0b0778374dc958f84e1}\label{_items_8h_aff329d8d7665b0b0778374dc958f84e1}} 
+\index{Items.\+h@{Items.\+h}!s\+\_\+querymenu@{s\+\_\+querymenu}}
+\index{s\+\_\+querymenu@{s\+\_\+querymenu}!Items.\+h@{Items.\+h}}
+\subsubsection{\texorpdfstring{s\+\_\+querymenu()}{s\_querymenu()}}
+{\footnotesize\ttfamily std\+::string s\+\_\+querymenu (\begin{DoxyParamCaption}\item[{std\+::string}]{item }\end{DoxyParamCaption})}
+
+Сообщение с вопросом для пользователя. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\tt in}  & {\em item} & Строка до выполнения модуля меню. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Выбранный пункт меню. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_items_8h_ae0f9a7fdce9e3a275336f70656c0c4fc}\label{_items_8h_ae0f9a7fdce9e3a275336f70656c0c4fc}} 
+\index{Items.\+h@{Items.\+h}!v\+\_\+manual@{v\+\_\+manual}}
+\index{v\+\_\+manual@{v\+\_\+manual}!Items.\+h@{Items.\+h}}
+\subsubsection{\texorpdfstring{v\+\_\+manual()}{v\_manual()}}
+{\footnotesize\ttfamily void v\+\_\+manual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Инструкция к программе. 
+
+См. определение в файле Items.\+cpp строка 113
+

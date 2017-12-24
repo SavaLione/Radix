@@ -1,0 +1,108 @@
+.TH "Operations.h" 3 "Пн 25 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Operations.h \- Заголовочный файл с вызовом модуля проверки стандартных файлов программы и вызова алгоритма рутирования\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBroot\fP ()"
+.br
+.ti -1c
+.RI "bool \fBb_file_exists\fP (const char *ch_file_name)"
+.br
+.ti -1c
+.RI "int \fBi_checking_files\fP ()"
+.br
+.ti -1c
+.RI "void \fBv_initialization\fP ()"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Заголовочный файл с вызовом модуля проверки стандартных файлов программы и вызова алгоритма рутирования\&. 
+
+Вызов: 
+.PP
+.nf
+void root();
+void v_initialization();
+
+.fi
+.PP
+.PP
+\fBАвтор:\fP
+.RS 4
+SavaLione 
+.RE
+.PP
+
+.PP
+См\&. определение в файле \fBOperations\&.h\fP
+.SH "Функции"
+.PP 
+.SS "bool b_file_exists (const char * ch_file_name)"
+Вызов модуля проверки файла на наличие в папке\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIch_file_name\fP Путь и файл, для проверки\&. 
+.RE
+.PP
+\fBВозвращает:\fP
+.RS 4
+наличие файла\&. true - файл найден\&. false - файл не найден\&.
+.RE
+.PP
+Вызов модуля проверки файла на наличие в папке\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIch_file_name\fP Путь и файл, для проверки\&. 
+.RE
+.PP
+\fBВозвращает:\fP
+.RS 4
+наличие файла\&. 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Operations\&.cpp строка 54
+.SS "int i_checking_files ()"
+Вызов модуля проверки файлов\&. 
+.PP
+\fBВозвращает:\fP
+.RS 4
+0 - неуспешная проверка файлов\&. 1 - успешная проверка файлов\&. 
+.RE
+.PP
+
+.PP
+См\&. определение в файле Operations\&.cpp строка 65
+.SS "void root ()"
+Вызов алгоритма рутирования\&. 
+.PP
+См\&. определение в файле Operations\&.cpp строка 40
+.SS "void v_initialization ()"
+Функция проверяет наличие 3 стандартных файлов программы 
+.PP
+.nf
+logger.log
+
+rules.txt
+
+settings.ini
+.fi
+.PP
+ 
+.PP
+См\&. определение в файле Operations\&.cpp строка 112
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

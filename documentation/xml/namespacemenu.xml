@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacemenu" kind="namespace" language="C++">
+    <compoundname>menu</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemenu_1ac0906d6effd5dc68552a724a3edb9330" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string menu::indentation</definition>
+        <argsstring></argsstring>
+        <name>indentation</name>
+        <initializer>= &quot;       &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Отступ между пунктами меню. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="61" column="1" bodyfile="src/core/Constants.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1ab9230afa22bdf260e3944290026a5a86" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string menu::frame_left</definition>
+        <argsstring></argsstring>
+        <name>frame_left</name>
+        <initializer>= &quot;       &lt;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Левая скобка и отступ слева. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="64" column="1" bodyfile="src/core/Constants.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a3f786c7ab3caec7dfef9e1fa61b52ae7" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string menu::frame_right</definition>
+        <argsstring></argsstring>
+        <name>frame_right</name>
+        <initializer>= &quot;&gt;       &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Правая скобка и отступ справа. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="67" column="1" bodyfile="src/core/Constants.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1aa3bc0d7f62e04dc52dd8f276902448ae" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::loading_size</definition>
+        <argsstring></argsstring>
+        <name>loading_size</name>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Размер шкалы модуля загрузки. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="70" column="1" bodyfile="src/core/Constants.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1aaea5c70964114a416caa58676ddf8066" prot="public" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool menu::loading_check_module</definition>
+        <argsstring></argsstring>
+        <name>loading_check_module</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Включение задержки, для проверки работоспособности модуля загрузки. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="73" column="1" bodyfile="src/core/Constants.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a69bce854c4a150920a5c77eede8cab0a" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::loading_check_module_sleep</definition>
+        <argsstring></argsstring>
+        <name>loading_check_module_sleep</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Пауза в мс для проверки работоспособности модуля загрузки . </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="76" column="1" bodyfile="src/core/Constants.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a56af6a2d586e2b6baa4ebf128a690266" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char menu::loading_left</definition>
+        <argsstring></argsstring>
+        <name>loading_left</name>
+        <initializer>= &apos;[&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль загрузки. Левая скобка. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="79" column="1" bodyfile="src/core/Constants.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a272b2c0c591457b2aeccaae0c122a1fc" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char menu::loading_right</definition>
+        <argsstring></argsstring>
+        <name>loading_right</name>
+        <initializer>= &apos;]&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль загрузки. Правая скобка. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="82" column="1" bodyfile="src/core/Constants.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1ab79f369195d81dcb241b1ab5269c9d3d" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char menu::loading_progress</definition>
+        <argsstring></argsstring>
+        <name>loading_progress</name>
+        <initializer>= &apos;|&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль загрузки. Шкала прогресса. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="85" column="1" bodyfile="src/core/Constants.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1ad004c327a8a1c14388a6c7f23d6953a6" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char menu::loading_indenting</definition>
+        <argsstring></argsstring>
+        <name>loading_indenting</name>
+        <initializer>= &apos; &apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Модуль загрузки. Значение после шкалы прогресса. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="88" column="1" bodyfile="src/core/Constants.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1af10d26be126a6efaa57428f629514f93" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::backspace</definition>
+        <argsstring></argsstring>
+        <name>backspace</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Backspace key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="91" column="1" bodyfile="src/core/Constants.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a9ca2724b99053483cb2af7b49563db95" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::enter</definition>
+        <argsstring></argsstring>
+        <name>enter</name>
+        <initializer>= 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enter key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="94" column="1" bodyfile="src/core/Constants.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a31d13ed09dc59c7220146bd432fc3787" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::esc</definition>
+        <argsstring></argsstring>
+        <name>esc</name>
+        <initializer>= 27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ESC key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="97" column="1" bodyfile="src/core/Constants.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a480dcaab18029e9e82979360297d9841" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::space</definition>
+        <argsstring></argsstring>
+        <name>space</name>
+        <initializer>= 32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Space key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="100" column="1" bodyfile="src/core/Constants.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a5e6bc193fc3cb9a0cfce7370a1578aeb" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::arrow_up</definition>
+        <argsstring></argsstring>
+        <name>arrow_up</name>
+        <initializer>= 72</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arrow up key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="103" column="1" bodyfile="src/core/Constants.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a971b85d59fefa12b99efe533fa977e8f" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::arrow_left</definition>
+        <argsstring></argsstring>
+        <name>arrow_left</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arrow left key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="106" column="1" bodyfile="src/core/Constants.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a5ac4dac780ca5b41b206c7ddf5f9905e" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::arrow_right</definition>
+        <argsstring></argsstring>
+        <name>arrow_right</name>
+        <initializer>= 77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arrow right key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="109" column="1" bodyfile="src/core/Constants.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1a23e79ce5c613d90b85f9a2c064f610f3" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::arrow_down</definition>
+        <argsstring></argsstring>
+        <name>arrow_down</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arrow down key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="112" column="1" bodyfile="src/core/Constants.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacemenu_1af11c563a29975fcfa8a0bac77b2630f7" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t menu::special</definition>
+        <argsstring></argsstring>
+        <name>special</name>
+        <initializer>= 224</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Special key. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/core/Constants.h" line="115" column="1" bodyfile="src/core/Constants.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/core/Constants.h" line="59" column="1"/>
+  </compounddef>
+</doxygen>

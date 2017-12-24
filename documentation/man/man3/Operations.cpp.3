@@ -1,0 +1,163 @@
+.TH "Operations.cpp" 3 "Пн 25 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Operations.cpp \- Модуль проверки стандартных файлов программы и вызова алгоритма рутирования\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+\fC#include <io\&.h>\fP
+.br
+\fC#include <Windows\&.h>\fP
+.br
+\fC#include '\&.\&.\\core\\ADB_mod\&.h'\fP
+.br
+\fC#include '\&.\&.\\core\\Constants\&.h'\fP
+.br
+\fC#include '\&.\&.\\core\\Operations\&.h'\fP
+.br
+\fC#include '\&.\&.\\io\\Logger\&.h'\fP
+.br
+\fC#include '\&.\&.\\io\\Templates\&.h'\fP
+.br
+\fC#include '\&.\&.\\ui\\Menu\&.h'\fP
+.br
+\fC#include '\&.\&.\\ui\\Items\&.h'\fP
+.br
+
+.SS "Функции"
+
+.in +1c
+.ti -1c
+.RI "void \fBv_initialization_logger_log\fP ()"
+.br
+.RI "Проверка файла logger\&.log\&. "
+.ti -1c
+.RI "void \fBv_initialization_settings_ini\fP ()"
+.br
+.RI "Проверка файла settings\&.ini\&. "
+.ti -1c
+.RI "void \fBroot\fP ()"
+.br
+.ti -1c
+.RI "bool \fBb_file_exists\fP (const char *ch_file_name)"
+.br
+.ti -1c
+.RI "int \fBi_checking_files\fP ()"
+.br
+.ti -1c
+.RI "void \fBv_initialization\fP ()"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Модуль проверки стандартных файлов программы и вызова алгоритма рутирования\&. 
+
+Модуль проверяет наличие стандартных файлов программы и рутирует аппарат\&.
+.PP
+Файлы: 
+.PP
+.nf
+logger.log - вывод логера.
+
+rules.txt - правила программы, с которыми должен согласиться пользователь.
+
+settings.ini - файл настроек.
+.fi
+.PP
+
+.PP
+См\&. определение в файле \fBOperations\&.cpp\fP
+.SH "Функции"
+.PP 
+.SS "bool b_file_exists (const char * ch_file_name)"
+Вызов модуля проверки файла на наличие в папке\&. 
+.PP
+\fBАргументы:\fP
+.RS 4
+\fIch_file_name\fP Путь и файл, для проверки\&. 
+.RE
+.PP
+\fBВозвращает:\fP
+.RS 4
+наличие файла\&. 
+.RE
+.PP
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBOperations_Initialization\&.cpp\fP\&.
+.PP
+См\&. определение в файле Operations\&.cpp строка 54
+.SS "int i_checking_files ()"
+Вызов модуля проверки файлов\&. 
+.PP
+\fBВозвращает:\fP
+.RS 4
+0 - неуспешная проверка файлов\&. 1 - успешная проверка файлов\&. 
+.RE
+.PP
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBOperations\&.cpp\fP и \fBOperations_Initialization\&.cpp\fP\&.
+.PP
+См\&. определение в файле Operations\&.cpp строка 65
+.SS "void root ()"
+Вызов алгоритма рутирования\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBOperations\&.cpp\fP\&.
+.PP
+См\&. определение в файле Operations\&.cpp строка 40
+.SS "void v_initialization ()"
+Функция проверяет наличие 3 стандартных файлов программы 
+.PP
+.nf
+logger.log
+
+rules.txt
+
+settings.ini
+.fi
+.PP
+ 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBOperations_Initialization\&.cpp\fP\&.
+.PP
+См\&. определение в файле Operations\&.cpp строка 112
+.SS "void v_initialization_logger_log ()"
+
+.PP
+Проверка файла logger\&.log\&. Проверка файла logger\&.log
+.PP
+При отсутствии файла создаёт его\&.
+.PP
+При наличии файла пропуск\&.
+.PP
+Всё логируется\&. 
+.PP
+См\&. определение в файле Operations\&.cpp строка 132
+.SS "void v_initialization_settings_ini ()"
+
+.PP
+Проверка файла settings\&.ini\&. Проверка файла settings\&.ini
+.PP
+При отсутствии файла создаёт его\&.
+.PP
+При наличии файла пропуск\&.
+.PP
+Всё логируется\&. 
+.PP
+См\&. определение в файле Operations\&.cpp строка 150
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

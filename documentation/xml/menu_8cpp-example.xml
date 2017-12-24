@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="menu_8cpp-example" kind="example">
+    <compoundname>menu.cpp</compoundname>
+    <detaileddescription>
+<para><simplesect kind="author"><para>SavaLione <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;..\ui\Menu.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>before();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>after();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmenu__s" kindref="compound">menu_s</ref><sp/>testmenu;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1a2b4d6cd699b46daba2bb8297c11971aa" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Test<sp/>menu&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1ad653d55a31d8503ad989ffd0b94c14e4" kindref="member">s_before</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Test<sp/>before.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1a8622e3ccae9b1356ad3e2e3eb51a44e8" kindref="member">s_after</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Test<sp/>after.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1abf8d2985fb3bf50d8e2075701149375a" kindref="member">vec_item_name</ref><sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;Test&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Exit&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1aa71bffe8004873d1f43eeeb4e17595c8" kindref="member">before_menu</ref><sp/>=<sp/>before;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>testmenu.<ref refid="structmenu__s_1ad0e4cb85e66d3c8bc25687a92d986939" kindref="member">after_menu</ref><sp/>=<sp/>after;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/><ref refid="_menu_8cpp_1a20a38c5c97dbebd634a7b5c71fcd6120" kindref="member">s_menu</ref>(mainmenu)<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>before()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Before.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>after()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;After.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

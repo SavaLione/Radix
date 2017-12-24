@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="menu_8cpp-example">
+    <title>menu.cpp</title>
+
+<para><formalpara><title>Автор: </title>
+
+<para>SavaLione <literallayout><computeroutput><emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+
+<emphasis class="preprocessor">#include&#32;&quot;..\ui\Menu.h&quot;</emphasis>
+
+<emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="namespacestd">std</link>;
+
+<emphasis class="keywordtype">void</emphasis>&#32;before();
+<emphasis class="keywordtype">void</emphasis>&#32;after();
+
+<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="_main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link>()&#32;{
+&#32;&#32;&#32;&#32;<link linkend="structmenu__s">menu_s</link>&#32;testmenu;
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1a2b4d6cd699b46daba2bb8297c11971aa">name</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Test&#32;menu&quot;</emphasis>;
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1ad653d55a31d8503ad989ffd0b94c14e4">s_before</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Test&#32;before.&quot;</emphasis>;
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1a8622e3ccae9b1356ad3e2e3eb51a44e8">s_after</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Test&#32;after.&quot;</emphasis>;
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1abf8d2985fb3bf50d8e2075701149375a">vec_item_name</link>&#32;=&#32;{<emphasis class="stringliteral">&quot;Test&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Exit&quot;</emphasis>};
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1aa71bffe8004873d1f43eeeb4e17595c8">before_menu</link>&#32;=&#32;before;
+&#32;&#32;&#32;&#32;testmenu.<link linkend="structmenu__s_1ad0e4cb85e66d3c8bc25687a92d986939">after_menu</link>&#32;=&#32;after;
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<link linkend="_menu_8cpp_1a20a38c5c97dbebd634a7b5c71fcd6120">s_menu</link>(mainmenu)&#32;&lt;&lt;&#32;endl;
+&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;0;
+}
+
+<emphasis class="keywordtype">void</emphasis>&#32;before()&#32;{
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;Before.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+}
+
+<emphasis class="keywordtype">void</emphasis>&#32;after()&#32;{
+&#32;&#32;&#32;&#32;cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;After.&quot;</emphasis>&#32;&lt;&lt;&#32;endl;
+}
+</computeroutput></literallayout> </para>
+</formalpara>
+</para>
+
+</section>

@@ -1,0 +1,96 @@
+.TH "menu_s" 3 "Пн 25 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+menu_s
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Menu\&.h>\fP
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP = 'unassigned'"
+.br
+.ti -1c
+.RI "std::string \fBs_before\fP = ''"
+.br
+.ti -1c
+.RI "std::string \fBs_after\fP = ''"
+.br
+.ti -1c
+.RI "std::vector< std::string > \fBvec_item_name\fP"
+.br
+.RI "Строковый массив векторного размера\&. Это позволяет создать меню с n количеством параметров\&. "
+.ti -1c
+.RI "void(* \fBbefore_menu\fP )()=0"
+.br
+.ti -1c
+.RI "void(*)(*) \fBafter_menu\fP ()=0"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 12
+.SH "Данные класса"
+.PP 
+.SS "void(*)(*) menu_s::after_menu()=0"
+< Функция до создаваемого меню\&. Функция после создаваемого меню\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 18
+.SS "void(* menu_s::before_menu) ()=0"
+
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 17
+.SS "std::string menu_s::name = 'unassigned'"
+Имя создаваемого меню\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 13
+.SS "std::string menu_s::s_after = ''"
+Строка после создаваемого меню\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 15
+.SS "std::string menu_s::s_before = ''"
+Строка до создаваемого меню\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 14
+.SS "std::vector<std::string> menu_s::vec_item_name"
+
+.PP
+Строковый массив векторного размера\&. Это позволяет создать меню с n количеством параметров\&. 
+.PP
+\fBПримеры: \fP
+.in +1c
+\fBmenu\&.cpp\fP\&.
+.PP
+См\&. определение в файле Menu\&.h строка 16
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

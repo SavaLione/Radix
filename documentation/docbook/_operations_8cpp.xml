@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_operations_8cpp">
+    <title>Operations.cpp File Reference</title>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;io.h&gt;</programlisting>
+    <programlisting>#include &lt;Windows.h&gt;</programlisting>
+    <programlisting>#include &quot;..\core\ADB_mod.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Constants.h&quot;</programlisting>
+    <programlisting>#include &quot;..\core\Operations.h&quot;</programlisting>
+    <programlisting>#include &quot;..\io\Logger.h&quot;</programlisting>
+    <programlisting>#include &quot;..\io\Templates.h&quot;</programlisting>
+    <programlisting>#include &quot;..\ui\Menu.h&quot;</programlisting>
+    <programlisting>#include &quot;..\ui\Items.h&quot;</programlisting>
+<para>Include dependency diagram for Operations.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_operations_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Operations.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_operations_8cpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Функции</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_operations_8cpp_1a61271965777637ec3d70f6d7ab0a466a">v_initialization_logger_log</link> (
+)<para><emphasis>Проверка файла logger.log.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_operations_8cpp_1a9f137f3ae0426a1e7c1a398ad930dc70">v_initialization_settings_ini</link> (
+)<para><emphasis>Проверка файла settings.ini.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_operations_8cpp_1a784c09041cf40075e8eb016a2d8419d6">root</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="_operations_8cpp_1a06ba6d957eba855cc9f88ce7ac641722">b_file_exists</link> (
+const char * ch_file_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_operations_8cpp_1a5f44f09549aae42fa22e71e761b40abc">i_checking_files</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_operations_8cpp_1a11b373fd61e18cd28810a5b607e1749a">v_initialization</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Подробное описание</title>
+
+<para>Модуль проверки стандартных файлов программы и вызова алгоритма рутирования. </para>
+
+<para>Модуль проверяет наличие стандартных файлов программы и рутирует аппарат.</para>
+
+<para>Файлы: <literallayout>logger.log - вывод логера.
+
+rules.txt - правила программы, с которыми должен согласиться пользователь.
+
+settings.ini - файл настроек.</literallayout> </para>
+    <para>Definition in file Operations.cpp</para>
+    </simplesect>
+</section>

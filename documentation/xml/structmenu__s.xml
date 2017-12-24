@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structmenu__s" kind="struct" language="C++" prot="public">
+    <compoundname>menu_s</compoundname>
+    <includes refid="_menu_8h" local="no">Menu.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmenu__s_1a2b4d6cd699b46daba2bb8297c11971aa" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string menu_s::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>= &quot;unassigned&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Имя создаваемого меню. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="13" column="1" bodyfile="src/ui/Menu.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__s_1ad653d55a31d8503ad989ffd0b94c14e4" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string menu_s::s_before</definition>
+        <argsstring></argsstring>
+        <name>s_before</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Строка до создаваемого меню. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="14" column="1" bodyfile="src/ui/Menu.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__s_1a8622e3ccae9b1356ad3e2e3eb51a44e8" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string menu_s::s_after</definition>
+        <argsstring></argsstring>
+        <name>s_after</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Строка после создаваемого меню. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="15" column="1" bodyfile="src/ui/Menu.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__s_1abf8d2985fb3bf50d8e2075701149375a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; menu_s::vec_item_name</definition>
+        <argsstring></argsstring>
+        <name>vec_item_name</name>
+        <briefdescription>
+<para>Строковый массив векторного размера. Это позволяет создать меню с n количеством параметров. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="16" column="1" bodyfile="src/ui/Menu.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__s_1aa71bffe8004873d1f43eeeb4e17595c8" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* menu_s::before_menu) ()=0</definition>
+        <argsstring>)()=0</argsstring>
+        <name>before_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="17" column="1" bodyfile="src/ui/Menu.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmenu__s_1ad0e4cb85e66d3c8bc25687a92d986939" prot="public" static="no" mutable="no">
+        <type>void(*)(*)</type>
+        <definition>void(*)(*) menu_s::after_menu()=0</definition>
+        <argsstring>()=0</argsstring>
+        <name>after_menu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt; Функция до создаваемого меню. Функция после создаваемого меню. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ui/Menu.h" line="17" column="1" bodyfile="src/ui/Menu.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ui/Menu.h" line="12" column="1" bodyfile="src/ui/Menu.h" bodystart="12" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structmenu__s_1ad0e4cb85e66d3c8bc25687a92d986939" prot="public" virt="non-virtual"><scope>menu_s</scope><name>after_menu</name></member>
+      <member refid="structmenu__s_1aa71bffe8004873d1f43eeeb4e17595c8" prot="public" virt="non-virtual"><scope>menu_s</scope><name>before_menu</name></member>
+      <member refid="structmenu__s_1a2b4d6cd699b46daba2bb8297c11971aa" prot="public" virt="non-virtual"><scope>menu_s</scope><name>name</name></member>
+      <member refid="structmenu__s_1a8622e3ccae9b1356ad3e2e3eb51a44e8" prot="public" virt="non-virtual"><scope>menu_s</scope><name>s_after</name></member>
+      <member refid="structmenu__s_1ad653d55a31d8503ad989ffd0b94c14e4" prot="public" virt="non-virtual"><scope>menu_s</scope><name>s_before</name></member>
+      <member refid="structmenu__s_1abf8d2985fb3bf50d8e2075701149375a" prot="public" virt="non-virtual"><scope>menu_s</scope><name>vec_item_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

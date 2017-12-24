@@ -1,0 +1,171 @@
+.TH "Constants.h" 3 "Пн 25 Дек 2017" "Radix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Constants.h \- Заголовочный файл с константами\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+
+.SS "Пространства имен"
+
+.in +1c
+.ti -1c
+.RI " \fBradix\fP"
+.br
+.ti -1c
+.RI " \fBmenu\fP"
+.br
+.ti -1c
+.RI " \fBlogo\fP"
+.br
+.in -1c
+.SS "Переменные"
+
+.in +1c
+.ti -1c
+.RI "const size_t \fBradix::buff_size\fP = 32"
+.br
+.ti -1c
+.RI "const size_t \fBradix::buff_ruleslist\fP = 256"
+.br
+.ti -1c
+.RI "const char \fBradix::logger_list\fP [] = 'logger\&.log'"
+.br
+.ti -1c
+.RI "const char \fBradix::settings_list\fP [] = 'settings\&.ini'"
+.br
+.ti -1c
+.RI "const char \fBradix::firmware_way\fP [] = '\\\\assets\\\\firmware\\\\'"
+.br
+.ti -1c
+.RI "const char \fBradix::patch\fP [] = '\\\\assets\\\\'"
+.br
+.ti -1c
+.RI "const char \fBradix::expansion_file\fP [] = '\&.zip'"
+.br
+.ti -1c
+.RI "const char \fBradix::recovery_file\fP [] = 'recovery\&.img'"
+.br
+.ti -1c
+.RI "const char \fBradix::su_file\fP [] = 'su\&.zip'"
+.br
+.ti -1c
+.RI "const char \fBradix::not_found\fP [] = ' not found\&.'"
+.br
+.ti -1c
+.RI "const char \fBradix::found\fP [] = ' found\&.'"
+.br
+.ti -1c
+.RI "const char \fBradix::ch_user_continue\fP [] = 'The user continued the program despite the error\&.'"
+.br
+.ti -1c
+.RI "const char \fBradix::ch_user_not_continue\fP [] = 'The user did not continue the program despite the error\&.'"
+.br
+.ti -1c
+.RI "const std::string \fBmenu::indentation\fP = ' '"
+.br
+.ti -1c
+.RI "const std::string \fBmenu::frame_left\fP = ' <'"
+.br
+.ti -1c
+.RI "const std::string \fBmenu::frame_right\fP = '> '"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::loading_size\fP = 25"
+.br
+.ti -1c
+.RI "const bool \fBmenu::loading_check_module\fP = false"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::loading_check_module_sleep\fP = 1000"
+.br
+.ti -1c
+.RI "const char \fBmenu::loading_left\fP = '['"
+.br
+.ti -1c
+.RI "const char \fBmenu::loading_right\fP = ']'"
+.br
+.ti -1c
+.RI "const char \fBmenu::loading_progress\fP = '|'"
+.br
+.ti -1c
+.RI "const char \fBmenu::loading_indenting\fP = ' '"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::backspace\fP = 8"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::enter\fP = 13"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::esc\fP = 27"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::space\fP = 32"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::arrow_up\fP = 72"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::arrow_left\fP = 75"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::arrow_right\fP = 77"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::arrow_down\fP = 80"
+.br
+.ti -1c
+.RI "const size_t \fBmenu::special\fP = 224"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::border\fP = '===========================\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::little_help\fP = '==== <\- use to move \-> ====\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::license\fP = 'Do you agree with the license?\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::move_indentation\fP = ' '"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::move\fP = '<\- use to move \->\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::radix\fP = ' _____ _ _ \\n | __ \\\\ | (_) \\n | |__) |__ _ __| |___ __\\n | _ // _` |/ _` | \\\\ \\\\/ /\\n | | \\\\ \\\\ (_| | (_| | |> < \\n |_| \\\\_\\\\__,_|\\\\__,_|_/_/\\\\_\\\\ \\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::loading\fP = ' _ _ \\n | | | |\\n | | ___ __ _ __| |\\n | | / _ \\\\ / _` |/ _` |\\n | |___| (_) | (_| | (_| |\\n |______\\\\___/ \\\\__,_|\\\\__,_|\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::exit\fP = ' ______ _ _ \\n | ____| (_) | \\n | |__ __ ___| |_ \\n | __| \\\\ \\\\/ / | __|\\n | |____ > <| | |_ \\n |______/_/\\\\_\\\\_|\\\\__|\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::s_continue\fP = 'Continue?\\n'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::s_manual\fP = ' User Manual\\n0) If necessary, install drivers from assets/Drivers_Universal folder\&.\\n1) Enable USB debugging on your device\&.\\n You'll need to become developer by tapping \\'Build Number\\' in \\'About Device\\' section\&.\\n Then go to Developer section and enable debugging\&.\\n2) Plug in your device, accept debugging request\&.\\n3) Put files 'recovery\&.img' and 'su\&.zip' in program directory(next to Radix\&.exe)\\n4) Proceed\&.'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::enter\fP = 'Press any key to continue\&.'"
+.br
+.ti -1c
+.RI "const std::string \fBlogo::eula\fP = 'Copyright (c) 2017 Radix\\n\\nTHE SOFTWARE IS PROVIDED \\'AS IS\\', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A \\nPARTICULAR PURPOSE AND NONINFRINGEMENT\&. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN \\nACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE\&.\\n'"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+Заголовочный файл с константами\&. 
+
+
+.PP
+См\&. определение в файле \fBConstants\&.h\fP
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Radix из исходного текста\&.

@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Radix: Файл Items.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Radix
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_da5c6b39c0a2f54e57df6799511cd3ab.html">ui</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл Items.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Создание меню.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;Windows.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_constants_8h_source.html">..\core\Constants.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_color_8h_source.html">..\core\Color.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_menu_8h_source.html">..\ui\Menu.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Items.cpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_items_8cpp__incl.svg" width="595" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+</div>
+<p><a href="_items_8cpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad151996f106cf7ff3fad3914fbf611c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#ad151996f106cf7ff3fad3914fbf611c5">v_mainmenu_before</a> ()</td></tr>
+<tr class="memdesc:ad151996f106cf7ff3fad3914fbf611c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок до выполнения модуля меню.  <a href="#ad151996f106cf7ff3fad3914fbf611c5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad151996f106cf7ff3fad3914fbf611c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac274a96bdc6bb4f3b297c7cf108ffa88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#ac274a96bdc6bb4f3b297c7cf108ffa88">v_mainmenu_after</a> ()</td></tr>
+<tr class="memdesc:ac274a96bdc6bb4f3b297c7cf108ffa88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок после выполнения модуля меню.  <a href="#ac274a96bdc6bb4f3b297c7cf108ffa88">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac274a96bdc6bb4f3b297c7cf108ffa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58915fe72643acfafcca29110bac7289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#a58915fe72643acfafcca29110bac7289">v_querymenu_before</a> ()</td></tr>
+<tr class="memdesc:a58915fe72643acfafcca29110bac7289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок до выполнения модуля меню.  <a href="#a58915fe72643acfafcca29110bac7289">Подробнее...</a><br /></td></tr>
+<tr class="separator:a58915fe72643acfafcca29110bac7289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a975c31a63037906ffcd058119643c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#a24a975c31a63037906ffcd058119643c">v_querymenu_after</a> ()</td></tr>
+<tr class="memdesc:a24a975c31a63037906ffcd058119643c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок после выполнения модуля меню.  <a href="#a24a975c31a63037906ffcd058119643c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a24a975c31a63037906ffcd058119643c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa52d2bd2c48a7550e095eee9a614b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#afa52d2bd2c48a7550e095eee9a614b39">v_checkagreement_before</a> ()</td></tr>
+<tr class="memdesc:afa52d2bd2c48a7550e095eee9a614b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок до выполнения модуля меню.  <a href="#afa52d2bd2c48a7550e095eee9a614b39">Подробнее...</a><br /></td></tr>
+<tr class="separator:afa52d2bd2c48a7550e095eee9a614b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992f6a23b7b289d164cb112c1a637f86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#a992f6a23b7b289d164cb112c1a637f86">v_checkagreement_after</a> ()</td></tr>
+<tr class="memdesc:a992f6a23b7b289d164cb112c1a637f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Блок после выполнения модуля меню.  <a href="#a992f6a23b7b289d164cb112c1a637f86">Подробнее...</a><br /></td></tr>
+<tr class="separator:a992f6a23b7b289d164cb112c1a637f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb16d6cecac9a7da7edd9389097a74b2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#afb16d6cecac9a7da7edd9389097a74b2">s_mainmenu</a> ()</td></tr>
+<tr class="separator:afb16d6cecac9a7da7edd9389097a74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45daa1eafaa5c4d1e9246abdd4db144e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#a45daa1eafaa5c4d1e9246abdd4db144e">s_querymenu</a> (string item)</td></tr>
+<tr class="separator:a45daa1eafaa5c4d1e9246abdd4db144e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda300061b64b7f3003c9103cfb1bb19"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#acda300061b64b7f3003c9103cfb1bb19">s_checkagreement</a> ()</td></tr>
+<tr class="separator:acda300061b64b7f3003c9103cfb1bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f9a7fdce9e3a275336f70656c0c4fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_items_8cpp.html#ae0f9a7fdce9e3a275336f70656c0c4fc">v_manual</a> ()</td></tr>
+<tr class="separator:ae0f9a7fdce9e3a275336f70656c0c4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Создание меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a></p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="acda300061b64b7f3003c9103cfb1bb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda300061b64b7f3003c9103cfb1bb19">&#9670;&nbsp;</a></span>s_checkagreement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string s_checkagreement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Проверка согласия пользователя с пользовательским соглашением. </p><dl class="section return"><dt>Возвращает</dt><dd>Выбранный пункт меню. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="items_8cpp-example.html#a3">items.cpp</a>.</dd>
+</dl>
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00087">87</a></p>
+
+</div>
+</div>
+<a id="afb16d6cecac9a7da7edd9389097a74b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb16d6cecac9a7da7edd9389097a74b2">&#9670;&nbsp;</a></span>s_mainmenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string s_mainmenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Главное меню. </p><dl class="section return"><dt>Возвращает</dt><dd>Выбранный пункт меню. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="items_8cpp-example.html#a1">items.cpp</a>.</dd>
+</dl>
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00027">27</a></p>
+
+</div>
+</div>
+<a id="a45daa1eafaa5c4d1e9246abdd4db144e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45daa1eafaa5c4d1e9246abdd4db144e">&#9670;&nbsp;</a></span>s_querymenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string s_querymenu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Главное меню. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">item</td><td>Строка до выполнения модуля меню. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Выбранный пункт меню. </dd></dl>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="items_8cpp-example.html#a2">items.cpp</a>.</dd>
+</dl>
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00058">58</a></p>
+
+</div>
+</div>
+<a id="a992f6a23b7b289d164cb112c1a637f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992f6a23b7b289d164cb112c1a637f86">&#9670;&nbsp;</a></span>v_checkagreement_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_checkagreement_after </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок после выполнения модуля меню. </p>
+<p>Блок после выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00103">103</a></p>
+
+</div>
+</div>
+<a id="afa52d2bd2c48a7550e095eee9a614b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa52d2bd2c48a7550e095eee9a614b39">&#9670;&nbsp;</a></span>v_checkagreement_before()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_checkagreement_before </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок до выполнения модуля меню. </p>
+<p>Блок до выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00097">97</a></p>
+
+</div>
+</div>
+<a id="ac274a96bdc6bb4f3b297c7cf108ffa88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac274a96bdc6bb4f3b297c7cf108ffa88">&#9670;&nbsp;</a></span>v_mainmenu_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_mainmenu_after </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок после выполнения модуля меню. </p>
+<p>Блок после выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00049">49</a></p>
+
+</div>
+</div>
+<a id="ad151996f106cf7ff3fad3914fbf611c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad151996f106cf7ff3fad3914fbf611c5">&#9670;&nbsp;</a></span>v_mainmenu_before()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_mainmenu_before </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок до выполнения модуля меню. </p>
+<p>Блок до выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a id="ae0f9a7fdce9e3a275336f70656c0c4fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f9a7fdce9e3a275336f70656c0c4fc">&#9670;&nbsp;</a></span>v_manual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_manual </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Инструкция к программе. </p>
+<dl><dt><b>Примеры: </b></dt><dd><a class="el" href="items_8cpp-example.html#a4">items.cpp</a>.</dd>
+</dl>
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00113">113</a></p>
+
+</div>
+</div>
+<a id="a24a975c31a63037906ffcd058119643c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a975c31a63037906ffcd058119643c">&#9670;&nbsp;</a></span>v_querymenu_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_querymenu_after </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок после выполнения модуля меню. </p>
+<p>Блок после выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00074">74</a></p>
+
+</div>
+</div>
+<a id="a58915fe72643acfafcca29110bac7289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58915fe72643acfafcca29110bac7289">&#9670;&nbsp;</a></span>v_querymenu_before()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void v_querymenu_before </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Блок до выполнения модуля меню. </p>
+<p>Блок до выполнения модуля меню. </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_items_8cpp_source.html">Items.cpp</a> строка <a class="el" href="_items_8cpp_source.html#l00069">69</a></p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
