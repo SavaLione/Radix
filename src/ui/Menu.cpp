@@ -29,7 +29,7 @@ string s_menu_choice(size_t choice, menu_s menu);
     \return Выбранный пункт меню.
 */
 string s_menu_choice(size_t choice, menu_s menu){					// Отрисовка модуля создания меню.
-	system("cls");													// Очистка экрана консоли
+	system("cls");													// Очистка экрана консоли.
 	cout << menu.s_before;											// Строка до выполнения алгоритма меню.
 	if (menu.before_menu != 0) {									// Если функция до выполнения алгоритма меню есть.
 		menu.before_menu();											// Функция до выполнения алгоритма меню есть.
